@@ -8,10 +8,12 @@ const AboutUs = () => {
             About Us
           </button>
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight ">
+            <h1 className="text-3xl md:text-4xl leading-tight ">
               Your Trusted Partner in Real Estate Development and{" "}
             </h1>
-            <h1 className="text-6xl py-5 pt-0">Investments</h1>
+            <h1 className="text-6xl py-5 pt-0 font-bold leading-tight">
+              Investments
+            </h1>
           </div>
           <p className="text-gray-600 mb-6">
             At NextGen Properties, we specialize in creating stunning custom
