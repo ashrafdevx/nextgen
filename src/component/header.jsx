@@ -1,6 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [activeItem, setActiveItem] = useState("/");
+
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Blogs", path: "/blog" },
+  ];
+
   return (
     <>
       <div className="container mx-auto mt-3 navbar bg-base-100">
@@ -57,83 +69,37 @@ const Header = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-2 gap-3">
-            <li className="relative text-md px-1 py-1 rounded-md overflow-hidden group">
-              <Link
-                to={"/"}
-                className="relative z-10 text-black group-hover:text-white transition duration-300"
+          <div className="flex px-2 gap-3">
+            {menuItems.map((item) => (
+              <div
+                key={item.path}
+                className={`relative text-md px-3 py-2 rounded-md overflow-hidden group ${
+                  activeItem === item.path
+                    ? "bg-[#0049ad] text-white"
+                    : "text-black"
+                }`}
               >
-                Home
-              </Link>
-              <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            </li>
-            <li className="relative text-md px-1 py-1 rounded-md overflow-hidden group">
-              <Link
-                to={"/about"}
-                className="relative z-10 text-black group-hover:text-white transition duration-300"
-              >
-                About
-              </Link>
-              <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            </li>
-
-            <li className="relative text-md px-1 py-1 rounded-md overflow-hidden group">
-              <Link
-                to={"/services"}
-                className="relative z-10 text-black group-hover:text-white transition duration-300"
-              >
-                Services
-              </Link>
-              <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            </li>
-            <li className="relative text-md px-1 py-1 rounded-md overflow-hidden group">
-              <Link
-                to={"/privacy-policy"}
-                className="relative z-10 text-black group-hover:text-white transition duration-300"
-              >
-                Privacy Policy
-              </Link>
-              <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            </li>
-
-            <li className="relative text-md px-1 py-1 rounded-md overflow-hidden group">
-              <Link
-                to={"/portfolio"}
-                className="relative z-10 text-black group-hover:text-white transition duration-300"
-              >
-                Portfolio
-              </Link>
-              <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            </li>
-            <li className="relative text-md px-1 py-1 rounded-md overflow-hidden group">
-              <Link
-                to={"/blog"}
-                className="relative z-10 text-black group-hover:text-white transition duration-300"
-              >
-                Blogs
-              </Link>
-              <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            </li>
-            {/* <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li> */}
-          </ul>
+                <button
+                  onClick={() => setActiveItem(item.path)}
+                  className={`relative z-10 ${
+                    activeItem === item.path ? "text-white" : "text-black"
+                  } group-hover:text-white transition duration-300`}
+                >
+                  <Link to={item.path}>{item.name}</Link>
+                </button>
+                <span
+                  className={`absolute inset-0 group-hover:bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out ${
+                    activeItem === item.path ? "translate-x-0 " : ""
+                  }`}
+                ></span>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="navbar-end">
           <ul className="menu menu-horizontal px-2 gap-3">
             <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white  py-[2px] overflow-hidden group">
               <a className="relative z-10  transition duration-300">Login</a>
-              {/* <span className="absolute inset-0 bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span> */}
             </li>
             <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white  py-[2px] overflow-hidden group">
               <a className="relative z-10  transition duration-300">Contact</a>
