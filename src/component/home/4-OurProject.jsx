@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -33,6 +34,7 @@ const projects = [
 const OurProject = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
+  const navigate = useNavigate();
   const filteredProjects =
     activeFilter === "All"
       ? projects
@@ -43,7 +45,10 @@ const OurProject = () => {
       <div className="py-10 md:px-16">
         {/* Header */}
         <div className="py-2">
-          <button className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+          <button
+            onClick={() => navigate("/portfolio")}
+            className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+          >
             Our Projects
           </button>
         </div>

@@ -48,7 +48,10 @@ const AboutUs = () => {
 
         {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
-          <button className="border duration-300 border-black hover:border-black px-8 py-2 rounded-full text-md mb-5 hover:bg-black hover:text-white transition ease-in-out delay-75">
+          <button
+            onClick={() => navigate("/services")}
+            className="border duration-300 border-black hover:border-black px-8 py-2 rounded-full text-md mb-5 hover:bg-black hover:text-white transition ease-in-out delay-75"
+          >
             Service
           </button>
           <div>
