@@ -101,15 +101,13 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="navbar-end">
-          <ul className="menu menu-horizontal px-2 gap-3">
-            <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white py-[2px] overflow-hidden group">
-              <a className="relative z-10 transition duration-300">Login</a>
-            </li>
-            <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white py-[2px] overflow-hidden group">
-              <a className="relative z-10 transition duration-300">Contact</a>
-            </li>
-          </ul>
+        <div className="flex gap-3 navbar-end">
+          <button className="rounded-full text-lg bg-[#0049ad] px-4 lg:px-6 text-white py-2 overflow-hidden relative z-10 transition duration-300">
+            Login
+          </button>
+          <button className="rounded-full text-lg bg-[#0049ad] px-4 lg:px-6 text-white py-2 overflow-hidden relative z-10 transition duration-300">
+            Contact
+          </button>
         </div>
       </div>
     </>
