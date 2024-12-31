@@ -1,175 +1,101 @@
 import React, { useState } from "react";
+import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
-const feedbacks = [
+const testimonials = [
   {
     title: "Our Dream Home, Perfectly Realized",
-    description:
-      "NextGen Properties turned our vision into reality with impeccable craftsmanship and attention to every detail. The process was seamless, and the result was beyond our expectations. We couldn’t be happier with our beautiful new home.",
-    name: "Karen Tignor",
-    image: "https://via.placeholder.com/50", // Replace with actual image
+    content:
+      "NextGen Properties turned our vision into reality with impeccable craftsmanship and attention to every detail. The process was seamless, and the result was beyond our expectations. We couldn't be happier with our beautiful new home.",
+    author: "Karen Tignor",
     rating: 5,
+    image: "https://avatar.iran.liara.run/public",
   },
   {
-    title: "A Seamless Experience",
-    description:
-      "The team made the entire process easy and enjoyable. Their expertise and attention to detail ensured we got exactly what we were looking for. Highly recommended!",
-    name: "John Doe",
-    image: "https://via.placeholder.com/50", // Replace with actual image
+    title: "Exceptional Investment Experience",
+    content:
+      "Working with NextGen Properties on our investment portfolio was a game-changer. Their market insight and professional guidance helped us make informed decisions that yielded excellent returns.",
+    author: "Michael Chen",
     rating: 5,
-  },
-  {
-    title: "Exceeding Expectations",
-    description:
-      "From start to finish, the service was outstanding. They truly care about their clients, and it shows in their work. We’re beyond satisfied!",
-    name: "Emily Smith",
-    image: "https://via.placeholder.com/50", // Replace with actual image
-    rating: 5,
+    image: "https://avatar.iran.liara.run/public",
   },
 ];
 
-const OurCustomerFeedback = () => {
+export default function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? feedbacks.length - 1 : prevIndex - 1
+  const next = () =>
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+  const prev = () =>
+    setCurrentIndex(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === feedbacks.length - 1 ? 0 : prevIndex + 1
-    );
-  };
 
   return (
-    <div className="flex container mx-auto flex-col items-center py-10 bg-gray-100">
-      {/* Header */}
-      <div className="text-center">
-        <h4 className="text-gray-600 font-semibold">Showcase of Excellence</h4>
-        <h2 className="text-3xl font-bold text-gray-800 mt-2">
-          Our Customer Feedback
-        </h2>
+    <div className="max-w-5xl mx-auto px-4 py-16 mt-16 bg-gray-50">
+      <div className="text-center mb-12">
+        <span className="inline-block hover:text-white hover:bg-gray-600 px-16 py-2 rounded-full border border-gray-700 text-gray-600">
+          Showcase of Excellence
+        </span>
+        <h1 className="text-6xl font-bold my-10 ">Our Customer Feedback</h1>
       </div>
 
-      {/* Feedback Card */}
-      <div className="relative max-w-2xl  w-full mt-8  ">
-        <div className="transition-transform px-12 duration-500">
-          {feedbacks.map((feedback, index) => (
-            <div
-              key={index}
-              className={`absolute w-full bg-white rounded-lg p-8 shadow-lg transition-opacity duration-500 ${
-                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
-            >
-              {/* Icon */}
-              <div className="flex justify-center items-center">
-                <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 10h.01M12 10h.01M16 10h.01M9 16h6m-3-6a9 9 0 110-18 9 9 0 010 18z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mt-6">
-                {feedback.title}
-              </h3>
-              <p className="text-gray-600 mt-4">{feedback.description}</p>
-              {/* User Info */}
-              <div className="flex items-center justify-center mt-6">
-                <img
-                  src={feedback.image}
-                  alt={feedback.name}
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div className="text-left">
-                  <p className="font-medium text-gray-800">{feedback.name}</p>
-                  <div className="flex">
-                    {Array(feedback.rating)
-                      .fill(0)
-                      .map((_, i) => (
-                        <svg
-                          key={i}
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-5 h-5 text-yellow-500"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.905c.969 0 1.371 1.24.588 1.81l-3.974 2.888a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.538 1.118l-3.975-2.888a1 1 0 00-1.175 0l-3.974 2.888c-.783.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.049 9.1c-.783-.57-.381-1.81.588-1.81h4.905a1 1 0 00.95-.69L9.049 2.927z" />
-                        </svg>
-                      ))}
-                  </div>
-                </div>
+      <div className="relative px-4">
+        <div className="pl-3  sm:h-[35vh]">
+          <div className="flex justify-start mb-6 ">
+            <img
+              src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/67075624bb0fa3c3786e601d_Quotes%20(1).png"
+              className="text-white rounded-full bg-blue-700  p-4"
+              // size={64}
+              alt="Sdfsdf"
+            />
+          </div>
+
+          <h3 className="text-3xl font-semibold text-start mb-4">
+            {testimonials[currentIndex].title}
+          </h3>
+
+          <p className="text-gray-600 text-xl h-[10vh] text-start mb-8">
+            {testimonials[currentIndex].content}
+          </p>
+
+          <div className="flex items-startjustify-center gap-4">
+            <img
+              src={testimonials[currentIndex].image}
+              alt={testimonials[currentIndex].author}
+              className="w-12 h-12 rounded-full"
+            />
+            <div>
+              <p className="font-semibold">
+                {testimonials[currentIndex].author}
+              </p>
+              <div className="flex gap-1">
+                {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">
+                    ★
+                  </span>
+                ))}
               </div>
             </div>
-          ))}
+          </div>
         </div>
 
-        {/* Navigation Buttons */}
-        <button
-          onClick={handlePrev}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 text-gray-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 text-gray-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Pagination Dots */}
-      <div className="flex justify-center mt-6 space-x-2">
-        {feedbacks.map((_, index) => (
+        <div className="flex justify-end pr-4 gap-4">
           <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? "bg-blue-600" : "bg-gray-300"
-            }`}
-          ></button>
-        ))}
+            onClick={prev}
+            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft size={36} />
+          </button>
+          <button
+            onClick={next}
+            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight size={36} />
+          </button>
+        </div>
       </div>
     </div>
   );
-};
-
-export default OurCustomerFeedback;
+}
