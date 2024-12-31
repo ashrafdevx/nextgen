@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [activeItem, setActiveItem] = useState(location.pathname);
 
   useEffect(() => {
@@ -82,13 +83,14 @@ const Header = () => {
                     ? "bg-[#0049ad] text-white"
                     : "text-black"
                 }`}
+                onClick={() => navigate(item.path)}
               >
                 <Link
                   to={item.path}
                   onClick={() => setActiveItem(item.path)}
                   className={`relative z-10 ${
                     activeItem === item.path ? "text-white" : "text-black"
-                  } group-hover:text-white transition duration-300`}
+                  } group-hover:text-white font-quicksand transition duration-300`}
                 >
                   {item.name}
                 </Link>
@@ -102,10 +104,10 @@ const Header = () => {
           </div>
         </div>
         <div className="flex gap-3 navbar-end">
-          <button className="rounded-full text-lg bg-[#0049ad] px-4 lg:px-6 text-white py-2 overflow-hidden relative z-10 transition duration-300">
+          <button className="rounded-full font-quicksand text-lg bg-[#0049ad] px-4 lg:px-6 text-white py-2 overflow-hidden relative z-10 transition duration-300">
             Login
           </button>
-          <button className="rounded-full text-lg bg-[#0049ad] px-4 lg:px-6 text-white py-2 overflow-hidden relative z-10 transition duration-300">
+          <button className="rounded-full font-quicksand text-lg bg-[#0049ad] px-4 lg:px-6 text-white py-2 overflow-hidden relative z-10 transition duration-300">
             Contact
           </button>
         </div>

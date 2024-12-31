@@ -6,10 +6,12 @@ const About = () => {
   return (
     <>
       <div className=" flex flex-col pt-6">
-        <h1 className="flex font-medium  justify-center text-5xl">About Us</h1>
+        <h1 className="flex font-medium font-sans text-5xl justify-center ">
+          About Us
+        </h1>
         <AboutBanner />
-        <NextGenproperties />
         <OurFounder />
+        <NextGenproperties />
         <ContactForm />
       </div>
       ;

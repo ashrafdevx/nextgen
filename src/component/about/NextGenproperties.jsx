@@ -7,7 +7,7 @@ const NextGenproperties = () => {
         {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
           <div>
-            <h1 className="text-3xl w-full md:text-5xl font-bold leading-tight ">
+            <h1 className="text-3xl w-full font-rubikSans md:text-5xl font-medium leading-tight ">
               NextGen Properties LLC
             </h1>
           </div>
@@ -39,7 +39,7 @@ const NextGenproperties = () => {
       <div className="flex flex-col md:flex-row h-[60vh] w-full">
         {/* Left Section */}
         <div className="flex-1 bg-gradient-to-r from-black via-gray-800 to-blue-900 text-white flex flex-col justify-center items-start px-8 md:px-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4">
+          <h2 className="text-4xl md:text-6xl font-medium mb-4">
             What Sets Us Apart
           </h2>
           <p className="text-base md:text-lg">
@@ -65,7 +65,7 @@ const NextGenproperties = () => {
         {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
           <div>
-            <h1 className="text-3xl w-full md:text-5xl font-bold leading-tight ">
+            <h1 className="text-3xl w-full md:text-5xl font-medium leading-tight ">
               At NextGen Properties
             </h1>
           </div>
@@ -102,7 +102,7 @@ const NextGenproperties = () => {
         {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
           <div>
-            <h1 className="text-3xl w-full md:text-5xl font-bold leading-tight ">
+            <h1 className="text-3xl w-full md:text-5xl font-medium leading-tight ">
               What Sets Us Apart
             </h1>
           </div>

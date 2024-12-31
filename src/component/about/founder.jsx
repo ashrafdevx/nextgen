@@ -1,6 +1,6 @@
 const OurFounder = () => {
   return (
-    <div className="flex flex-col md:flex-row sm:mb-16 w-full">
+    <div className="flex md:flex-row sm:mb-16 w-full">
       <div className="mt-8 md:mt-0 w-1/2 flex items-center justify-end">
         <img
           src={
@@ -11,8 +11,8 @@ const OurFounder = () => {
         />
       </div>
       <div className="flex-1 bg-gradient-to-r from-black via-gray-800 to-blue-900 text-white flex flex-col justify-center items-start px-8 md:px-16">
-        <h2 className="text-4xl md:text-6xl font-bold mb-4">
-          What Sets Us Apart
+        <h2 className="text-4xl md:text-5xl font-medium font-rubik mb-4">
+          Our Founder, Asim Ali
         </h2>
         <p className="text-base md:text-lg">
           NextGen Properties is more than just a real estate company; we are a
@@ -20,6 +20,14 @@ const OurFounder = () => {
           you’re looking for your dream home or a strategic investment
           opportunity, we’re here to bring your vision to life.
         </p>
+        <div className="flex flex-col md:flex-row gap-4 pt-6">
+          <button className="bg-blue-600 text-white transition duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+            Consult Now
+          </button>
+          <button className="border transition duration-300 border-blue-600 text-blue-600 hover:bg-blue-900 py-2 px-9  rounded-full hover:text-white">
+            Read More
+          </button>
+        </div>
       </div>
     </div>
   );
