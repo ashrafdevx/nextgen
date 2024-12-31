@@ -1,8 +1,13 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [activeItem, setActiveItem] = useState("/");
+  const location = useLocation();
+  const [activeItem, setActiveItem] = useState(location.pathname);
+
+  useEffect(() => {
+    setActiveItem(location.pathname);
+  }, [location.pathname]);
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -39,7 +44,7 @@ const Header = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item tfyhfhf1</a>
+                <a>Item 1</a>
               </li>
               <li>
                 <a>Parent</a>
@@ -58,7 +63,6 @@ const Header = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">
-            {" "}
             <img
               src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/6736c94fd7a302e4ac8ed8f3_NextGen%20Properties%20Logo.jpg"
               loading="lazy"
@@ -79,14 +83,15 @@ const Header = () => {
                     : "text-black"
                 }`}
               >
-                <button
+                <Link
+                  to={item.path}
                   onClick={() => setActiveItem(item.path)}
                   className={`relative z-10 ${
                     activeItem === item.path ? "text-white" : "text-black"
                   } group-hover:text-white transition duration-300`}
                 >
-                  <Link to={item.path}>{item.name}</Link>
-                </button>
+                  {item.name}
+                </Link>
                 <span
                   className={`absolute inset-0 group-hover:bg-[#0049ad] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out ${
                     activeItem === item.path ? "translate-x-0 " : ""
@@ -98,11 +103,11 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           <ul className="menu menu-horizontal px-2 gap-3">
-            <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white  py-[2px] overflow-hidden group">
-              <a className="relative z-10  transition duration-300">Login</a>
+            <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white py-[2px] overflow-hidden group">
+              <a className="relative z-10 transition duration-300">Login</a>
             </li>
-            <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white  py-[2px] overflow-hidden group">
-              <a className="relative z-10  transition duration-300">Contact</a>
+            <li className="relative rounded-full text-lg bg-[#0049ad] px-3 text-white py-[2px] overflow-hidden group">
+              <a className="relative z-10 transition duration-300">Contact</a>
             </li>
           </ul>
         </div>

@@ -1,10 +1,25 @@
+import { Pause, Play } from "lucide-react"; // Import Play icon as well
+import { useState, useRef } from "react"; // Use state and ref for video control
 import "../../assets/banner.css"; // Optional for custom styles
 
 const Banner = () => {
+  const [isPlaying, setIsPlaying] = useState(true); // State to track video play/pause
+  const videoRef = useRef(null); // Ref to access video element
+
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      videoRef.current.pause(); // Pause the video
+    } else {
+      videoRef.current.play(); // Play the video
+    }
+    setIsPlaying(!isPlaying); // Toggle play/pause state
+  };
+
   return (
     <div className="banner-container">
       <div className="video-wrapper">
         <video
+          ref={videoRef} // Attach ref to video element
           autoPlay
           loop
           muted
@@ -27,10 +42,20 @@ const Banner = () => {
             type="button"
             className="play-pause-button"
             aria-label="Play or Pause Video"
+            onClick={handlePlayPause} // Add click handler
           >
-            <span className="play-state">Pause Video</span>
-            <span className="pause-state" hidden>
-              Play Video
+            <span className="flex items-center gap-5">
+              {isPlaying ? (
+                <>
+                  <Pause size={36} className="bg-green-800 p-2 rounded-full" />
+                  Pause Video
+                </>
+              ) : (
+                <>
+                  <Play size={36} className="bg-green-800 p-2 rounded-full" />
+                  Play Video
+                </>
+              )}
             </span>
           </button>
         </div>
