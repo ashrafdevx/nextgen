@@ -14,7 +14,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="container mx-auto  flex-col px-16 justify-between flex">
+      <div className="container mx-auto  flex-col px-16 pt-6 justify-between flex">
         <div className="flex justify-between">
           <h1 className="text-4xl text-center mb-4">
             Ready to Build or Invest?

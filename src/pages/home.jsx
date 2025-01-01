@@ -7,8 +7,9 @@ import OurProject from "../component/home/4-OurProject";
 import OurInvestmentPortfolio from "../component/home/5-OurInvestmentPortfolio.jsx";
 import AskQuesdtion from "../component/home/6-AskQuesdtion.jsx";
 import TestimonialCarousel from "../component/home/7-OurCustomerFeedback.jsx";
-import OurBlogs from "../component/home/8-OurBlogs.jsx";
+
 import ContactForm from "../utils/ContactForm.jsx";
+import OurBlogs from "../utils/blogs.jsx";
 // import ContactForm from "../component/home/9-form.jsx";
 
 const Home = () => {
