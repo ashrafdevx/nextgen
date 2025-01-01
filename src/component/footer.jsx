@@ -1,10 +1,9 @@
-import React from "react";
 import { LinkedinIcon, InstagramIcon, FacebookIcon } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-[#1a1f36] text-white py-12 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="sm:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold">NextGen Properties</h3>
