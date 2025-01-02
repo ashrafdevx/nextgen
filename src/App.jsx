@@ -7,10 +7,10 @@ import PrivacyPolicy from "./pages/privacyPolicy";
 import Blogs from "./pages/blogs";
 import Header from "./component/header";
 import Footer from "./component/footer";
-import EstateInvestmentAndManagement from "./pages/services/estateInvesterManagement/EstateInvestmentAndManagement";
 import Services from "./pages/services/services";
 import IndividualAndHomeOwner from "./pages/services/individualAndHomeOwner/index";
 import InvesterAndFundManagers from "./pages/services/InvesterAndFundManagers";
+import EstateInvestmentAndManagement from "./pages/services/estateInvesterManagement";
 
 function App() {
   return (
