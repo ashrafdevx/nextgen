@@ -5,7 +5,7 @@ const OurBlogs = () => {
 
   return (
     <>
-      <div className="container mx-auto  sm:py-16 sm:px-2 md:py-16 lg:py-6">
+      <div className="container mx-auto px-2  sm:py-16 sm:px-2 md:py-16 lg:py-6">
         <div className="container flex-col items-center flex pb-6 pt-10 ">
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-medium text-gray-800 mt-2">
             Our Blogs
