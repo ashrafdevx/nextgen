@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home";
 import About from "./pages/about";
-import Portfolio from "./pages/Portfolio";
 import PrivacyPolicy from "./pages/privacyPolicy";
 import Blogs from "./pages/blogs";
 import Header from "./component/header";
@@ -11,6 +10,9 @@ import Services from "./pages/services/services";
 import IndividualAndHomeOwner from "./pages/services/individualAndHomeOwner/index";
 import InvesterAndFundManagers from "./pages/services/InvesterAndFundManagers";
 import EstateInvestmentAndManagement from "./pages/services/estateInvesterManagement";
+import RealEstatePortfolioDevelopment from "./pages/portfolio/RealEstatePortfolioDevelopment";
+import RealEstatePortfolioInvestment from "./pages/portfolio/RealEstatePortfolioInvestment";
+import Portfolio from "./pages/portfolio";
 
 function App() {
   return (
@@ -34,7 +36,16 @@ function App() {
             element={<InvesterAndFundManagers />}
           />
         </Route>
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Portfolio />}>
+          <Route
+            path="commercial"
+            element={<RealEstatePortfolioInvestment />}
+          />{" "}
+          <Route
+            path="residential"
+            element={<RealEstatePortfolioDevelopment />}
+          />
+        </Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/blog" element={<Blogs />} />
       </Routes>
