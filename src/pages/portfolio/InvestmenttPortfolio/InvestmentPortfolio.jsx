@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -31,9 +31,10 @@ const projects = [
   },
 ];
 
-const OurProject = () => {
+const InvestmentPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
-
+  const { pathname } = useLocation();
+  console.log("pathname", pathname);
   const navigate = useNavigate();
   const filteredProjects =
     activeFilter === "All"
@@ -45,15 +46,17 @@ const OurProject = () => {
       <div className="py-10 md:px-16">
         {/* Header */}
         <div className="py-2">
-          <button
-            onClick={() => navigate("/portfolio")}
-            className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
-          >
-            Our Projects
-          </button>
+          {pathname === "/" && (
+            <button
+              onClick={() => navigate("/portfolio")}
+              className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+            >
+              Our Projects
+            </button>
+          )}
         </div>
         <h2 className="text-4xl font-bold mt-2 py-4">
-          Our Development Portfolio
+          Our Investment Management Portfolio
         </h2>
 
         {/* Filters */}
@@ -110,4 +113,4 @@ const OurProject = () => {
   );
 };
 
-export default OurProject;
+export default InvestmentPortfolio;

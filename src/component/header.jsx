@@ -36,8 +36,14 @@ const Header = () => {
       name: "Portfolio",
       path: "/portfolio",
       dropdownItems: [
-        { name: "Commercial Projects", path: "/portfolio/commercial" },
-        { name: "Residential Projects", path: "/portfolio/residential" },
+        {
+          name: "Real Estate Development Portfolio",
+          path: "/portfolio/development-portfolio",
+        },
+        {
+          name: "Real Estate Investment Portfolio",
+          path: "/portfolio/investment-portfolio",
+        },
       ],
     },
     { name: "Privacy Policy", path: "/privacy-policy" },

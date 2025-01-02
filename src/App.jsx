@@ -10,9 +10,9 @@ import Services from "./pages/services/services";
 import IndividualAndHomeOwner from "./pages/services/individualAndHomeOwner/index";
 import InvesterAndFundManagers from "./pages/services/InvesterAndFundManagers";
 import EstateInvestmentAndManagement from "./pages/services/estateInvesterManagement";
-import RealEstatePortfolioDevelopment from "./pages/portfolio/RealEstatePortfolioDevelopment";
-import RealEstatePortfolioInvestment from "./pages/portfolio/RealEstatePortfolioInvestment";
 import Portfolio from "./pages/portfolio";
+import PortfolioDevelopment from "./pages/portfolio/DevelopmentPortfolio/RealEstatePortfolioDevelopment";
+import RealEstatePortfolioInvestment from "./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment";
 
 function App() {
   return (
@@ -38,12 +38,12 @@ function App() {
         </Route>
         <Route path="/portfolio" element={<Portfolio />}>
           <Route
-            path="commercial"
-            element={<RealEstatePortfolioInvestment />}
-          />{" "}
+            path="development-portfolio"
+            element={<PortfolioDevelopment />}
+          />
           <Route
-            path="residential"
-            element={<RealEstatePortfolioDevelopment />}
+            path="investment-portfolio"
+            element={<RealEstatePortfolioInvestment />}
           />
         </Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -3,13 +3,13 @@ import { ArrowUp } from "lucide-react"; // Install lucide-react with `npm instal
 import AboutUs from "../component/home/3-AboutUs";
 import Banner from "../component/home/1-Banner";
 import NextGenProperties from "../component/home/2-NextGenProperties";
-import OurProject from "../component/home/4-OurProject";
 import OurInvestmentPortfolio from "../component/home/5-OurInvestmentPortfolio.jsx";
 import AskQuesdtion from "../component/home/6-AskQuesdtion.jsx";
 import TestimonialCarousel from "../component/home/7-OurCustomerFeedback.jsx";
 
 import ContactForm from "../utils/ContactForm.jsx";
 import OurBlogs from "../utils/blogs.jsx";
+import DevelopmentPortfolio from "../utils/developmentPortfolio.jsx";
 // import ContactForm from "../component/home/9-form.jsx";
 
 const Home = () => {
@@ -43,7 +43,7 @@ const Home = () => {
       <Banner />
       <NextGenProperties />
       <AboutUs />
-      <OurProject />
+      <DevelopmentPortfolio />
       <OurInvestmentPortfolio />
       <AskQuesdtion />
       <TestimonialCarousel />
