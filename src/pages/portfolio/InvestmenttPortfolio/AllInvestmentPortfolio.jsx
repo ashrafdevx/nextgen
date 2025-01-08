@@ -4,16 +4,41 @@ import { useLocation, useNavigate } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    title: "Black Pine",
+    title: "5808 Black Pine Circle, Granbury, TX 76048",
+    status: "sold",
+    builtIn: "2024",
+    price: null,
+    LotArea: "0.09",
+    LivingArea: "1,627",
+    coverdArea: "2,700",
+    bedRoom: 4,
+    bethRoom: 3,
+    Garage: 2,
+    floor: 2,
+    Community: "Canyon Creek, Granbury, TX",
+    elevations:
+      "Front Elevation: stained wood – Back & Side Elevations: Hardy Plank",
     description:
       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-    category: "Completed",
+    category: "sell",
     image:
       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg", // Replace with your image URL
   },
   {
     id: 2,
-    title: "Contemporary Family Home",
+    title: "5634 Barkridge Dr, Granbury, TX 76048",
+    status: "Early January 2025",
+    price: "$400k-$425k",
+    builtIn: "January 2025",
+    LotArea: "0.09",
+    LivingArea: "2,228",
+    coverdArea: "1,950",
+    bedRoom: 3,
+    bethRoom: 2,
+    Garage: 1,
+    floor: 1,
+    Community: "Canyon Creek, Granbury, TX",
+    elevations: "Front Elevation: Brick – Back & Side Elevations: Hardy Plank",
     description:
       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
     category: "Under Construction",
@@ -22,31 +47,113 @@ const projects = [
   },
   {
     id: 4,
-    title: "Hillside Retreat Villa",
+    title: "56345702 Barkridge Dr, Granbury, TX 76048",
+    status: "Under Construction",
+    price: "$400k-$425k",
+    builtIn: "January 2025",
+    LotArea: "0.09",
+    LivingArea: "2,228",
+    coverdArea: "1,950",
+    bedRoom: 3,
+    bethRoom: 2,
+    Garage: 1,
+    floor: 1,
+    Community: "Canyon Creek, Granbury, TX",
+    elevations:
+      "Front Elevation: stained wood – Back & Side Elevations: Hardy Plank",
     description:
       "Set against a stunning natural backdrop, this custom villa offers...",
     category: "Completed",
+    image:
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
+  },
+  {
+    id: 3,
+    title: "5503 Northview Ct, Granbury, TX 76048",
+    status: "Under Construction",
+    price: "$390k-$410k",
+    builtIn: "April 2025",
+    lotArea: "0.09 acre",
+    livingArea: "2,200 sq ft",
+    coveredArea: "2,700 sq ft",
+    bedRoom: 4,
+    bathRoom: 3,
+    garage: "2 cars",
+    floor: 2,
+    community: "Canyon Creek, Granbury, TX",
+    elevations: "Front Elevation: Brick – Back & Side Elevations: Hardy Plank",
+  },
+  {
+    id: 4,
+    title: "5505 Northview Ct, Granbury, TX 76048",
+    status: "Under Construction",
+    price: "$400k-$430k",
+    builtIn: "April 2025",
+    lotArea: "0.09 acre",
+    livingArea: "2,338 sq ft",
+    coveredArea: "2,900 sq ft",
+    bedRoom: 4,
+    bathRoom: 3,
+    garage: "2 cars",
+    floor: 2,
+    community: "Canyon Creek, Granbury, TX",
+    elevations: "Front Elevation: Brick – Back & Side Elevations: Hardy Plank",
     image:
       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
   },
   {
     id: 5,
-    title: "Hillside Retreat Villa",
-    description:
-      "Set against a stunning natural backdrop, this custom villa offers...",
-    category: "Completed",
+    title: "2300 Candlestick Dr, Granbury, TX 76049",
+    status: "Under Construction",
+    price: "$725k",
+    builtIn: "March 2025",
+    lotArea: "0.7 acre",
+    livingArea: "3,200 sq ft",
+    coveredArea: "4,501 sq ft",
+    bedRoom: 4,
+    bathRoom: 3.5,
+    garage: "3 cars",
+    floor: 1,
+    community: "Pecan Plantation, Granbury, TX",
+    elevations:
+      "Front Elevation: Brick & Stones – Back & Side Elevations: All Brick",
     image:
       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
   },
   {
     id: 6,
-    title: "Hillside Retreat Villa",
-    description:
-      "Set against a stunning natural backdrop, this custom villa offers...",
-    category: "Completed",
+    title: "2416 Candlestick Dr, Granbury, TX 76049",
+    status: "Under Construction",
+    price: "$725k",
+    builtIn: "March 2025",
+    lotArea: "0.67 acre",
+    livingArea: "3,200 sq ft",
+    coveredArea: "4,501 sq ft",
+    bedRoom: 4,
+    bathRoom: 3.5,
+    garage: "3 cars",
     image:
       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
+
+    floor: 1,
+    community: "Pecan Plantation, Granbury, TX",
+    elevations:
+      "Front Elevation: Brick & Stones – Back & Side Elevations: All Brick",
   },
+  // {
+  //   id: 5,
+  //   title: "Hillside Retreat Villa",
+  //   description:
+  //     "Set against a stunning natural backdrop, this custom villa offers...",
+  //   category: "Completed",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Hillside Retreat Villa",
+  //   description:
+  //     "Set against a stunning natural backdrop, this custom villa offers...",
+  //   category: "Completed",
+  // },
 ];
 
 const AllInvestmentPortfolio = () => {
