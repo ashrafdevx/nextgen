@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react"; // Install lucide-react with `npm install lucide-react`
-import AboutUs from "../component/home/3-AboutUs";
-import Banner from "../component/home/1-Banner";
-import NextGenProperties from "../component/home/2-NextGenProperties";
-import OurInvestmentPortfolio from "../component/home/5-OurInvestmentPortfolio.jsx";
-import AskQuesdtion from "../component/home/6-AskQuesdtion.jsx";
-import TestimonialCarousel from "../component/home/7-OurCustomerFeedback.jsx";
+import AboutUs from "./3-AboutUs.jsx";
+import Banner from "./1-Banner.jsx";
+import NextGenProperties from "./2-NextGenProperties.jsx";
+import OurInvestmentPortfolio from "./5-OurInvestmentPortfolio.jsx";
+import AskQuesdtion from "./6-AskQuesdtion.jsx";
+import TestimonialCarousel from "./7-OurCustomerFeedback.jsx";
 
-import ContactForm from "../utils/ContactForm.jsx";
-import OurBlogs from "../utils/blogs.jsx";
-import DevelopmentPortfolio from "../utils/developmentPortfolio.jsx";
+import ContactForm from "../../utils/ContactForm.jsx";
+import OurBlogs from "../../utils/blogs.jsx";
+import DevelopmentPortfolio from "./4-developmentPortfolio.jsx";
 // import ContactForm from "../component/home/9-form.jsx";
 
 const Home = () => {

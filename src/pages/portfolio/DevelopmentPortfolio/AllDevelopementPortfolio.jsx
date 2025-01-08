@@ -29,9 +29,27 @@ const projects = [
     image:
       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
   },
+  {
+    id: 4,
+    title: "Contemporary Family Home",
+    description:
+      "Designed to minimize environmental impact while maximizing comfort, it’s the...",
+    category: "Under Construction",
+    image:
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+  },
+  {
+    id: 5,
+    title: "Hillside Retreat Villa",
+    description:
+      "Set against a stunning natural backdrop, this custom villa offers...",
+    category: "Completed",
+    image:
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
+  },
 ];
 
-const InvestmentPortfolio = () => {
+const AllDevelopmentPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const { pathname } = useLocation();
   console.log("pathname", pathname);
@@ -56,7 +74,7 @@ const InvestmentPortfolio = () => {
           )}
         </div>
         <h2 className="text-4xl font-bold mt-2 py-4">
-          Our Investment Management Portfolio
+          Our Development Portfolio
         </h2>
 
         {/* Filters */}
@@ -103,14 +121,14 @@ const InvestmentPortfolio = () => {
       <div className="container  flex items-center justify-center">
         {" "}
         <button
-          onClick={() => alert("View All For Our Project has Cliked!!!")}
+          onClick={() => navigate("/")}
           className=" border text-center transition bg-blue-600  text-white border-blue-600 hover:text-blue-600 duration-300 px-16 py-2 rounded-full shadow-md hover:bg-white"
         >
-          View all
+          Back
         </button>
       </div>
     </div>
   );
 };
 
-export default InvestmentPortfolio;
+export default AllDevelopmentPortfolio;

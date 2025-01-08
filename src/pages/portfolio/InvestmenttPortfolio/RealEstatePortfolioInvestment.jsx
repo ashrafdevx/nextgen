@@ -1,13 +1,13 @@
 import ContactForm from "../../../utils/ContactForm";
-import InvestmentPortfolio from "./InvestmentPortfolio";
+import AllInvestmentPortfolio from "./AllInvestmentPortfolio";
 
-const RealEstatePortfolioInvestment = () => {
+const InvestmentPortfolioMain = () => {
   return (
     <div className="flex flex-col items-center  sm:pt-7">
-      <InvestmentPortfolio />
+      <AllInvestmentPortfolio />
       <ContactForm />
     </div>
   );
 };
 
-export default RealEstatePortfolioInvestment;
+export default InvestmentPortfolioMain;

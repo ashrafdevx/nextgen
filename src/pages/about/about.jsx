@@ -1,7 +1,7 @@
-import ContactForm from "../utils/ContactForm";
-import NextGenproperties from "../component/about/NextGenproperties";
-import AboutBanner from "../component/about/banner";
-import OurFounder from "../component/about/founder";
+import ContactForm from "../../utils/ContactForm";
+import NextGenproperties from "./NextGenproperties";
+import AboutBanner from "./banner";
+import OurFounder from "./founder";
 const About = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/home";
-import About from "./pages/about";
+
+import About from "./pages/about/about";
 import PrivacyPolicy from "./pages/privacyPolicy";
 import Blogs from "./pages/blogs";
 import Header from "./component/header";
@@ -11,8 +11,9 @@ import IndividualAndHomeOwner from "./pages/services/individualAndHomeOwner/inde
 import InvesterAndFundManagers from "./pages/services/InvesterAndFundManagers";
 import EstateInvestmentAndManagement from "./pages/services/estateInvesterManagement";
 import Portfolio from "./pages/portfolio";
-import PortfolioDevelopment from "./pages/portfolio/DevelopmentPortfolio/RealEstatePortfolioDevelopment";
-import RealEstatePortfolioInvestment from "./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment";
+import PortfolioDevelopmentMain from "./pages/portfolio/DevelopmentPortfolio/RealEstatePortfolioDevelopment";
+import InvestmentPortfolioMain from "./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment";
+import Home from "./pages/home/home";
 
 function App() {
   return (
@@ -39,11 +40,11 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />}>
           <Route
             path="development-portfolio"
-            element={<PortfolioDevelopment />}
+            element={<PortfolioDevelopmentMain />}
           />
           <Route
             path="investment-portfolio"
-            element={<RealEstatePortfolioInvestment />}
+            element={<InvestmentPortfolioMain />}
           />
         </Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

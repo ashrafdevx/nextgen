@@ -1,13 +1,13 @@
 import ContactForm from "../../../utils/ContactForm";
-import DevelopmentPortfolio from "../../../utils/developmentPortfolio";
+import AllDevelopmentPortfolio from "./AllDevelopementPortfolio";
 
-const PortfolioDevelopment = () => {
+const PortfolioDevelopmentMain = () => {
   return (
     <div className="flex flex-col items-center  sm:pt-7">
-      <DevelopmentPortfolio />
+      <AllDevelopmentPortfolio />
       <ContactForm />
     </div>
   );
 };
 
-export default PortfolioDevelopment;
+export default PortfolioDevelopmentMain;
