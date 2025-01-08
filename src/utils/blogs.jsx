@@ -1,6 +1,7 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const OurBlogs = () => {
+  const navigate = useNavigate();
   const { pathname } = useLocation();
   const blogData = [
     {
@@ -71,7 +72,7 @@ const OurBlogs = () => {
           {pathname === "/blog" ? null : (
             <div className="container mt-3 flex items-center justify-center">
               <button
-                onClick={() => alert("View All For Our Project has Cliked!!!")}
+                onClick={() => navigate("/blog")}
                 className=" border text-center transition bg-blue-600  text-white border-blue-600 hover:text-blue-600 duration-300 px-16 py-2 rounded-full shadow-md hover:bg-white"
               >
                 View all
