@@ -137,7 +137,12 @@ const OurInvestmentPortfolio = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <button className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+                  <button
+                    onClick={() =>
+                      navigate(`/portfolio/investment-portfolio/${project.id}`)
+                    }
+                    className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+                  >
                     Read More
                   </button>
                 </div>

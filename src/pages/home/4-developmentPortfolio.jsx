@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/slider.css";
-import { ChartArea, CircleDollarSign, DollarSign, House } from "lucide-react";
+// import { ChartArea, CircleDollarSign, DollarSign, House } from "lucide-react";
 
 const projects = [
   {

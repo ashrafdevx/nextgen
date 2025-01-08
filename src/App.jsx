@@ -16,6 +16,7 @@ import InvestmentPortfolioMain from "./pages/portfolio/InvestmenttPortfolio/Real
 import Home from "./pages/home/home";
 import LoginPage from "./pages/login/login";
 import PropertyListing from "./pages/portfolio/DevelopmentPortfolio/developPortfolioById";
+import InvestmentPortfolioById from "./pages/portfolio/InvestmenttPortfolio/investmentPortfolioById";
 
 function App() {
   return (
@@ -49,10 +50,14 @@ function App() {
             path="development-portfolio/:id"
             element={<PropertyListing />}
           />
-          PropertyListing
+
           <Route
             path="investment-portfolio"
             element={<InvestmentPortfolioMain />}
+          />
+          <Route
+            path="investment-portfolio/:id"
+            element={<InvestmentPortfolioById />}
           />
         </Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
