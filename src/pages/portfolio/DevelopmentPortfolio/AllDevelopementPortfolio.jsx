@@ -9,7 +9,7 @@ const projects = [
       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
     category: "Completed",
     image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg", // Replace with your image URL
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
     category: "Under Construction",
     image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
       "Set against a stunning natural backdrop, this custom villa offers...",
     category: "Completed",
     image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const projects = [
       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
     category: "Under Construction",
     image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
   },
   {
     id: 5,
@@ -106,10 +106,16 @@ const AllDevelopmentPortfolio = () => {
                 alt={project.title}
                 className="w-full h-80 object-cover"
               />
+
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <button className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+                <button
+                  onClick={() =>
+                    navigate(`/portfolio/development-portfolio/${project.id}`)
+                  }
+                  className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+                >
                   Read More
                 </button>
               </div>

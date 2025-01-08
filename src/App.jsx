@@ -15,6 +15,7 @@ import PortfolioDevelopmentMain from "./pages/portfolio/DevelopmentPortfolio/Rea
 import InvestmentPortfolioMain from "./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment";
 import Home from "./pages/home/home";
 import LoginPage from "./pages/login/login";
+import PropertyListing from "./pages/portfolio/DevelopmentPortfolio/developPortfolioById";
 
 function App() {
   return (
@@ -44,6 +45,11 @@ function App() {
             path="development-portfolio"
             element={<PortfolioDevelopmentMain />}
           />
+          <Route
+            path="development-portfolio/:id"
+            element={<PropertyListing />}
+          />
+          PropertyListing
           <Route
             path="investment-portfolio"
             element={<InvestmentPortfolioMain />}

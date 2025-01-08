@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/slider.css";
+import { ChartArea, CircleDollarSign, DollarSign, House } from "lucide-react";
 
 const projects = [
   {
@@ -145,12 +146,28 @@ const DevelopmentPortfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-80 object-cover"
-                />
-                <div className="p-6">
+                  className="w-full mb-2 h-80 object-cover"
+                />{" "}
+                {/* <div className="flex mb-3 py-2 px-4 items-center justify-between">
+                  <div className="flex items-center">
+                    <ChartArea size={20} />: 17,344,4
+                  </div>
+                  <div className="flex items-center">
+                    <House size={20} />: 4
+                  </div>
+                  <div className="flex items-center">
+                    <CircleDollarSign size={20} />: 4
+                  </div>
+                </div> */}
+                <div className="px-6 py-4">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <button className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+                  <button
+                    onClick={() =>
+                      navigate(`/portfolio/development-portfolio/${project.id}`)
+                    }
+                    className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+                  >
                     Read More
                   </button>
                 </div>
