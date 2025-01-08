@@ -140,26 +140,11 @@ const projects = [
     elevations:
       "Front Elevation: Brick & Stones – Back & Side Elevations: All Brick",
   },
-  // {
-  //   id: 5,
-  //   title: "Hillside Retreat Villa",
-  //   description:
-  //     "Set against a stunning natural backdrop, this custom villa offers...",
-  //   category: "Completed",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Hillside Retreat Villa",
-  //   description:
-  //     "Set against a stunning natural backdrop, this custom villa offers...",
-  //   category: "Completed",
-  // },
 ];
 
 const AllInvestmentPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const { pathname } = useLocation();
-  console.log("pathname", pathname);
   const navigate = useNavigate();
   const filteredProjects =
     activeFilter === "All"
