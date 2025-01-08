@@ -5,52 +5,52 @@ import "../../assets/slider.css";
 const TestimonialSlider = () => {
   const testimonials = [
     {
-      name: "Sohail Ahmad",
-      date: "September 3, 2023",
+      name: "Ashraf Nasib",
+      date: "January 8, 2025",
       rating: 5,
       review:
-        "I Found the Saif Group very Professional and Most Trustable Group in Peshawar Real Estate Market",
-      imageInitial: "S",
+        "Ashraf is a dedicated and skilled frontend developer with extensive experience in React.js, Redux, and Material-UI. He consistently delivers high-quality work with attention to detail and ensures the projects meet user needs.",
+      imageInitial: "A",
     },
     {
-      name: "Muhammad Ali",
-      date: "September 3, 2023",
+      name: "Ashraf Nasib",
+      date: "January 8, 2025",
       rating: 5,
       review:
-        "Saif group is top company, they have very good management staff, also bring top projects for oversease.",
-      imageInitial: "M",
+        "I appreciate Ashraf's innovative approach to frontend development. He has a strong technical foundation and a passion for creating responsive and user-friendly web applications.",
+      imageInitial: "A",
     },
     {
-      name: "Imad Khan",
-      date: "September 3, 2023",
+      name: "Ashraf Nasib",
+      date: "January 8, 2025",
       rating: 5,
       review:
-        "Saif group is good developer and Builders. I my self saw a lot of project of saif group which deliver on time.",
-      imageInitial: "I",
+        "Ashraf has demonstrated excellent problem-solving skills, particularly in React.js projects. He has successfully worked on a wide range of complex tasks, from UI development to integrating backend services.",
+      imageInitial: "A",
     },
     {
-      name: "Imad Khan",
-      date: "September 3, 2023",
+      name: "Ashraf Nasib",
+      date: "January 8, 2025",
       rating: 6,
       review:
-        "Saif group is good developer and Builders. I my self saw a lot of project of saif group which deliver on time.",
-      imageInitial: "I",
+        "Ashraf’s commitment to continuous improvement in his frontend skills makes him a valuable asset. He is always learning and experimenting with new techniques to enhance the user experience.",
+      imageInitial: "A",
     },
     {
-      name: "Jalal Jann",
-      date: "September 3, 2023",
+      name: "Ashraf Nasib",
+      date: "January 8, 2025",
       rating: 7,
       review:
-        "Saif group is good developer and Builders. I my self saw a lot of project of saif group which deliver on time.",
-      imageInitial: "I",
+        "Working with Ashraf has been a great experience. His dedication to perfecting the details of each project, from design implementation to responsiveness, ensures the success of any product he works on.",
+      imageInitial: "A",
     },
     {
-      name: "Khan Khan",
-      date: "September 3, 2023",
+      name: "Ashraf Nasib",
+      date: "January 8, 2025",
       rating: 8,
       review:
-        "Saif group is good developer and Builders. I my self saw a lot of project of saif group which deliver on time.",
-      imageInitial: "I",
+        "Ashraf is a proactive developer, always willing to take on new challenges and contribute innovative ideas. His work ethic and technical expertise make him an outstanding professional in the React.js ecosystem.",
+      imageInitial: "A",
     },
   ];
 
@@ -110,7 +110,12 @@ const TestimonialSlider = () => {
                   />
                 ))}
               </div>
-              <p className="text-gray-700">{testimonial.review}</p>
+              <p
+                className="text-gray-700 
+              h-40"
+              >
+                {testimonial.review}
+              </p>
             </div>
           </div>
         ))}
