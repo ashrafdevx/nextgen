@@ -17,8 +17,36 @@ import Home from "./pages/home/home";
 import LoginPage from "./pages/login/login";
 import PropertyListing from "./pages/portfolio/DevelopmentPortfolio/developPortfolioById";
 import InvestmentPortfolioById from "./pages/portfolio/InvestmenttPortfolio/investmentPortfolioById";
+import ContactUs from "./pages/contactUs/contactUs";
+import TawkToWidget from "./utils/tawk";
+import { useEffect, useState } from "react";
+import { ArrowUp } from "lucide-react";
 
 function App() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <Header />
@@ -62,7 +90,19 @@ function App() {
         </Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/blog" element={<Blogs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
+      <TawkToWidget />
+      {/* Scroll to Top Button */}
+      {showScrollButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp size={24} />
+        </button>
+      )}
       <Footer />
     </>
   );

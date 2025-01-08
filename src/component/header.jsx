@@ -133,7 +133,10 @@ const Header = () => {
           >
             Login
           </button>
-          <button className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg hover:bg-blue-800 transition-colors duration-300">
+          <button
+            onClick={() => navigate("/contact-us")}
+            className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg hover:bg-blue-800 transition-colors duration-300"
+          >
             Contact
           </button>
         </div>
