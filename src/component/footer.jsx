@@ -1,4 +1,5 @@
 import { LinkedinIcon, InstagramIcon, FacebookIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,39 +27,39 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="space-y-4">
+        <div className="space-y-2">
           <h3 className="text-lg font-semibold">Quick Links</h3>
-          <ul className="space-y-6">
+          <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/" className="hover:text-gray-300">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/about" className="hover:text-gray-300">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/services" className="hover:text-gray-300">
                 Services
-              </a>
+              </Link>
             </li>
-            <li>
-              <a href="#" className="hover:text-gray-300">
+            {/* <li>
+              <Link to="/" className="hover:text-gray-300">
                 Terms and Conditions
-              </a>
-            </li>
+              </Link>
+            </li> */}
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/portfolio" className="hover:text-gray-300">
                 Portfolio
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Contact */}
-        <div className="space-y-6">
+        <div className="space-y-2">
           <h3 className="text-lg font-semibold">Contact</h3>
           <p className="text-sm">
             812 W McDermott Dr,
@@ -87,7 +88,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
-        © Copyright 2024. All Rights Reserved
+        © Copyright 2025. All Rights Reserved
       </div>
     </footer>
   );
