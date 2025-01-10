@@ -46,7 +46,7 @@ const Header = () => {
         },
       ],
     },
-    { name: "Privacy Policy", path: "/privacy-policy" },
+    // { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Blogs", path: "/blog" },
   ];
 

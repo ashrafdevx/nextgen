@@ -44,8 +44,8 @@ const OurBlogs = () => {
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-medium text-gray-800 mt-2">
             Our Blogs
           </h1>
-          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-6 gap-6 sm:p-4">
-            {blogData.map((blog) => (
+          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-6 gap-6 sm:p-4">
+            {blogData.slice(0, 3).map((blog) => (
               <div
                 key={blog.id}
                 className="card card-compact bg-base-100 w-full shadow-xl shadow-gray-300 p-2 hover:shadow-gray-400"

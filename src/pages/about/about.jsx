@@ -2,6 +2,8 @@ import ContactForm from "../../utils/ContactForm";
 import NextGenproperties from "./NextGenproperties";
 import AboutBanner from "./banner";
 import OurFounder from "./founder";
+import AskQuesdtion from "../home/6-AskQuesdtion";
+import PrivacyPolicy from "./privacyPolicy";
 const About = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const About = () => {
         <AboutBanner />
         <OurFounder />
         <NextGenproperties />
+        <AskQuesdtion />
+        <PrivacyPolicy />
         <ContactForm />
       </div>
       ;

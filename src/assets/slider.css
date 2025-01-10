@@ -1,8 +1,9 @@
 .slick-next:before,
 .slick-prev:before {
-  font-size: 50px; /* Increase icon size */
-  color: black !important; /* Set the icon color to black */
-  background-color: transparent !important; /* Make the background transparent */
-  border: none; /* Ensure no border is applied */
-  box-shadow: none; /* Remove shadow if any */
+  font-size: 50px;  
+  color: black !important; 
+  background-color: transparent !important; 
+  border: none;  
+  box-shadow: none;  
+  margin: -30px;
 }

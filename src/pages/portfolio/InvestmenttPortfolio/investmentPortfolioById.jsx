@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Slider from "react-slick";
-import { MapPin, Phone, Home, Bath, ArrowLeft, ArrowRight } from "lucide-react";
+import { Phone, Home, Bath, ArrowLeft, ArrowRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, useParams, Navigate } from "react-router-dom";
+import { investmentPortfolioData } from "../../../utils/data";
 const InvestmentPortfolioById = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -44,8 +44,17 @@ const InvestmentPortfolioById = () => {
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setCurrentSlide(next),
   };
-  const navigate = useNavigate();
 
+  const navigate = useNavigate();
+  const { id } = useParams();
+  // Find the project by ID or title
+  const selectedProject = investmentPortfolioData?.find(
+    (project) => project.id === parseInt(id)
+  );
+  console.log("selectedProject", selectedProject);
+  if (!selectedProject?.images) {
+    return <Navigate to="/" />; // Redirect to home page (or wherever appropriate)
+  }
   return (
     <div className="container mx-auto p-4">
       {/* Back button */}
@@ -93,93 +102,92 @@ const InvestmentPortfolioById = () => {
               ))}
             </div>
           </div>
-
           {/* Property details section */}
-          <div className="p-6">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <div className="flex items-center gap-2">
-                  <h1 className="text-2xl font-semibold">125 1st Street, 2</h1>
-                  <MapPin className="h-6 w-6 text-gray-500" />
+          {/* Property details section */}
+          <div className="px-6">
+            <div className="flex justify-between items-start ">
+              <div className="">
+                <div className="flex items-center gap-2 mb-2">
+                  <h1 className="text-2xl font-semibold">
+                    {selectedProject.title}
+                  </h1>
+                  {/* <MapPin className="h-6 w-6 text-gray-500" /> */}
                 </div>
-                <p className="text-gray-600">Boone, IA 50036</p>
+                <div className="flex gap-4 mb-6">
+                  <div className="flex items-center gap-1">
+                    <Home className="h-5 w-5 text-gray-600" />
+                    <span>{selectedProject?.Bedroom} Bed</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Bath className="h-5 w-5 text-gray-600" />
+                    <span>{selectedProject?.Bathroom} Bath</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span>Garage(s): {selectedProject?.Garage}</span>
+                  </div>
+                </div>
               </div>
               <div className="text-right">
-                <p className="text-2xl font-bold text-orange-500">$850 /mo</p>
-                <span className="text-green-500 text-sm">Available Now</span>
+                <p className="text-2xl font-bold text-orange-500">
+                  {selectedProject?.sellingPrice}
+                </p>
+                <span className="text-green-500 text-md">
+                  {" "}
+                  {selectedProject?.propertyStatus}
+                </span>
               </div>
             </div>
 
-            <div className="flex gap-4 mb-6">
-              <div className="flex items-center gap-1">
-                <Home className="h-5 w-5 text-gray-600" />
-                <span>2 Bed</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <Bath className="h-5 w-5 text-gray-600" />
-                <span>1 Bath</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <span>900 Sq. Ft.</span>
+            <div className="flex flex-col mb-6">
+              <p className="text-gray-600">Specs: {selectedProject?.specs}</p>
+              <p className="text-gray-600">
+                Property Type:: {selectedProject?.propertyType}
+              </p>
+
+              {/* <p className="text-gray-600">
+                Living Area: {selectedProject?.LivingArea}
+              </p>
+              <p className="text-gray-600">
+                Covered Area: {selectedProject?.CoveredArea}
+              </p> */}
+              <p className="text-gray-600">
+                Investors: {selectedProject?.investors}
+              </p>
+
+              <p className="text-gray-600">
+                Per Investors Share : {selectedProject?.perInvestorShare}
+              </p>
+
+              <p className="text-gray-600">
+                Funding Round: : {selectedProject?.fundRound}
+              </p>
+              {/* <p className="text-gray-600"> Garage(s): 1</p> */}
+              <p className="text-gray-600">
+                Floor(s): {selectedProject?.Floor}
+              </p>
+              {/* <p className="text-gray-600">
+                {" "}
+                Community : {selectedProject?.Community}
+              </p> */}
+              <div className="pt-2">
+                <p className="text-gray-800 font-rubik text-lg">Elevations :</p>
+                <p className="text-gray-600 font-rubik text-lg">
+                  Front Elevation: {selectedProject?.FrontElevation}
+                </p>
+                <p className="text-gray-600 font-rubik text-lg">
+                  Side Elevations: {selectedProject?.SideElevations}
+                </p>
               </div>
             </div>
 
-            <h2 className="font-semibold text-lg mb-2">
-              Country View 125-2 Renovated
-            </h2>
+            <h2 className="font-semibold text-lg mb-2">{`What's special`}</h2>
 
             <div className="space-y-4 text-gray-700">
-              <p>
-                {` We're excited to offer an exclusive special! Sign a 6-month
-                lease and enjoy $100 off your rent each month. Additionally, if
-                you're approved and sign a lease with us, we'll reimburse your
-                application fee and apply it toward your first month's rent.`}
-              </p>
-
-              <p>
-                Welcome to Country View, your new home in Boone, IA! This newly
-                renovated, large, and spacious 2 bed 1 bath apartment is
-                currently available.
-              </p>
-
-              <p>
-                This property is located in a quiet area of Boone with local
-                wildlife right outside your door near Little League Park.
-              </p>
-
-              <p>
-                We pride ourselves on being pet-friendly, so your furry friends
-                are more than welcome here (subject to approval on a
-                case-by-case basis). We do require a $25/month pet fee per pet
-                and an additional refundable $500 per pet, pet deposit, with a
-                maximum of two.
-              </p>
+              <p>{selectedProject?.description}</p>
             </div>
-
-            <div className="mt-6 space-y-2">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <p className="font-semibold">Rent:</p>
-                  <p className="font-semibold">Security Deposit:</p>
-                  <p className="font-semibold">Bedroom(s):</p>
-                  <p className="font-semibold">Bathroom(s):</p>
-                  <p className="font-semibold">Laundry:</p>
-                </div>
-                <div>
-                  <p>$850</p>
-                  <p>$850</p>
-                  <p>2</p>
-                  <p>1</p>
-                  <p>
-                    On Site with option for coin-operated or the tech friendly
-                    app.
-                  </p>
-                </div>
-              </div>
-            </div>
-
+            {/* 
             <div className="mt-6">
-              <h3 className="font-semibold mb-2">Utilities & Features:</h3>
+              <h3 className="font-semibold mb-2">Key Features:</h3>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
                   Utilities included in rent: Garbage, Lawn Care, Snow Removal
@@ -197,35 +205,37 @@ const InvestmentPortfolioById = () => {
                 <li>Smoking: No Smoking on-premise</li>
                 <li>Pets: Yes</li>
               </ul>
-            </div>
-
-            <div className="mt-6">
-              <h3 className="font-semibold mb-2">Additional Fees:</h3>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  Dwell Management Group Administrative Fee: $16/month
-                  (non-negotiable)
-                </li>
-                <li>
-                  Liability to Landlord Insurance is required: $10.50/month
-                  (non-negotiable)
-                </li>
-                <li>
-                  One-Time Rental Referral Program Fee: $5 (non-negotiable)
-                </li>
-              </ul>
-            </div>
+            </div> */}
 
             <div className="mt-6 flex items-center justify-between">
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-                Apply Now
+              <button
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+                onClick={() => navigate("/contact-us")}
+              >
+                Contact Us
               </button>
               <div className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-gray-600" />
-                <span className="text-gray-700">(515) 203-3559 Ext. 4</span>
+                <span className="text-gray-700">(919)-249-8450</span>
               </div>
             </div>
+          </div>{" "}
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
+          {/* Video content */}
+          <div className="video-container">
+            <video
+              className="w-full h-auto"
+              autoPlay
+              muted
+              loop
+              playsInline
+              src="https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
+              alt="Under Construction Video"
+            />
           </div>
+
+          {/* 3D Image content */}
         </div>
       </div>
     </div>

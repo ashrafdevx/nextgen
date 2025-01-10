@@ -58,68 +58,93 @@ const TestimonialSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
 
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280, // Tailwind `xl`
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024, // Tailwind `lg`
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Tailwind `md`
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640, // Tailwind `sm`
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false, // Optional: Hide arrows on smaller screens
         },
       },
     ],
   };
 
   return (
-    <div className="w-full container mx-auto px-4 py-12">
-      <div className="text-start mb-12">
-        <span className="inline-block hover:text-white hover:bg-gray-600 px-16 py-2 rounded-full border border-gray-700 text-gray-600">
-          Showcase of Excellence
-        </span>
-        <h1 className="text-4xl font-bold my-10 ">Our Customer Feedback</h1>
+    <div className="container   mx-auto px-4 py-12">
+      <div className="px-8">
+        <div className="text-start mb-12">
+          <span className="inline-block hover:text-white hover:bg-gray-600 px-16 py-2 rounded-full border border-gray-700 text-gray-600">
+            Showcase of Excellence
+          </span>
+          <h1 className="text-4xl font-bold my-10 ">Our Customer Feedback</h1>
+        </div>
+        <div className="container ">
+          <Slider {...settings} className="">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="p-4   max-w-md">
+                <div className="bg-white rounded-lg shadow-lg py-6 px-4">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                      {testimonial.imageInitial}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-gray-500 text-sm">
+                        {testimonial.date}
+                      </p>
+                    </div>
+                    <div className="ml-auto flex items-center">
+                      <img
+                        src="https://www.google.com/favicon.ico"
+                        alt="Google"
+                        className="w-5 h-5"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex mb-2">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-yellow-400 fill-yellow-400"
+                      />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 h-40">{testimonial.review}</p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-      <Slider {...settings} className=" px-12">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="p-4 ">
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                  {testimonial.imageInitial}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">{testimonial.name}</h3>
-                  <p className="text-gray-500 text-sm">{testimonial.date}</p>
-                </div>
-                <div className="ml-auto flex items-center">
-                  <img
-                    src="https://www.google.com/favicon.ico"
-                    alt="Google"
-                    className="w-5 h-5"
-                  />
-                </div>
-              </div>
-              <div className="flex mb-2">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-5 h-5 text-yellow-400 fill-yellow-400"
-                  />
-                ))}
-              </div>
-              <p
-                className="text-gray-700 
-              h-40"
-              >
-                {testimonial.review}
-              </p>
-            </div>
-          </div>
-        ))}
-      </Slider>
     </div>
   );
 };

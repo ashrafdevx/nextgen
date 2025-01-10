@@ -1,11 +1,11 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import TawkToWidget from "./utils/tawk";
 import React, { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
 
 const About = React.lazy(() => import("./pages/about/about"));
-const PrivacyPolicy = React.lazy(() => import("./pages/privacyPolicy"));
+// const PrivacyPolicy = React.lazy(() => import("./pages/about/privacyPolicy"));
 const Blogs = React.lazy(() => import("./pages/blogs"));
 const Header = React.lazy(() => import("./component/header"));
 const Footer = React.lazy(() => import("./component/footer"));
@@ -39,6 +39,8 @@ const InvestmentPortfolioById = React.lazy(() =>
 const ContactUs = React.lazy(() => import("./pages/contactUs/contactUs"));
 
 function App() {
+  const location = useLocation();
+  // console.log("location", location.pathname);
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
@@ -55,7 +57,7 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -104,11 +106,14 @@ function App() {
             element={<InvestmentPortfolioById />}
           />
         </Route>
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
         <Route path="/blog" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
-      <TawkToWidget />
+      <div className="fixed bottom-4 right-4 max-w-xs max-h-[80vh] w-full h-auto overflow-hidden rounded-lg shadow-lg">
+        <TawkToWidget />
+      </div>
+
       {/* Scroll to Top Button */}
       {showScrollButton && (
         <button

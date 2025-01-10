@@ -1,53 +1,54 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { developmentPortfolioData } from "../../../utils/data";
 
-const projects = [
-  {
-    id: 1,
-    title: "Black Pine",
-    description:
-      "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-    category: "Completed",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
-  },
-  {
-    id: 2,
-    title: "Contemporary Family Home",
-    description:
-      "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-    category: "Under Construction",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-  },
-  {
-    id: 3,
-    title: "Hillside Retreat Villa",
-    description:
-      "Set against a stunning natural backdrop, this custom villa offers...",
-    category: "Completed",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-  },
-  {
-    id: 4,
-    title: "Contemporary Family Home",
-    description:
-      "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-    category: "Under Construction",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-  },
-  {
-    id: 5,
-    title: "Hillside Retreat Villa",
-    description:
-      "Set against a stunning natural backdrop, this custom villa offers...",
-    category: "Completed",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
-  },
-];
+// const projects = [
+//   {
+//     id: 1,
+//     title: "Black Pine",
+//     description:
+//       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
+//     category: "Completed",
+//     image:
+//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
+//   },
+//   {
+//     id: 2,
+//     title: "Contemporary Family Home",
+//     description:
+//       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
+//     category: "Under Construction",
+//     image:
+//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
+//   },
+//   {
+//     id: 3,
+//     title: "Hillside Retreat Villa",
+//     description:
+//       "Set against a stunning natural backdrop, this custom villa offers...",
+//     category: "Completed",
+//     image:
+//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
+//   },
+//   {
+//     id: 4,
+//     title: "Contemporary Family Home",
+//     description:
+//       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
+//     category: "Under Construction",
+//     image:
+//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
+//   },
+//   {
+//     id: 5,
+//     title: "Hillside Retreat Villa",
+//     description:
+//       "Set against a stunning natural backdrop, this custom villa offers...",
+//     category: "Completed",
+//     image:
+//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
+//   },
+// ];
 
 const AllDevelopmentPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -56,8 +57,10 @@ const AllDevelopmentPortfolio = () => {
   const navigate = useNavigate();
   const filteredProjects =
     activeFilter === "All"
-      ? projects
-      : projects.filter((project) => project.category === activeFilter);
+      ? developmentPortfolioData
+      : developmentPortfolioData.filter(
+          (project) => project.category === activeFilter
+        );
 
   return (
     <div className="container flex flex-col mx-auto">
