@@ -62,7 +62,7 @@ const OurBlogs = () => {
                   <p>{blog.description}</p>
                   <div className="card-actions justify-start">
                     <button className="px-4 py-3 rounded-lg text-white bg-blue-600">
-                      Buy Now
+                      Check Detail
                     </button>
                   </div>
                 </div>

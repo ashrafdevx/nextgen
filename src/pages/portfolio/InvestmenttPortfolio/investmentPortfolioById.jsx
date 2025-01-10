@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { Phone, Home, Bath, ArrowLeft, ArrowRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
@@ -7,14 +7,6 @@ import { useNavigate, useParams, Navigate } from "react-router-dom";
 import { investmentPortfolioData } from "../../../utils/data";
 const InvestmentPortfolioById = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const images = [
-    "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
-    "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-    "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-    "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-    "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-  ];
 
   const NextArrow = ({ onClick }) => (
     <button
@@ -45,6 +37,29 @@ const InvestmentPortfolioById = () => {
     beforeChange: (current, next) => setCurrentSlide(next),
   };
 
+  const videoRef = useRef(null);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
   const navigate = useNavigate();
   const { id } = useParams();
   // Find the project by ID or title
@@ -71,10 +86,10 @@ const InvestmentPortfolioById = () => {
           {/* Image carousel section */}
           <div className="relative">
             <div className="absolute top-4 left-4 z-10 bg-black/50 text-white px-2 py-1 rounded">
-              {currentSlide + 1} / {images.length}
+              {currentSlide + 1} / {selectedProject?.images.length}
             </div>
             <Slider {...settings} className="property-slider">
-              {images.map((img, index) => (
+              {selectedProject?.images.map((img, index) => (
                 <div key={index} className="relative h-[400px]">
                   <img
                     src={img}
@@ -87,7 +102,7 @@ const InvestmentPortfolioById = () => {
 
             {/* Thumbnail strip */}
             <div className="flex gap-2 mt-2 px-2">
-              {images.map((img, index) => (
+              {selectedProject?.images.map((img, index) => (
                 <div
                   key={index}
                   className="w-24 h-16 cursor-pointer"
@@ -102,7 +117,6 @@ const InvestmentPortfolioById = () => {
               ))}
             </div>
           </div>
-          {/* Property details section */}
           {/* Property details section */}
           <div className="px-6">
             <div className="flex justify-between items-start ">
@@ -185,27 +199,6 @@ const InvestmentPortfolioById = () => {
             <div className="space-y-4 text-gray-700">
               <p>{selectedProject?.description}</p>
             </div>
-            {/* 
-            <div className="mt-6">
-              <h3 className="font-semibold mb-2">Key Features:</h3>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  Utilities included in rent: Garbage, Lawn Care, Snow Removal
-                </li>
-                <li>
-                  Utilities Tenant is responsible for: Electricity/Gas,
-                  Cable/Internet, Water/Sewer
-                </li>
-                <li>
-                  Flat Rate Service Fee: $60 per month added to the rent to
-                  cover water and sewer expenses.
-                </li>
-                <li>Parking: Off-Street Parking</li>
-                <li>Garage: Available for rent</li>
-                <li>Smoking: No Smoking on-premise</li>
-                <li>Pets: Yes</li>
-              </ul>
-            </div> */}
 
             <div className="mt-6 flex items-center justify-between">
               <button
@@ -223,19 +216,21 @@ const InvestmentPortfolioById = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
           {/* Video content */}
-          <div className="video-container">
-            <video
-              className="w-full h-auto"
-              autoPlay
-              muted
-              loop
-              playsInline
-              src="https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
-              alt="Under Construction Video"
-            />
-          </div>
 
-          {/* 3D Image content */}
+          <video
+            ref={videoRef}
+            className="w-full h-auto"
+            autoPlay={isIntersecting}
+            muted
+            loop
+            playsInline
+            src={
+              isIntersecting
+                ? "https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
+                : ""
+            }
+            alt="Under Construction Video"
+          />
         </div>
       </div>
     </div>
