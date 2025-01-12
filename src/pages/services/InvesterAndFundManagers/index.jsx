@@ -5,7 +5,7 @@ import PhotosAndConstructionUpdate from "./4-PhotosAndConstructionUpdate";
 import HiddenCostAndDemands from "./5-HiddenCostAndDemands";
 import QualityAndExcellence from "./6-QualityAndExcellence";
 import EfficientProjectManagement from "./7-EfficientProjectManagement";
-import ContactForm from "../../../utils/ContactForm";
+// import ContactForm from "../../../utils/ContactForm";
 const InvesterAndFundManagers = () => {
   return (
     <div className=" flex flex-col items-center  sm:pt-7">
@@ -16,7 +16,7 @@ const InvesterAndFundManagers = () => {
       <HiddenCostAndDemands />
       <QualityAndExcellence />
       <EfficientProjectManagement />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 };

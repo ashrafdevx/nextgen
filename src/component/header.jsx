@@ -13,7 +13,24 @@ const Header = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    {
+      name: "About",
+      path: "/about",
+      dropdownItems: [
+        {
+          name: "About",
+          path: "/about",
+        },
+        {
+          name: "Our Policy",
+          path: "/our-policy",
+        },
+        {
+          name: "FAQ",
+          path: "/faq",
+        },
+      ],
+    },
     {
       name: "Services",
       path: "/services",
@@ -46,8 +63,8 @@ const Header = () => {
         },
       ],
     },
-    // { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Blogs", path: "/blog" },
+    { name: "Contact", path: "/contact-us" },
   ];
 
   const handleMenuToggle = () => {
@@ -86,7 +103,7 @@ const Header = () => {
             <img
               src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/6736c94fd7a302e4ac8ed8f3_NextGen%20Properties%20Logo.jpg"
               alt="NextGen Properties Logo"
-              className="h-12 w-20 object-cover"
+              className="h-14 w-24 object-cover"
             />
           </Link>
         </div>
@@ -106,8 +123,8 @@ const Header = () => {
                 {item.name}
               </Link>
               {item.dropdownItems ? (
-                <div className="absolute left-0 mt-2 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="absolute left-0 mt-2 min-w-min w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden inline-block">
                     {item.dropdownItems.map((dropdownItem) => (
                       <Link
                         key={dropdownItem.path}
@@ -129,15 +146,9 @@ const Header = () => {
         <div className="hidden lg:flex items-center space-x-4">
           <button
             onClick={() => navigate("/login")}
-            className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg hover:bg-blue-800 transition-colors duration-300"
+            className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg mr-2 hover:bg-blue-800 transition-colors duration-300"
           >
             Login
-          </button>
-          <button
-            onClick={() => navigate("/contact-us")}
-            className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg hover:bg-blue-800 transition-colors duration-300"
-          >
-            Contact
           </button>
         </div>
 
@@ -182,9 +193,9 @@ const Header = () => {
                 <button className="w-full rounded-full bg-blue-700 px-4 py-2 text-white font-quicksand text-lg hover:bg-blue-800">
                   Login
                 </button>
-                <button className="w-full rounded-full bg-blue-700 px-4 py-2 text-white font-quicksand text-lg hover:bg-blue-800">
+                {/* <button className="w-full rounded-full bg-blue-700 px-4 py-2 text-white font-quicksand text-lg hover:bg-blue-800">
                   Contact
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import PhotosConstructionUpdates from "./4-PhotosConstructionUpdates";
 import EfficientProjectManagement from "./5-EfficientProjectManagement";
 import ProvenTrackRecord from "./6-ProvenTrackRecord";
 import InvestmentResearchAnalysis from "./7-InvestmentResearchAnalysis";
-import ContactForm from "../../../utils/ContactForm";
+// import ContactForm from "../../../utils/ContactForm";
 import Heading from "./Heading";
 
 const EstateInvestmentAndManagement = () => {
@@ -17,7 +17,7 @@ const EstateInvestmentAndManagement = () => {
       <EfficientProjectManagement />
       <ProvenTrackRecord />
       <InvestmentResearchAnalysis />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 };

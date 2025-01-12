@@ -1,9 +1,9 @@
-import ContactForm from "../../utils/ContactForm";
+// import ContactForm from "../../utils/ContactForm";
 import NextGenproperties from "./NextGenproperties";
 import AboutBanner from "./banner";
 import OurFounder from "./founder";
-import AskQuesdtion from "../home/6-AskQuesdtion";
-import PrivacyPolicy from "./privacyPolicy";
+// import AskQuesdtion from "../faq/6-AskQuesdtion";
+// import PrivacyPolicy from "../ourPolicy/privacyPolicy";
 const About = () => {
   return (
     <>
@@ -14,9 +14,9 @@ const About = () => {
         <AboutBanner />
         <OurFounder />
         <NextGenproperties />
-        <AskQuesdtion />
-        <PrivacyPolicy />
-        <ContactForm />
+        {/* <AskQuesdtion /> */}
+        {/* <PrivacyPolicy /> */}
+        {/* <ContactForm /> */}
       </div>
       ;
     </>

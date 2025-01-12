@@ -5,9 +5,9 @@ import EfficiantProjectManagement from "./4-EfficiantProjectManagement";
 import VisionAndNeeds from "./5-VisionAndNeeds";
 import YourDreamSpace from "./6-YourDreamSpace";
 import PrecisionCraftsmanship from "./7-PrecisionCraftsmanship";
-import OurBlogs from "../../../utils/blogs";
+// import OurBlogs from "../../../utils/blogs";
 import UnmatchedSupport from "./8-UnmatchedSupport";
-import ContactForm from "../../../utils/ContactForm";
+// import ContactForm from "../../../utils/ContactForm";
 
 const IndividualAndHomeOwner = () => {
   return (
@@ -19,9 +19,9 @@ const IndividualAndHomeOwner = () => {
       <VisionAndNeeds />
       <YourDreamSpace />
       <PrecisionCraftsmanship />
-      <OurBlogs />
+      {/* <OurBlogs /> */}
       <UnmatchedSupport />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 };

@@ -309,7 +309,6 @@ export const developmentPortfolioData = [
     CoveredArea: "1,950 sq ft",
     Bedroom: 3,
     Bathroom: 2,
-
     Garage: 1,
     Floor: 1,
     FrontElevation: "Brick – Back",
@@ -345,7 +344,7 @@ export const developmentPortfolioData = [
     Community: "Canyon Creek, Granbury, TX",
     description:
       "Expected to be completed in early January 2025, offering a modern design with ample living space.",
-    category: "completed",
+    category: "Completed",
     image:
       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
     images: [

@@ -111,7 +111,7 @@ const PropertyListing = () => {
                   </h1>
                   {/* <MapPin className="h-6 w-6 text-gray-500" /> */}
                 </div>
-                <div className="flex gap-4 mb-6">
+                <div className="flex gap-4 mb-2">
                   <div className="flex items-center gap-1">
                     <Home className="h-5 w-5 text-gray-600" />
                     <span>{selectedProject?.Bedroom} Bed</span>
@@ -137,32 +137,32 @@ const PropertyListing = () => {
             </div>
 
             <div className="flex flex-col mb-6">
-              <p className="text-gray-600">
+              <li className="text-gray-800 font-rubik">
                 Lot Area: {selectedProject?.LotArea}
-              </p>
-              <p className="text-gray-600">
+              </li>
+              <li className="text-gray-800 font-rubik">
                 Living Area: {selectedProject?.LivingArea}
-              </p>
-              <p className="text-gray-600">
+              </li>
+              <li className="text-gray-800 font-rubik">
                 Covered Area: {selectedProject?.CoveredArea}
-              </p>
-              {/* <p className="text-gray-600"> Garage(s): 1</p> */}
-              <p className="text-gray-600">
+              </li>
+              {/* <p className="text-gray-800 font-rubik"> Garage(s): 1</p> */}
+              <li className="text-gray-800 font-rubik">
                 {" "}
                 Floor(s): {selectedProject?.Floor}
-              </p>
-              <p className="text-gray-600">
+              </li>
+              <li className="text-gray-800 font-rubik">
                 {" "}
                 Community : {selectedProject?.Community}
-              </p>
+              </li>
               <div className="pt-2">
                 <p className="text-gray-800 font-rubik text-lg">Elevations :</p>
-                <p className="text-gray-600 font-rubik text-lg">
+                <li className="text-gray-600 font-rubik text-lg">
                   Front Elevation: {selectedProject?.FrontElevation}
-                </p>
-                <p className="text-gray-600 font-rubik text-lg">
+                </li>
+                <li className="text-gray-600 font-rubik text-lg">
                   Side Elevations: {selectedProject?.SideElevations}
-                </p>
+                </li>
               </div>
             </div>
 
@@ -171,27 +171,6 @@ const PropertyListing = () => {
             <div className="space-y-4 text-gray-700">
               <p>{selectedProject?.description}</p>
             </div>
-            {/* 
-            <div className="mt-6">
-              <h3 className="font-semibold mb-2">Key Features:</h3>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  Utilities included in rent: Garbage, Lawn Care, Snow Removal
-                </li>
-                <li>
-                  Utilities Tenant is responsible for: Electricity/Gas,
-                  Cable/Internet, Water/Sewer
-                </li>
-                <li>
-                  Flat Rate Service Fee: $60 per month added to the rent to
-                  cover water and sewer expenses.
-                </li>
-                <li>Parking: Off-Street Parking</li>
-                <li>Garage: Available for rent</li>
-                <li>Smoking: No Smoking on-premise</li>
-                <li>Pets: Yes</li>
-              </ul>
-            </div> */}
 
             <div className="mt-6 flex items-center justify-between">
               <button

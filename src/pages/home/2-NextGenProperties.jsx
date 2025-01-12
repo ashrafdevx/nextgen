@@ -73,13 +73,13 @@ const NextGenProperties = () => {
   return (
     <div className="bg-gray-100">
       <div className="p-16 container mx-auto">
-        <h1 className="text-6xl font-bold font-rubik text-center mb-10 text-gray-800">
+        <h1 className="text-5xl font-bold font-rubik text-center mb-10 text-gray-800">
           NextGen Properties At a Glance
         </h1>
 
         {data.map((section, index) => (
           <div key={index} className="mb-6">
-            <h2 className="text-xl font-quicksand font-semibold text-gray-700 mb-6 text-center">
+            <h2 className="text-2xl font-quicksand font-semibold text-gray-700 mb-6 text-center">
               {section.title}
             </h2>
             <div className="grid grid-cols-1 font-rubik sm:grid-cols-2 md:grid-cols-4 gap-6">

@@ -127,7 +127,7 @@ const InvestmentPortfolioById = () => {
                   </h1>
                   {/* <MapPin className="h-6 w-6 text-gray-500" /> */}
                 </div>
-                <div className="flex gap-4 mb-6">
+                <div className="flex gap-4 mb-2">
                   <div className="flex items-center gap-1">
                     <Home className="h-5 w-5 text-gray-600" />
                     <span>{selectedProject?.Bedroom} Bed</span>
@@ -153,44 +153,44 @@ const InvestmentPortfolioById = () => {
             </div>
 
             <div className="flex flex-col mb-6">
-              <p className="text-gray-600">Specs: {selectedProject?.specs}</p>
-              <p className="text-gray-600">
-                Property Type:: {selectedProject?.propertyType}
-              </p>
+              {/* <p className="text-gray-600">Specs: {selectedProject?.specs}</p> */}
+              <li className="text-gray-800 font-rubik">
+                Property Type : {selectedProject?.propertyType}
+              </li>
 
-              {/* <p className="text-gray-600">
+              {/* <li className="text-gray-800">
                 Living Area: {selectedProject?.LivingArea}
-              </p>
-              <p className="text-gray-600">
+              </li>
+              <li className="text-gray-800">
                 Covered Area: {selectedProject?.CoveredArea}
-              </p> */}
-              <p className="text-gray-600">
+              </li> */}
+              <li className="text-gray-800 font-rubik">
                 Investors: {selectedProject?.investors}
-              </p>
+              </li>
 
-              <p className="text-gray-600">
+              <li className="text-gray-800 font-rubik">
                 Per Investors Share : {selectedProject?.perInvestorShare}
-              </p>
+              </li>
 
-              <p className="text-gray-600">
+              <li className="text-gray-800 font-rubik">
                 Funding Round: : {selectedProject?.fundRound}
-              </p>
-              {/* <p className="text-gray-600"> Garage(s): 1</p> */}
-              <p className="text-gray-600">
+              </li>
+              {/* <li className="text-gray-800"> Garage(s): 1</li> */}
+              <li className="text-gray-800 font-rubik">
                 Floor(s): {selectedProject?.Floor}
-              </p>
-              {/* <p className="text-gray-600">
+              </li>
+              {/* <p className="text-gray-800">
                 {" "}
                 Community : {selectedProject?.Community}
               </p> */}
               <div className="pt-2">
                 <p className="text-gray-800 font-rubik text-lg">Elevations :</p>
-                <p className="text-gray-600 font-rubik text-lg">
+                <li className="text-gray-800 font-rubik text-lg">
                   Front Elevation: {selectedProject?.FrontElevation}
-                </p>
-                <p className="text-gray-600 font-rubik text-lg">
+                </li>
+                <li className="text-gray-800 font-rubik text-lg">
                   Side Elevations: {selectedProject?.SideElevations}
-                </p>
+                </li>
               </div>
             </div>
 

@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import ImageWithOverlay from "../../../utils/ImagePreview";
 
 const ComprehensiveInvestmentManagement = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-4 md:py-16">
       {/* Left Section */}
@@ -20,7 +22,10 @@ const ComprehensiveInvestmentManagement = () => {
           Properties offers the expertise and resources necessary for your
           success in the ever-evolving real estate landscape.
         </p>{" "}
-        <button className="bg-blue-600 text-white transition duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+        <button
+          onClick={() => navigate("/contact-us")}
+          className="bg-blue-600 text-white transition duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+        >
           Consult Now
         </button>
         {/* Right Section */}

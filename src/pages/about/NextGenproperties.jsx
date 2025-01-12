@@ -1,3 +1,4 @@
+import ConsultButton from "../../utils/consultButton";
 import ImageWithOverlay from "../../utils/ImagePreview";
 
 const NextGenproperties = () => {
@@ -20,9 +21,7 @@ const NextGenproperties = () => {
             and investment opportunities.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-blue-600 text-white transition duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
-              Consult Now
-            </button>
+            <ConsultButton />
             <button className="border transition duration-300 border-blue-600 text-blue-600 hover:bg-blue-900 py-2 px-9  rounded-full hover:text-white">
               Read More
             </button>
@@ -78,9 +77,7 @@ const NextGenproperties = () => {
             should yield exceptional returns.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-blue-600 text-white transition duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
-              Consult Now
-            </button>
+            <ConsultButton />
             <button className="border transition duration-300 border-blue-600 text-blue-600 hover:bg-blue-900 py-2 px-9  rounded-full hover:text-white">
               Read More
             </button>

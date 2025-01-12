@@ -1,10 +1,10 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import TawkToWidget from "./utils/tawk";
 import React, { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
-
+const TawkToWidget = React.lazy(() => import("./utils/tawk"));
 const About = React.lazy(() => import("./pages/about/about"));
+const AskQuesdtion = React.lazy(() => import("./pages/faq/6-AskQuesdtion"));
 // const PrivacyPolicy = React.lazy(() => import("./pages/about/privacyPolicy"));
 const Blogs = React.lazy(() => import("./pages/blogs"));
 const Header = React.lazy(() => import("./component/header"));
@@ -25,6 +25,9 @@ const PortfolioDevelopmentMain = React.lazy(() =>
     "./pages/portfolio/DevelopmentPortfolio/RealEstatePortfolioDevelopment"
   )
 );
+const PrivacyPolicy = React.lazy(() =>
+  import("./pages/ourPolicy/privacyPolicy")
+);
 const InvestmentPortfolioMain = React.lazy(() =>
   import("./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment")
 );
@@ -40,7 +43,6 @@ const ContactUs = React.lazy(() => import("./pages/contactUs/contactUs"));
 
 function App() {
   const location = useLocation();
-  // console.log("location", location.pathname);
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
@@ -51,7 +53,7 @@ function App() {
         setShowScrollButton(false);
       }
     };
-
+    console.log("Route Called!!!!!!!!");
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -65,6 +67,7 @@ function App() {
       behavior: "smooth",
     });
   };
+
   return (
     <>
       <Header />
@@ -106,9 +109,10 @@ function App() {
             element={<InvestmentPortfolioById />}
           />
         </Route>
-        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+        <Route path="/our-policy" element={<PrivacyPolicy />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/faq" element={<AskQuesdtion />} />
       </Routes>
       <div className="fixed bottom-4 right-4 max-w-xs max-h-[80vh] w-full h-auto overflow-hidden rounded-lg shadow-lg">
         <TawkToWidget />
