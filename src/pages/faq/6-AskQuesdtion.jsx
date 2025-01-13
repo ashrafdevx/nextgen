@@ -2,10 +2,10 @@ const AskQuesdtion = () => {
   return (
     <>
       <div className="container flex items-center flex-col mx-auto pt-3 mb-5 ">
-        <h2 className="text-5xl py-10 font-semibold">
+        <h2 className="text-2xl md:text-3xl px-4 md:px-0 md:text-5xl text-center md:py-10 font-semibold">
           Frequently Asked Questions
         </h2>
-        <div className="container mx-auto items-center px-16 mb-4 gap-4 pt-2">
+        <div className="w-full md:container mx-auto items-center px-2 md:px-16 mb-4 gap-4 pt-2">
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" defaultChecked />
             <div className="collapse-title text-xl font-medium">

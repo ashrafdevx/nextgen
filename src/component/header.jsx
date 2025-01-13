@@ -103,8 +103,8 @@ const Header = () => {
   return (
     <div className="container mx-auto py-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center">
-          <div className="lg:hidden">
+        <div className="flex items-center w-full lg:w-auto">
+          <div className="lg:hidden flex items-center justify-between w-full ">
             <button onClick={handleMenuToggle} className="p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,8 +121,15 @@ const Header = () => {
                 />
               </svg>
             </button>
+            <Link to="/" className="ml-2">
+              <img
+                src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/6736c94fd7a302e4ac8ed8f3_NextGen%20Properties%20Logo.jpg"
+                alt="NextGen Properties Logo"
+                className="h-14 w-24 object-cover"
+              />
+            </Link>
           </div>
-          <Link to="/" className="ml-2">
+          <Link to="/" className="ml-2 hidden lg:flex">
             <img
               src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/6736c94fd7a302e4ac8ed8f3_NextGen%20Properties%20Logo.jpg"
               alt="NextGen Properties Logo"

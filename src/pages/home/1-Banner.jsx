@@ -17,7 +17,7 @@ const Banner = () => {
   };
   return (
     <>
-      <div className="hidden sm:flex banner-container">
+      <div className="hidden md:flex banner-container">
         <div className="video-wrapper">
           <LazyLoad height={300} offset={100} once>
             <video
@@ -69,7 +69,7 @@ const Banner = () => {
       </div>
 
       {/* Mobile */}
-      <div className="sm:hidden">
+      <div className="md:hidden">
         <LazyLoad height={300} offset={100} once>
           <video
             ref={videoRef} // Attach ref to the video element

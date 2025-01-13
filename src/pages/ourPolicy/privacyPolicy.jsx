@@ -1,10 +1,10 @@
 const PrivacyPolicy = () => {
   return (
     <>
-      <div className=" mb-10 bg-gray-100">
-        <div className="container mx-auto mb-10 lg:pt-6">
+      <div className="md:mb-10 bg-gray-100">
+        <div className="container mx-auto md:mb-10 lg:pt-6">
           <div className="sm:px-8 lg:px-16">
-            <h1 className="flex text-2xl font-medium justify-start sm:text-4xl pt-4  sm:pt-7">
+            <h1 className="flex text-2xl font-medium md:justify-start justify-center sm:text-4xl pt-4  sm:pt-7">
               Policy and privacy
             </h1>
             <div className="flex sm:text-lg flex-col md:pt-6 lg:pt-4">

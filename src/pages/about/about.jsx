@@ -7,8 +7,8 @@ import OurFounder from "./founder";
 const About = () => {
   return (
     <>
-      <div className=" flex flex-col pt-6">
-        <h1 className="flex font-medium font-sans text-5xl justify-center ">
+      <div className=" flex flex-col md:pt-6">
+        <h1 className="flex font-medium font-sans text-2xl md:text-5xl justify-center ">
           About Us
         </h1>
         <AboutBanner />
@@ -18,7 +18,6 @@ const About = () => {
         {/* <PrivacyPolicy /> */}
         {/* <ContactForm /> */}
       </div>
-      ;
     </>
   );
 };
