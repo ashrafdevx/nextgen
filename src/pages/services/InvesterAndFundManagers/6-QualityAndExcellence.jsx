@@ -2,9 +2,12 @@ import ImageWithOverlay from "../../../utils/ImagePreview";
 
 const QualityAndExcellence = () => {
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-4 md:py-16">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:px-16 bg-white  md:py-16">
+      <div className="flex md:hidden max-w-full">
+        <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f7ebb1894853479d75324_14.webp" />
+      </div>{" "}
       {/* Left Section */}
-      <div className="max-w-xl text-center md:text-left">
+      <div className="max-w-xl text-center px-2 md:px-0 md:text-left">
         <p className="hidden md:flex font-rubik rounded-full text-lg">
           {`${"Commitment"}`}
         </p>
@@ -31,7 +34,7 @@ const QualityAndExcellence = () => {
         </p>
       </div>
       {/* Right Section */}
-      <div className="max-w-full">
+      <div className="hidden md:flex max-w-full">
         <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f7ebb1894853479d75324_14.webp" />
       </div>
     </div>

@@ -1,6 +1,6 @@
 const UnmatchedSupport = () => {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2 mx-auto py-2 justify-center px-8 gap-8 mb-4">
+    <div className="container grid grid-cols-1 md:grid-cols-2 mx-auto py-2 justify-center  gap-8 mb-4">
       <div className="flex flex-col max-w-full max-h-96 ">
         <div className="aspect-w-4 aspect-h-3 w-full">
           <img
@@ -9,7 +9,7 @@ const UnmatchedSupport = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="flex flex-col justify-center  sm:p-4">
+        <div className="flex px-2 md:px-0 flex-col justify-center  sm:p-4">
           <h3 className="text-lg sm:text-2xl font-semibold">
             Unmatched Support
           </h3>
@@ -30,7 +30,7 @@ const UnmatchedSupport = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="flex flex-col justify-center sm:p-4">
+        <div className="flex px-2 md:px-0 flex-col justify-center sm:p-4">
           <h3 className="text-lg sm:text-2xl font-semibold">
             Experience the NextGen Difference
           </h3>

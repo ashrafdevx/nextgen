@@ -2,12 +2,15 @@ import ImageWithOverlay from "../../../utils/ImagePreview";
 
 const InvestmentResearchAnalysis = () => {
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-4 md:py-16">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center  md:px-16 bg-white py-4 md:py-16">
+      <div className="flex md:hidden max-w-full">
+        <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f871c3774ae2003dc7e7e_DJI_0500-HDR-Edit.webp" />
+      </div>{" "}
       {/* Left Section */}
       <div className="max-w-xl text-center md:text-left">
         <div>
           <div>
-            <p className="hidden md:flex font-rubik rounded-full text-xl">
+            <p className=" md:flex font-rubik rounded-full text-xl">
               {`${"Track Your Investment's Progress"}`}
             </p>
           </div>
@@ -18,7 +21,7 @@ const InvestmentResearchAnalysis = () => {
         </div>
         <div>
           <div>
-            <p className="hidden md:flex font-rubik rounded-full text-xl">
+            <p className=" pt-2 md:pt-0 md:flex font-rubik rounded-full text-xl">
               {`${"Risk Management"}`}
             </p>
           </div>
@@ -29,7 +32,7 @@ const InvestmentResearchAnalysis = () => {
         </div>{" "}
         <div>
           <div>
-            <p className="hidden md:flex font-rubik rounded-full text-xl">
+            <p className=" pt-2 md:pt-0 md:flex font-rubik rounded-full text-xl">
               {`${"Financial Planning"}`}
             </p>
           </div>
@@ -40,7 +43,7 @@ const InvestmentResearchAnalysis = () => {
         </div>
         <div>
           <div>
-            <p className="hidden md:flex font-rubik rounded-full text-xl">
+            <p className=" pt-2 md:pt-0 md:flex font-rubik rounded-full text-xl">
               {`${"Performance Reporting"}`}
             </p>
           </div>
@@ -50,7 +53,7 @@ const InvestmentResearchAnalysis = () => {
           </p>{" "}
         </div>
       </div>{" "}
-      <div className="max-w-full">
+      <div className="hidden md:flex max-w-full">
         <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f871c3774ae2003dc7e7e_DJI_0500-HDR-Edit.webp" />
       </div>
     </div>

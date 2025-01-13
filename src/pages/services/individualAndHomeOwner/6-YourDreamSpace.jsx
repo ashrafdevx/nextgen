@@ -2,12 +2,12 @@ import ImageWithOverlay from "../../../utils/ImagePreview";
 
 const YourDreamSpace = () => {
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-4 md:py-16">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center  md:px-16 bg-white md:py-16">
       <div className="max-w-full flex md:hidden">
         <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f736b6891a9e28f40422d_4x_USA-ECONOMY.jpg" />
       </div>
       {/* Left Section */}
-      <div className="max-w-xl text-center md:text-left">
+      <div className="max-w-xl px-2 md:px-0 text-center md:text-left">
         <h2 className="hidden md:flex font-rubik  py-1 rounded-full text-2xl">
           {`${"Construction"}`}
         </h2>
