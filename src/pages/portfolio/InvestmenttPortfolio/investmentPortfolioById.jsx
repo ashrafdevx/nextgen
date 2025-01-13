@@ -219,7 +219,7 @@ const InvestmentPortfolioById = () => {
               <p>{selectedProject?.description}</p>
             </div>
 
-            <div className="mt-6 flex items-center justify-between">
+            <div className="mt-6 mb-2 flex items-center justify-between">
               <button
                 className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
                 onClick={() => navigate("/contact-us")}
