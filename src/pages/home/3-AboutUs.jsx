@@ -4,7 +4,7 @@ const AboutUs = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 sm:gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
         {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
           <button
@@ -14,10 +14,10 @@ const AboutUs = () => {
             About Us
           </button>
           <div>
-            <h1 className="text-3xl font-rubik md:text-4xl leading-tight ">
+            <h1 className="sm:text-3xl font-rubik mb-2 sm:mb-0 md:text-4xl leading-tight ">
               Your Trusted Partner in Real Estate Development and{" "}
             </h1>
-            <h1 className="text-6xl font-rubik py-5 pt-0 font-bold leading-tight">
+            <h1 className="text-2xl sm:text-6xl font-rubik  py-2 sm:py-5 pt-0 font-bold leading-tight">
               Investments
             </h1>
           </div>
@@ -26,27 +26,28 @@ const AboutUs = () => {
             home management. Our dual commitment to craftsmanship and financial
             growth ensures your home and financial future.
           </p>
-          <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-blue-600 font-quicksand text-white transition duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700">
+          <div className="flex sm:flex-col md:flex-row sm:gap-4 justify-evenly">
+            <button className="bg-blue-600 font-quicksand text-white transition duration-300 px-4 sm:px-9 sm:py-2 rounded-full shadow-md hover:bg-blue-700">
               Consult Now
             </button>
-            <button className="border transition font-quicksand duration-300 border-blue-600 text-blue-600 hover:bg-blue-900 py-2 px-9  rounded-full hover:text-white">
+            <button className="border transition font-quicksand duration-300 border-blue-600 text-blue-600 hover:bg-blue-900 py-2 px-4 sm:px-9  rounded-full hover:text-white">
               Read More
             </button>
           </div>
         </div>
 
         {/* Right Section */}
-        <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671a568f31e8a98567c19008_pexels-rdne-8292895.jpg?w=800&format=webp" />
+        <ImageWithOverlay
+          className="border"
+          img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671a568f31e8a98567c19008_pexels-rdne-8292895.jpg?w=800&format=webp"
+        />
       </div>
       {/* Build for Individual HomeTown Div */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
-        {/* Right Section */}
+      {/* <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
         <div className="max-w-full">
           <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671a56fa59f4cc3345d4cd60_pexels-dropshado-2251247.jpg" />
         </div>
 
-        {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
           <button
             onClick={() => navigate("/services")}
@@ -74,11 +75,10 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Build for Investment and Manager */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
-        {/* Left Section */}
+      {/* <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
         <div className="max-w-xl text-center md:text-left">
           <div>
             <h1 className="text-3xl w-full md:text-5xl font-medium font-rubik leading-tight ">
@@ -101,20 +101,17 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="mt-8 md:mt-0 max-w-2xl">
           <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671a57606194fcd30b191155_pexels-enric-cruz-lopez-6039188.jpg" />
         </div>
-      </div>
+      </div> */}
 
       {/* Real State Investment Manangement */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
-        {/* Right Section */}
+      {/* <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
         <div className="mt-8 md:mt-0 max-w-2xl">
           <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671a575f050f09d0cde7a510_pexels-vividcafe-681333.jpg" />
         </div>
 
-        {/* Left Section */}
         <div className="max-w-xl text-center md:text-left">
           <div>
             <h1 className="text-3xl w-full md:text-5xl font-medium leading-tight ">
@@ -137,7 +134,7 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

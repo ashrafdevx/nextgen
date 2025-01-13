@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -69,6 +69,7 @@ const TestimonialSlider = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
@@ -76,6 +77,7 @@ const TestimonialSlider = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
@@ -83,6 +85,7 @@ const TestimonialSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
@@ -90,6 +93,7 @@ const TestimonialSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
           arrows: false, // Optional: Hide arrows on smaller screens
         },
       },
@@ -97,19 +101,21 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="container   mx-auto px-4 py-12">
-      <div className="px-8">
-        <div className="text-start mb-12">
-          <span className="inline-block hover:text-white hover:bg-gray-600 px-16 py-2 rounded-full border border-gray-700 text-gray-600">
+    <div className="container   mx-auto sm:px-4 py-8 sm:py-12">
+      <div className="sm:px-8">
+        <div className="text-start sm:mb-12 px-8">
+          <span className="hidden sm:inline-block hover:text-white hover:bg-gray-600 px-16 py-2 rounded-full border border-gray-700 text-gray-600">
             Showcase of Excellence
           </span>
-          <h1 className="text-4xl font-bold my-10 ">Our Customer Feedback</h1>
+          <h1 className="text-xl sm:text-4xl font-bold sm:my-10 ">
+            Our Customer Feedback
+          </h1>
         </div>
         <div className="container ">
           <Slider {...settings} className="">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="p-4   max-w-md">
-                <div className="bg-white rounded-lg shadow-lg py-6 px-4">
+              <div key={index} className="sm:p-4 px-2 sm:px-0   max-w-md">
+                <div className="bg-white rounded-lg shadow-lg py-3 sm:py-6 px-4">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
                       {testimonial.imageInitial}
@@ -138,7 +144,9 @@ const TestimonialSlider = () => {
                       />
                     ))}
                   </div>
-                  <p className="text-gray-700 h-40">{testimonial.review}</p>
+                  <p className="text-gray-700 h-40 line-clamp-4 mb-4">
+                    {testimonial.review}
+                  </p>
                 </div>
               </div>
             ))}

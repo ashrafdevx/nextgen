@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1f36] text-white py-12 px-4">
-      <div className="sm:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-[#1a1f36] text-white py-4 sm:py-12 px-4">
+      <div className="sm:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-8 mb-3 sm:mb-0">
         {/* Company Info */}
         <div className="space-y-4">
           <h3 className="text-xl font-semibold">NextGen Properties</h3>
@@ -13,7 +13,7 @@ const Footer = () => {
             <br />
             Investment Managers
           </p>
-          <div className="flex pt-2 space-x-4">
+          <div className="hidden sm:flex pt-2 space-x-4">
             <a href="#" className="hover:text-gray-300 ">
               <LinkedinIcon size={20} />
             </a>
@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Quick Links */}
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Quick Links</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 flex gap-3 items-center sm:items-start sm:flex-col">
             <li>
               <Link to="/" className="hover:text-gray-300">
                 Home
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+      <div className="sm:mt-8 sm:pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
         © Copyright 2025. All Rights Reserved
       </div>
     </footer>

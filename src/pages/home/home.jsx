@@ -18,10 +18,8 @@ const Home = () => {
       <AboutUs />
       <DevelopmentPortfolio />
       <OurInvestmentPortfolio />
-      {/* <AskQuesdtion /> */}
       <TestimonialCarousel />
-      <OurBlogs />
-      {/* <ContactForm /> */}
+      {/* <OurBlogs /> */}
     </>
   );
 };
