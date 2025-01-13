@@ -14,20 +14,14 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="container mx-auto  flex-col px-16 pt-6 justify-between flex">
-        <div className="flex justify-between">
-          <h1 className="text-4xl text-center mb-4">
+      <div className="container mx-auto flex-col md:px-16 md:pt-6 justify-between flex">
+        <div className="flex justify-center flex-col md:flex-row md:justify-between">
+          <h1 className="text-3xl md:text-4xl text-center mb-4">
             Ready to Build or Invest?
           </h1>
-          <button
-            onClick={() => alert("View All For Our Project has Cliked!!!")}
-            className=" border text-center transition bg-blue-600  text-white border-blue-600 hover:text-blue-600 duration-300 px-10  rounded-full shadow-md hover:bg-white"
-          >
-            Contact Us
-          </button>
         </div>
-        <div className="flex items-start py-6">
-          <p className="text-center mb-8 text-gray-600">
+        <div className="flex items-start md:py-6">
+          <p className="text-center mb-4 md:mb-8 text-gray-600">
             Start building your dream home or secure your financial future
             today. Contact us to bring your vision to life!
           </p>

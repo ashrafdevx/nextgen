@@ -106,10 +106,10 @@ const OurBlogs = () => {
     <>
       <div className="container mx-auto px-2 sm:py-16 sm:px-2 md:py-16 lg:py-2">
         <div className="container flex-col items-center flex pb-6  ">
-          <h1 className="text-4xl sm:text-4xl md:text-5xl font-medium text-gray-800">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-800">
             Our Blogs
           </h1>
-          <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-6 gap-6 sm:p-4">
+          <div className="md:pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-6 gap-6 sm:p-4">
             {currentBlogs.map((blog) => (
               <div
                 key={blog.id}
