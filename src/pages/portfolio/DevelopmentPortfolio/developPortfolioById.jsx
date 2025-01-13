@@ -64,16 +64,15 @@ const PropertyListing = () => {
       </button>
 
       <div className="bg-white rounded-lg shadow-lg overflow-hidden pb-3">
-        {/* Main content grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
-          {/* Image carousel section */}
+          {/* Carousels*/}
           <div className="relative">
             <div className="absolute top-4 left-4 z-10 bg-black/50 text-white px-2 py-1 rounded">
               {currentSlide + 1} / {selectedProject?.images.length}
             </div>
             <Slider {...settings} className="property-slider">
               {selectedProject?.images.map((img, index) => (
-                <div key={index} className="relative h-[400px]">
+                <div key={index} className="relative h-64 md:h-[400px]">
                   <img
                     src={img}
                     alt={`Property view ${index + 1}`}
@@ -100,18 +99,34 @@ const PropertyListing = () => {
               ))}
             </div>
           </div>
+          {/* Mobile Vedio */}
+          <div className="grid md:hidden grid-cols-1 lg:grid-cols-2 gap-6 ">
+            {/* Video content */}
+            <div className="video-container">
+              <video
+                className="w-full h-auto"
+                autoPlay
+                muted
+                loop
+                playsInline
+                src="https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
+                alt="Under Construction Video"
+              />
+            </div>
+
+            {/* 3D Image content */}
+          </div>
 
           {/* Property details section */}
-          <div className="px-6">
+          <div className="px-2 md:px-6">
             <div className="flex justify-between items-start ">
               <div className="">
-                <div className="flex items-center gap-2 mb-2">
-                  <h1 className="text-2xl font-semibold">
+                <div className="flex items-center md:gap-2 mb-2">
+                  <h1 className="md:text-2xl font-semibold">
                     {selectedProject.title}
                   </h1>
-                  {/* <MapPin className="h-6 w-6 text-gray-500" /> */}
                 </div>
-                <div className="flex gap-4 mb-2">
+                <div className="hidden md:flex md:gap-4 mb-2">
                   <div className="flex items-center gap-1">
                     <Home className="h-5 w-5 text-gray-600" />
                     <span>{selectedProject?.Bedroom} Bed</span>
@@ -125,8 +140,8 @@ const PropertyListing = () => {
                   </div>
                 </div>
               </div>
-              <div className="text-right">
-                <p className="text-2xl font-bold text-orange-500">
+              <div className=" text-right">
+                <p className="md:text-2xl font-bold text-orange-500">
                   {selectedProject?.SellingPrice}
                 </p>
                 <span className="text-green-500 text-md">
@@ -137,6 +152,13 @@ const PropertyListing = () => {
             </div>
 
             <div className="flex flex-col mb-6">
+              <li className="md:hidden">{selectedProject?.Bedroom} Bed</li>
+
+              <li className="md:hidden">{selectedProject?.Bathroom} Bath</li>
+
+              <li className="md:hidden">
+                Garage(s): {selectedProject?.Garage}
+              </li>
               <li className="text-gray-800 font-rubik">
                 Lot Area: {selectedProject?.LotArea}
               </li>
@@ -186,7 +208,7 @@ const PropertyListing = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
+        <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
           {/* Video content */}
           <div className="video-container">
             <video

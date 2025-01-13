@@ -153,9 +153,9 @@ const AllInvestmentPortfolio = () => {
 
   return (
     <div className="container flex flex-col mx-auto">
-      <div className="py-10 md:px-16">
+      <div className="md:py-10 md:px-16">
         {/* Header */}
-        <div className="py-2">
+        <div className="md:py-2">
           {pathname === "/" && (
             <button
               onClick={() => navigate("/portfolio")}
@@ -165,16 +165,16 @@ const AllInvestmentPortfolio = () => {
             </button>
           )}
         </div>
-        <h2 className="text-4xl font-bold mt-2 py-4">
-          Our Development Portfolio
+        <h2 className="text-xl md:text-4xl px-2 md:px-0 font-bold md:mt-2 md:py-4">
+          Investment Portfolio
         </h2>
 
         {/* Filters */}
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex justify-center gap-4 md:gap-4 mb-3 md:mb-8 py-3 md:pt-0">
           {["All", "Completed", "Under Construction"].map((category) => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full text-sm ${
+              className={`px-2 md:px-4 md:py-2 py-1  rounded-full text-sm ${
                 activeFilter === category
                   ? "bg-blue-600 text-white"
                   : "border border-blue-600 text-blue-600 hover:bg-blue-100"
@@ -196,7 +196,7 @@ const AllInvestmentPortfolio = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-80 object-cover"
+                className="w-full h-40 object-cover md:h-80 md:object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

@@ -2,54 +2,6 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { developmentPortfolioData } from "../../../utils/data";
 
-// const projects = [
-//   {
-//     id: 1,
-//     title: "Black Pine",
-//     description:
-//       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-//     category: "Completed",
-//     image:
-//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
-//   },
-//   {
-//     id: 2,
-//     title: "Contemporary Family Home",
-//     description:
-//       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-//     category: "Under Construction",
-//     image:
-//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-//   },
-//   {
-//     id: 3,
-//     title: "Hillside Retreat Villa",
-//     description:
-//       "Set against a stunning natural backdrop, this custom villa offers...",
-//     category: "Completed",
-//     image:
-//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-//   },
-//   {
-//     id: 4,
-//     title: "Contemporary Family Home",
-//     description:
-//       "Designed to minimize environmental impact while maximizing comfort, it’s the...",
-//     category: "Under Construction",
-//     image:
-//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-//   },
-//   {
-//     id: 5,
-//     title: "Hillside Retreat Villa",
-//     description:
-//       "Set against a stunning natural backdrop, this custom villa offers...",
-//     category: "Completed",
-//     image:
-//       "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png", // Replace with your image URL
-//   },
-// ];
-
 const AllDevelopmentPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const { pathname } = useLocation();
@@ -64,7 +16,7 @@ const AllDevelopmentPortfolio = () => {
 
   return (
     <div className="container flex flex-col mx-auto">
-      <div className="py-10 md:px-16">
+      <div className="md:py-10 md:px-16">
         {/* Header */}
         <div className="py-2">
           {pathname === "/" && (
@@ -76,16 +28,16 @@ const AllDevelopmentPortfolio = () => {
             </button>
           )}
         </div>
-        <h2 className="text-4xl font-bold mt-2 py-4">
+        <h2 className="text-xl md:text-4xl px-2 md:px-0 font-bold md:mt-2 md:py-4">
           Our Development Portfolio
         </h2>
 
         {/* Filters */}
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex justify-center gap-4 md:gap-4 mb-3 md:mb-8 py-3 md:pt-0">
           {["All", "Completed", "Under Construction"].map((category) => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full text-sm ${
+              className={`px-2 md:px-4 md:py-2 py-1 rounded-full text-sm ${
                 activeFilter === category
                   ? "bg-blue-600 text-white"
                   : "border border-blue-600 text-blue-600 hover:bg-blue-100"
@@ -107,7 +59,7 @@ const AllDevelopmentPortfolio = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-80 object-cover"
+                className="w-full h-40 object-cover md:h-80 md:object-cover"
               />
 
               <div className="p-6">
@@ -127,7 +79,7 @@ const AllDevelopmentPortfolio = () => {
         </div>
       </div>
 
-      <div className="container  flex items-center justify-center">
+      <div className="container pt-3 md:pt-0 flex items-center justify-center">
         {" "}
         <button
           onClick={() => navigate("/")}
