@@ -1,3 +1,4 @@
+import { X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -72,11 +73,33 @@ const Header = () => {
   };
 
   const handleMenuItemClick = (path) => {
+    setActiveDropdown(null);
     setActiveItem(path);
     setMenuOpen(false);
     navigate(path);
   };
 
+  // Mobiekl Nav
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const handleParentItemClick = (item) => {
+    if (item.dropdownItems) {
+      // If item has dropdown, toggle it
+      setActiveDropdown(activeDropdown === item.path ? null : item.path);
+      // setMenuOpen(false);
+    } else {
+      // If no dropdown, navigate directly
+      navigate(item.path);
+      setActiveDropdown(null);
+      setMenuOpen(false);
+    }
+  };
+
+  const handleDropdownItemClick = (path) => {
+    navigate(path);
+    setMenuOpen(false);
+    setActiveDropdown(null); // Close dropdown after navigation
+  };
   return (
     <div className="container mx-auto py-4">
       <div className="flex items-center justify-between">
@@ -154,36 +177,55 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed inset-0 bg-black bg-opacity-50 z-20 transition-opacity duration-300 lg:hidden ${
-            menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+          className={`fixed inset-0 bg-black bg-opacity-50 z-20 transition-opacity duration-300 lg:hidden opacity-100 ${
+            menuOpen ? "visible" : "hidden"
+          } `}
         >
-          <div
-            className={`fixed inset-y-0 right-0 w-full bg-red-500 transform transition-transform duration-300 ${
-              menuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
+          <div className="fixed inset-y-0 right-0 w-full max-w-sm transform transition-transform duration-300 translate-x-0 bg-white">
+            <div
+              onClick={() => setMenuOpen(false)}
+              className="absolute top-4 right-4 p-2 cursor-pointer hover:bg-gray-100 rounded-full"
+            >
+              <X size={24} />
+            </div>
             <div className="p-4">
               {menuItems.map((item) => (
                 <div key={item.path} className="py-2">
-                  <Link
-                    to={item.path}
-                    onClick={() => handleMenuItemClick(item.path)}
-                    className="block py-2 text-gray-800 hover:text-blue-700"
+                  <div
+                    onClick={() => handleParentItemClick(item)}
+                    className="flex items-center justify-between py-2 text-gray-800 hover:text-blue-700 cursor-pointer"
                   >
-                    {item.name}
-                  </Link>
-                  {item.dropdownItems && (
-                    <div className="ml-4 mt-2">
+                    <span>{item.name}</span>
+                    {item.dropdownItems && (
+                      <svg
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          activeDropdown === item.path ? "rotate-180" : ""
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    )}
+                  </div>
+                  {item.dropdownItems && activeDropdown === item.path && (
+                    <div className="ml-4 mt-2 space-y-2">
                       {item.dropdownItems.map((dropdownItem) => (
-                        <Link
+                        <div
                           key={dropdownItem.path}
-                          to={dropdownItem.path}
-                          onClick={() => handleMenuItemClick(dropdownItem.path)}
-                          className="block py-2 text-gray-600 hover:text-blue-700"
+                          onClick={() =>
+                            handleDropdownItemClick(dropdownItem.path)
+                          }
+                          className="block py-2 text-gray-600 hover:text-blue-700 cursor-pointer"
                         >
                           {dropdownItem.name}
-                        </Link>
+                        </div>
                       ))}
                     </div>
                   )}
@@ -193,9 +235,6 @@ const Header = () => {
                 <button className="w-full rounded-full bg-blue-700 px-4 py-2 text-white font-quicksand text-lg hover:bg-blue-800">
                   Login
                 </button>
-                {/* <button className="w-full rounded-full bg-blue-700 px-4 py-2 text-white font-quicksand text-lg hover:bg-blue-800">
-                  Contact
-                </button> */}
               </div>
             </div>
           </div>
