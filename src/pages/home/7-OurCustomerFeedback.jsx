@@ -89,19 +89,19 @@ const TestimonialSlider = () => {
         },
       },
       {
-        breakpoint: 640, // Tailwind `sm`
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-          arrows: false, // Optional: Hide arrows on smaller screens
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <div className="container   mx-auto sm:px-4 py-8 sm:py-12">
+    <div className="container  px-2 md:px-0 md:mb-0 mb-3 mx-auto sm:px-4 py-8 sm:py-12">
       <div className="sm:px-8">
         <div className="text-start sm:mb-12 px-8">
           <span className="hidden sm:inline-block hover:text-white hover:bg-gray-600 px-16 py-2 rounded-full border border-gray-700 text-gray-600">
@@ -111,11 +111,17 @@ const TestimonialSlider = () => {
             Our Customer Feedback
           </h1>
         </div>
-        <div className="container ">
-          <Slider {...settings} className="">
+        <div className="container mx-auto">
+          <Slider
+            {...settings}
+            className="flex md:pl-5 justify-center items-center"
+          >
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="sm:p-4 px-2 sm:px-0   max-w-md">
-                <div className="bg-white rounded-lg shadow-lg py-3 sm:py-6 px-4">
+              <div
+                key={index}
+                className="sm:p-4 px-0 flex items-center justify-center sm:px-0 max-w-md"
+              >
+                <div className="bg-white rounded-lg border shadow-lg py-3 sm:py-6 px-4">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
                       {testimonial.imageInitial}
