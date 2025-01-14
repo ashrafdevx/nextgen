@@ -70,7 +70,7 @@ const OurInvestmentPortfolio = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false, // Hide dots on mobile screens
-          arrows: true, // Show arrows on mobile screens
+          arrows: false, // Show arrows on mobile screens
         },
       },
     ],

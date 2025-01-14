@@ -7,6 +7,9 @@
 @tailwind utilities;
 
 /* Global css */
+*{
+  /* border: 2px solid red; */
+}
 /* globals.css or in your Tailwind classes */
 h1 {
   @apply font-rubik;
