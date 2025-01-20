@@ -5,21 +5,21 @@ const NextGenProperties = () => {
     {
       title: "Real Estate Development Portfolio",
       items: [
-        { value: "08", label: "Total Projects", numericValue: 8 },
+        { value: "06", label: "Total Projects", numericValue: 6 },
         { value: "$3.8M", label: "Market Value", numericValue: 3.8 },
-        { value: "04", label: "Completed", numericValue: 4 },
-        { value: "04", label: "Under Construction", numericValue: 4 },
+        { value: "03", label: "Completed", numericValue: 3 },
+        { value: "03", label: "Under Construction", numericValue: 3 },
       ],
     },
     {
       title: "Real Estate Investment Portfolio",
       items: [
-        { value: "09", label: "Total Projects", numericValue: 9 },
-        { value: "$4.0M", label: "Market Value", numericValue: 4.0 },
+        { value: "07", label: "Total Projects", numericValue: 7 },
+        { value: "$3.20M", label: "Market Value", numericValue: 3.2 },
         {
-          value: "09",
+          value: "07",
           label: "Funding Secured - In Progress",
-          numericValue: 9,
+          numericValue: 7,
         },
         { value: "50+", label: "Total Investors", numericValue: 50 },
       ],

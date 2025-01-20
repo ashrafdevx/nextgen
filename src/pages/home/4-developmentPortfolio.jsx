@@ -79,7 +79,7 @@ const DevelopmentPortfolio = () => {
   };
 
   return (
-    <div className="container flex mb-2 sm:mb-0 border border-re flex-col mx-auto">
+    <div className="container flex mb-2 sm:mb-0  flex-col mx-auto">
       <div className="sm:py-10 px-6  md:px-16">
         {/* Header */}
         <div className="sm:py-2">
