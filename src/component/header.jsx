@@ -7,7 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
   const [activeItem, setActiveItem] = useState(location.pathname);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  console.log("activeItem", activeItem);
   useEffect(() => {
     setActiveItem(location.pathname);
   }, [location.pathname]);
@@ -34,7 +34,7 @@ const Header = () => {
     },
     {
       name: "Services",
-      path: "/services",
+      path: "/services/individuals-homeowners",
       dropdownItems: [
         {
           name: "Build for Individuals & Homeowners",
@@ -52,7 +52,7 @@ const Header = () => {
     },
     {
       name: "Portfolio",
-      path: "/portfolio",
+      path: "/portfolio/investment-portfolio",
       dropdownItems: [
         {
           name: "Real Estate Development Portfolio",
@@ -84,11 +84,8 @@ const Header = () => {
 
   const handleParentItemClick = (item) => {
     if (item.dropdownItems) {
-      // If item has dropdown, toggle it
       setActiveDropdown(activeDropdown === item.path ? null : item.path);
-      // setMenuOpen(false);
     } else {
-      // If no dropdown, navigate directly
       navigate(item.path);
       setActiveDropdown(null);
       setMenuOpen(false);
@@ -98,7 +95,7 @@ const Header = () => {
   const handleDropdownItemClick = (path) => {
     navigate(path);
     setMenuOpen(false);
-    setActiveDropdown(null); // Close dropdown after navigation
+    setActiveDropdown(null);
   };
   return (
     <div className="container mx-auto py-4">
@@ -145,7 +142,7 @@ const Header = () => {
               <Link
                 to={item.path}
                 className={`py-2 px-3 relative rounded-md transition font-quicksand text-lg duration-300 ${
-                  activeItem === item.path
+                  activeItem === item.path || item.path.includes(activeItem)
                     ? "text-white bg-blue-700"
                     : " group-hover:text-white group-hover:bg-blue-700"
                 }`}

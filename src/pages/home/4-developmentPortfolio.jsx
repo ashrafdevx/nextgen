@@ -104,7 +104,7 @@ const DevelopmentPortfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full mb-2   h-40 sm:h-80 object-fill sm:object-cover"
+                  className="w-full mb-2 h-40 sm:h-80 object-fill sm:object-fill"
                 />{" "}
                 <div className=" px-6 py-4">
                   <h3 className="text-xl sm:text-md overflow-hidden whitespace-nowrap text-ellipsis font-bold mb-2 ">

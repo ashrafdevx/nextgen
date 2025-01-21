@@ -49,7 +49,7 @@ const PropertyListing = () => {
   const selectedProject = developmentPortfolioData?.find(
     (project) => project.id === parseInt(id)
   );
-  console.log("selectedProject", selectedProject);
+  console.log("selectedProject");
   if (!selectedProject?.images) {
     return <Navigate to="/" />; // Redirect to home page (or wherever appropriate)
   }
@@ -72,7 +72,7 @@ const PropertyListing = () => {
             </div>
             <Slider {...settings} className="property-slider">
               {selectedProject?.images.map((img, index) => (
-                <div key={index} className="relative h-64 md:h-[400px]">
+                <div key={index} className="relative h-64 md:h-[500px]">
                   <img
                     src={img}
                     alt={`Property view ${index + 1}`}
@@ -148,6 +148,7 @@ const PropertyListing = () => {
                   {" "}
                   {selectedProject?.Status}
                 </span>
+                <br />
               </div>
             </div>
 
@@ -159,6 +160,12 @@ const PropertyListing = () => {
               <li className="md:hidden">
                 Garage(s): {selectedProject?.Garage}
               </li>
+
+              {selectedProject?.CompletionDate && (
+                <li className="text-gray-800 font-rubik">
+                  Completion Date: {selectedProject?.CompletionDate}
+                </li>
+              )}
               <li className="text-gray-800 font-rubik">
                 Lot Area: {selectedProject?.LotArea}
               </li>
@@ -210,14 +217,18 @@ const PropertyListing = () => {
         </div>
         <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
           {/* Video content */}
-          <div className="video-container">
+          <div className="video-container h-96">
             <video
-              className="w-full h-auto"
+              className="w-full object-cover h-full"
               autoPlay
               muted
               loop
               playsInline
-              src="https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
+              src={
+                selectedProject?.vedio ||
+                "https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
+              }
+              // src="https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
               alt="Under Construction Video"
             />
           </div>

@@ -92,6 +92,7 @@ function App() {
         </Route>
         <Route path="/portfolio" element={<Portfolio />}>
           <Route
+            index
             path="development-portfolio"
             element={<PortfolioDevelopmentMain />}
           />
