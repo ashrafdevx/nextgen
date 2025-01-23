@@ -19,13 +19,13 @@ const QualityAndExcellence = () => {
         <p className="md:hidden font-rubik py-1 rounded-full text-lg">
           {`${"Commitment"}`}
         </p>
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           Our commitment to excellence drives us to utilize only high-quality
           materials and skilled craftsmanship. We understand that your
           investment deserves the best, and we strive to ensure that every
           project meets the highest standards of durability and aesthetics.
         </p>
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           We prioritize clear communication and responsiveness throughout the
           construction process, providing personalized support to ensure a
           seamless experience and complete satisfaction for our clients. Our

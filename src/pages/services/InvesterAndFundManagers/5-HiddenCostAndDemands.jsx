@@ -21,7 +21,7 @@ const HiddenCostAndDemands = () => {
         <p className="md:hidden font-rubik py-1 rounded-full text-lg">
           {`${"Budget-Friendly Flat-Fee Development"}`}
         </p>
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           Our flat-fee development service is designed with your budget in mind,
           providing a transparent and straight for ward approach to project
           oversight. You can expect comprehensive development at a fixed cost,

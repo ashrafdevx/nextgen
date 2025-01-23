@@ -19,7 +19,7 @@ const YourDreamSpace = () => {
         <p className="md:hidden font-rubik  py-1 rounded-full text-lg">
           {`${"Construction"}`}
         </p>
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           Once the design is finalized, we move in to the Construction Phase. We
           handle everything from securing necessary permits to managing
           day-to-day tasks with high-quality craftsmanship. Throughout the

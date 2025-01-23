@@ -4,7 +4,7 @@ const Heading = () => {
       <h1 className="flex font-medium font-rubik text-center text-md sm:text-3xl  md:text-5xl justify-center ">
         Home Build for Investors & Investment Managers
       </h1>
-      <p className="text-sm sm:text-lg sm:py-2 md:py-4 font-quicksand">
+      <p className="text-sm text-justify sm:text-lg sm:py-2 md:py-4 font-quicksand">
         At NextGen Properties, we build single-family homes at wholesale prices
         for real estate investors, enabling them to maximize profits upon
         resale. With extensive experience in the industry, we also develop two-

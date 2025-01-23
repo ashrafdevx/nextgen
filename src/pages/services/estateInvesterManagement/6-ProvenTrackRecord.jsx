@@ -13,7 +13,7 @@ const ProvenTrackRecord = () => {
             Proven Track Record
           </h1>
         </div>
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           NextGen Properties has a rich history of successfully completing
           high-quality real estate projects in the Dallas-Fort Worth area. Our
           portfolio, featuring custom homes and residential developments,

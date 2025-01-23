@@ -1,4 +1,3 @@
-import ConsultButton from "../../utils/consultButton";
 const OurFounder = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-0 sm:mb-16">
@@ -7,13 +6,13 @@ const OurFounder = () => {
         <img
           src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/672075c141d8474775b0b4e2_d414b4ca-06a1-48e2-b25b-ca64574809ae.jpg"
           alt="Real Estate"
-          className="w-full h-[300px] md:h-[500px] object-cover  shadow-lg"
+          className="w-full h-[300px]  md:h-[500px] object-scale-down bg-black max-w-full md:object-contain shadow-lg"
         />
       </div>
 
       {/* Content Section */}
       <div className="order-2 md:order-2 bg-gradient-to-r from-black via-gray-800 to-blue-900 text-white p-4 md:p-16 flex flex-col justify-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-rubik mb-4">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-rubik mb-4">
           Our Founder, Asim Ali
         </h2>
         <p className="text-base md:text-lg mb-6">

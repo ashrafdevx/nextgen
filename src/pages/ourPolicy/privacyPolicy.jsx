@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
             <h1 className="flex text-2xl font-medium md:justify-start justify-center sm:text-4xl pt-4  sm:pt-7">
               Policy and privacy
             </h1>
-            <div className="flex sm:text-lg flex-col md:pt-6 lg:pt-4">
+            <div className="flex text-justify sm:text-lg flex-col md:pt-6 lg:pt-4">
               <p className="py-3 md:py-2 px-6 sm:px-1 lg:py-6">
                 Text message communications. We use text messaging to
                 communicate with you about your service. Normal data and

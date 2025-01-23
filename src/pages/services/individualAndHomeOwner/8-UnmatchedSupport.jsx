@@ -1,7 +1,7 @@
 const UnmatchedSupport = () => {
   return (
     <div className="container grid grid-cols-1 md:grid-cols-2 mx-auto py-2 justify-center  gap-8 mb-4">
-      <div className="flex flex-col max-w-full max-h-96 ">
+      <div className="flex text-justify flex-col max-w-full max-h-96 ">
         <div className="aspect-w-4 aspect-h-3 w-full">
           <img
             src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f7c423d27dc48dc44eb0e_greyson-joralemon-A1g0oeX29ec-unsplash.webp"
@@ -34,7 +34,7 @@ const UnmatchedSupport = () => {
           <h3 className="text-lg sm:text-2xl font-semibold">
             Experience the NextGen Difference
           </h3>
-          <p>
+          <p className="text-justify">
             Our clients are at the heart of everything we do. Explore our
             process firsthand through the testimonials of satisfied customers
             who have experienced smooth, successful projects with us. Let’s

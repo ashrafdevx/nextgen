@@ -15,7 +15,7 @@ const ComprehensiveInvestmentManagement = () => {
             Comprehensive Investment Management
           </h1>
         </div>
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           In addition to custom home building, we provide a wide array of real
           estate investment management services. Specializing in residential
           real estate, we focus on group investments without relying on

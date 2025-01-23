@@ -16,7 +16,7 @@ const EfficientProjectManagement = () => {
           </h1>
         </div>
 
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify px-2 md:px-0 font-quicksand md:mb-6 mb-0">
           We are committed to efficient project management, ensuring that
           timelines are met without compromising quality. Our organized approach
           keeps your project on track from inception to completion, allowing you

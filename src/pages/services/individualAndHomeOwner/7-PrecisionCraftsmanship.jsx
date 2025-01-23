@@ -16,7 +16,7 @@ const PrecisionCraftsmanship = () => {
           </h1>
         </div>
 
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           At NextGen Properties, the journey ofconstructing your dream home
           begins with our skilled team taking charge.Precision is our
           cornerstone, ensuring every detail surpasses expectations.Building a

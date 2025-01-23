@@ -11,17 +11,16 @@ const EfficiantProjectManagement = () => {
       <div className="max-w-xl px-2 md:px-0 text-center md:text-left">
         <div>
           <h1 className="text-xl sm:text-3xl font-rubik md:text-5xl md:py-5 font-medium  leading-tight">
-            Photos and Construction Updates
+            Efficient Project Management
           </h1>
         </div>
 
-        <p className="text-gray-600 font-quicksand">
-          Once the design is finalized, we move in to the Construction Phase. We
-          handle everything from securing necessary permits to managing
-          day-to-day tasks with high-quality craftsmanship. Throughout the
-          process, you’ll receive regular updates to keep you informed. We
-          prioritize staying on schedule and minimizing disruptions, ensuring
-          your dream space is delivered on time and exceeds your expectations.
+        <p className="text-gray-600 break-all md:break-words  text-justify font-quicksand">
+          We are committed to efficient projectmanagement, ensuring that
+          timelines are met without compromising quality. Ourorganized approach
+          keeps your project on track from inception to completion,allowing you
+          to focus on your core business activities while we handle
+          thecomplexities of construction.
         </p>
       </div>
       {/* Right Section */}

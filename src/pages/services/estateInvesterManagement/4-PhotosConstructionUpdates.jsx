@@ -9,7 +9,7 @@ const PhotosConstructionUpdates = () => {
       </div>
 
       {/* Left Section */}
-      <div className="max-w-xl px-2 md:px-0 text-center md:text-left">
+      <div className="max-w-xl px-2 md:px-0 text-justify md:text-left">
         <p className="hidden md:flex font-rubik rounded-full text-xl">
           {`${"Track Your Investment's Progress"}`}
         </p>

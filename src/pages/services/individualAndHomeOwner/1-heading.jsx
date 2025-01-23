@@ -4,7 +4,7 @@ const Heading = () => {
       <h1 className="flex font-medium font-rubik text-center text-md sm:text-3xl  md:text-5xl justify-center ">
         Custom Home Build For Individuals
       </h1>
-      <p className="text-sm sm:text-lg sm:py-2 md:py-4 font-quicksand">
+      <p className="text-justify md:text-center break-all md:break-words text-sm sm:text-lg sm:py-2 md:py-4 font-quicksand">
         NextGen Properties delivers personalizedcustom homebuilding services,
         creating dream residences tailored to individualpreferences and
         lifestyles.

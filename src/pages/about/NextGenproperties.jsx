@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import ConsultButton from "../../utils/consultButton";
 import ImageWithOverlay from "../../utils/ImagePreview";
 
 const NextGenproperties = () => {
@@ -11,7 +10,7 @@ const NextGenproperties = () => {
           <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f6010e5d3bb46a4776ca1_DSC00001.webp" />
         </div>
         {/* Left Section */}
-        <div className="max-w-xl text-center md:text-left">
+        <div className="max-w-xl md:text-left text-justify">
           <div>
             <h1 className="text-2xl w-full font-rubikSans md:text-5xl font-medium leading-tight ">
               NextGen Properties LLC
@@ -53,11 +52,11 @@ const NextGenproperties = () => {
           }}
         ></div>
         {/* Left Section */}
-        <div className="flex-1 bg-gradient-to-r from-black via-gray-800 to-blue-900 text-white flex flex-col justify-center items-start px-8 md:px-16">
-          <h2 className="text-3xl md:text-6xl font-medium mb-4">
+        <div className="flex-1 bg-gradient-to-r from-black via-gray-800 to-blue-900 text-white flex flex-col justify-center items-start px-4 md:px-16">
+          <h2 className="text-2xl md:text-6xl font-medium mb-2">
             What Sets Us Apart
           </h2>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             {` NextGen Properties is more than just a real estate company; we are a
             team passionate about helping you build a better future. Whether
             you’re looking for your dream home or a strategic investment
@@ -76,13 +75,13 @@ const NextGenproperties = () => {
 
       {/* At NextGen Properties */}
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8 md:px-16 bg-white  md:py-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4 md:px-16 bg-white  md:py-8">
         <div className="mt-8 md:hidden flex md:mt-0 max-w-2xl">
           <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f609f5a37f1c92da2c818_tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg" />
         </div>
-        <div className="max-w-xl text-center md:text-left">
+        <div className="max-w-xl text-justify md:text-left">
           <div>
-            <h1 className="text-2xl w-full md:text-5xl font-medium leading-tight ">
+            <h1 className="text-2xl w-full mb-2 md:mb-0 md:text-5xl font-medium leading-tight ">
               At NextGen Properties
             </h1>
           </div>

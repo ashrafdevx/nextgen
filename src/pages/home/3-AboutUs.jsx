@@ -6,7 +6,7 @@ const AboutUs = () => {
     <>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 sm:gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
         {/* Left Section */}
-        <div className="max-w-xl text-center md:text-left">
+        <div className="max-w-xl text-left">
           <button
             className="border font-quicksand transition duration-300 border-black hover:border-black px-8 py-2 rounded-full text-md mb-5 hover:bg-black hover:text-white ease-in-out delay-75"
             onClick={() => navigate("/about")}

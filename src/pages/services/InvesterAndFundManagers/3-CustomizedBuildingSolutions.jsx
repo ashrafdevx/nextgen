@@ -16,7 +16,7 @@ const CustomizedBuildingSolutions = () => {
           </h1>
         </div>
 
-        <p className="text-gray-600 font-quicksand md:mb-6 mb-0">
+        <p className="text-gray-600 text-justify font-quicksand md:mb-6 mb-0">
           Understanding that every client has uniqueneeds, we offer customized
           building solutions specifically designed to alignwith your goals and
           requirements. Our personalized approach guarantees atailored

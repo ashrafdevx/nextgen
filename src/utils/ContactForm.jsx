@@ -20,7 +20,7 @@ export default function ContactForm() {
             Ready to Build or Invest?
           </h1>
         </div>
-        <div className="flex items-start md:py-6">
+        <div className="flex items-start text-justify md:py-6">
           <p className="text-center mb-4 md:mb-8 text-gray-600">
             Start building your dream home or secure your financial future
             today. Contact us to bring your vision to life!
@@ -97,7 +97,7 @@ export default function ContactForm() {
               {...register("smsConsent")}
               className="checkbox mt-1"
             />
-            <label className="text-sm text-gray-600">
+            <label className="text-sm text-justify text-gray-600">
               By checking this box, I agree to receive SMS updates, promotions,
               and offers from Nextgenproperties at the phone number provided.
               Msg & data rates may apply. Msg frequency varies. Reply STOP to
