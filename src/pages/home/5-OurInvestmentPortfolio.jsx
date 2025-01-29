@@ -96,8 +96,10 @@ const OurInvestmentPortfolio = () => {
                   className="w-full mb-2   h-40 sm:h-80 object-fill sm:object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-gray-600 line-clamp-3 mb-4">
+                  <h3 className="text-xl font-bold mb-2  line-clamp-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 md:h-20 line-clamp-4 mb-4">
                     {project.shortDescription}
                   </p>
 

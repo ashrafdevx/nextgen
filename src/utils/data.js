@@ -2,7 +2,8 @@ export const investmentPortfolioData = [
   {
     id: 1,
     title: "5808 Black Pine Circle, Granbury, TX 76048",
-    shortDescription: "Single-story family home with brick front elevation.",
+    shortDescription:
+      "Single-story family home with brick front elevation.y home with brick front elevation.",
     propertyType: "Single Family Home",
     specs:
       "0.09-acre lot | 1,627 sq ft living area | Single car garage | Single Story with Brick Front Elevation and Hardy Plank Sidings",
@@ -36,7 +37,8 @@ export const investmentPortfolioData = [
   {
     id: 2,
     title: "5634 Barkridge Dr, Granbury, TX 76048",
-    shortDescription: "Two-story family home with brick-stone front elevation.",
+    shortDescription:
+      "Two-story family home with brick-stone front elevation.y home with brick front elevation.",
     propertyType: "Single Family Home",
     specs:
       "0.09-acre lot | 2,228 sq ft living area | 4 beds & 3 baths | Two car garage | Two Story with Brick-Stone Front Elevation & Hardy Plank Sidings",
@@ -69,7 +71,8 @@ export const investmentPortfolioData = [
   {
     id: 3,
     title: "5702 Barkridge Dr, Granbury, TX 76048",
-    shortDescription: "Two-story family home with brick-stone front elevation.",
+    shortDescription:
+      "Two-story family home with brick-stone y home with brick front elevation. front elevation.",
     propertyType: "Single Family Home",
     specs:
       "0.09-acre lot | 2,228 sq ft living area | 4 beds & 3 baths | Two car garage | Two Story with Brick-Stone Front Elevation & Hardy Plank Sidings",
@@ -103,7 +106,7 @@ export const investmentPortfolioData = [
     id: 4,
     title: "5426 Van Horn Dr, Granbury, TX 76048",
     shortDescription:
-      "Two-story home with wood & sidings in the front elevation.",
+      "Two-story home with wood & sidings in the front y home with brick front elevation. elevation.",
     propertyType: "Single Family Home",
     specs:
       "0.09-acre lot | 2,228 sq ft living area | 4 beds & 3 baths | Two car garage | Two Story with Wood & Sidings in the Front Elevation & Hardy Plank elsewhere",
@@ -136,7 +139,8 @@ export const investmentPortfolioData = [
   {
     id: 5,
     title: "2300 Candlestick Dr, Granbury, TX 76049",
-    shortDescription: "Large two-story home on a 0.7-acre lot.",
+    shortDescription:
+      "Large two-story home on a 0.7-acre lot.y home with brick front elevation.",
     propertyType: "Single Family Home",
     specs:
       "0.7-acre lot | 3,200 sq ft of living area | 4,501 sq ft of covered area | 4 beds & 3 baths | Two car garage | Two Story with Brick-Stone Front Elevation & Hardy Plank elsewhere",
