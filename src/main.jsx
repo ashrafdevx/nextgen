@@ -7,11 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { BrowserRouter } from "react-router-dom";
 import { Suspense } from "react";
+import { Spinner } from "./utils/spinner.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <App />
       </Suspense>
     </BrowserRouter>
