@@ -1,6 +1,16 @@
 import { useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { Phone, Home, Bath, ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  Home,
+  Bath,
+  ArrowLeft,
+  ArrowRight,
+  X,
+  ChevronLeft,
+  ChevronRight,
+  Fullscreen,
+} from "lucide-react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,21 +47,37 @@ const PropertyListing = () => {
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setCurrentSlide(next),
   };
+  const nextImage = () => {
+    setCurrentSlide((prev) =>
+      prev === selectedProject?.images.length - 1 ? 0 : prev + 1
+    );
+  };
 
-  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const prevImage = () => {
+    setCurrentSlide((prev) =>
+      prev === 0 ? selectedProject?.images.length - 1 : prev - 1
+    );
+  };
 
-  // const handleMouseMove = (e) => {
-  //   const { clientX: x, clientY: y } = e;
-  //   setMousePosition({ x, y });
-  // };
   const navigate = useNavigate();
   // Find the project by ID or title
   const selectedProject = developmentPortfolioData?.find(
     (project) => project.id === parseInt(id)
   );
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = (index) => {
+    setCurrentSlide(index);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   console.log("selectedProject");
   if (!selectedProject?.images) {
-    return <Navigate to="/" />; // Redirect to home page (or wherever appropriate)
+    return <Navigate to="/" />;
   }
   return (
     <div className="container mx-auto p-4">
@@ -67,9 +93,12 @@ const PropertyListing = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
           {/* Carousels*/}
           <div className="relative">
+            {/* Image Counter */}
             <div className="absolute top-4 left-4 z-10 bg-black/50 text-white px-2 py-1 rounded">
               {currentSlide + 1} / {selectedProject?.images.length}
             </div>
+
+            {/* Main Image Slider */}
             <Slider {...settings} className="property-slider">
               {selectedProject?.images.map((img, index) => (
                 <div key={index} className="relative h-64 md:h-[500px]">
@@ -78,13 +107,20 @@ const PropertyListing = () => {
                     alt={`Property view ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
+                  {/* Zoom Icon */}
+                  <div
+                    className="absolute bottom-4 right-4 bg-black/50 text-white p-2 rounded-full cursor-pointer"
+                    onClick={() => openModal(index)}
+                  >
+                    <Fullscreen size={20} />
+                  </div>
                 </div>
               ))}
             </Slider>
 
-            {/* Thumbnail strip */}
+            {/* Thumbnail Strip */}
             <div className="flex gap-2 mt-2 px-2">
-              {selectedProject?.images.map((img, index) => (
+              {selectedProject?.images?.slice(0, 8).map((img, index) => (
                 <div
                   key={index}
                   className="w-24 h-16 cursor-pointer"
@@ -98,6 +134,42 @@ const PropertyListing = () => {
                 </div>
               ))}
             </div>
+
+            {/* Full-Screen Modal */}
+            {isOpen && (
+              <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+                {/* Close Button */}
+                <button
+                  className="absolute top-4 right-4 text-white text-2xl"
+                  onClick={closeModal}
+                >
+                  <X />
+                </button>
+
+                {/* Previous Button */}
+                <button
+                  className="absolute left-4 text-white text-3xl"
+                  onClick={prevImage}
+                >
+                  <ChevronLeft />
+                </button>
+
+                {/* Enlarged Image */}
+                <img
+                  src={selectedProject?.images[currentSlide]}
+                  alt={`Enlarged view ${currentSlide + 1}`}
+                  className="max-w-full max-h-[90vh] object-contain"
+                />
+
+                {/* Next Button */}
+                <button
+                  className="absolute right-4 text-white text-3xl"
+                  onClick={nextImage}
+                >
+                  <ChevronRight />
+                </button>
+              </div>
+            )}
           </div>
           {/* Mobile Vedio */}
           <div className="grid md:hidden grid-cols-1 lg:grid-cols-2 gap-6 ">
@@ -228,7 +300,6 @@ const PropertyListing = () => {
                 selectedProject?.vedio ||
                 "https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
               }
-              // src="https://videos.pexels.com/video-files/27086044/12067677_640_360_60fps.mp4?autoplay"
               alt="Under Construction Video"
             />
           </div>

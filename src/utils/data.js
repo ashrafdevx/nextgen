@@ -1,3 +1,46 @@
+import img1 from "../assets/black-pine/1-5808-Black-Pine-Cir-08202024_081033.jpg";
+import img2 from "../assets/black-pine/2-5808-Black-Pine-Cir-08202024_081119.jpg";
+import img3 from "../assets/black-pine/3-5808-Black-Pine-Cir-08202024_080933.jpg";
+import img4 from "../assets/black-pine/4-5808-Black-Pine-Cir-08202024_080913.jpg";
+import img5 from "../assets/black-pine/5-5808-Black-Pine-Cir-08202024_080954.jpg";
+import img6 from "../assets/black-pine/6-5808-Black-Pine-Cir-08202024_081016.jpg";
+import img7 from "../assets/black-pine/7-5808-Black-Pine-Cir-08202024_080854.jpg";
+import img8 from "../assets/black-pine/8-5808-Black-Pine-Cir-08202024_080809.jpg";
+import img9 from "../assets/black-pine/9-5808-Black-Pine-Cir-08202024_081643.jpg";
+import img10 from "../assets/black-pine/10-5808-Black-Pine-Cir-08202024_081658.jpg";
+import img12 from "../assets/black-pine/12-5808-Black-Pine-Cir-08202024_083036.jpg";
+import img13 from "../assets/black-pine/13-5808-Black-Pine-Cir-08202024_083003.jpg";
+import img14 from "../assets/black-pine/14-5808-Black-Pine-Cir-08202024_075909.jpg";
+import img15 from "../assets/black-pine/15-5808-Black-Pine-Cir-08202024_082935.jpg";
+import img16 from "../assets/black-pine/16-5808-Black-Pine-Cir-08202024_075923.jpg";
+import img17 from "../assets/black-pine/17-5808-Black-Pine-Cir-08202024_075940.jpg";
+import img18 from "../assets/black-pine/18-5808-Black-Pine-Cir-08202024_075959.jpg";
+import img19 from "../assets/black-pine/19-5808-Black-Pine-Cir-08202024_082835.jpg";
+import img20 from "../assets/black-pine/20-5808-Black-Pine-Cir-08202024_075634.jpg";
+import img21 from "../assets/black-pine/21-5808-Black-Pine-Cir-08202024_075652.jpg";
+import img22 from "../assets/black-pine/22-5808-Black-Pine-Cir-08202024_075702.jpg";
+import img23 from "../assets/black-pine/23-5808-Black-Pine-Cir-08202024_080047.jpg";
+import img24 from "../assets/black-pine/24-5808-Black-Pine-Cir-08202024_080107.jpg";
+import img25 from "../assets/black-pine/25-5808-Black-Pine-Cir-08202024_081738.jpg";
+import img26 from "../assets/black-pine/26-5808-Black-Pine-Cir-08202024_080144.jpg";
+import img27 from "../assets/black-pine/27-5808-Black-Pine-Cir-08202024_080234.jpg";
+import img28 from "../assets/black-pine/28-5808-Black-Pine-Cir-08202024_080543.jpg";
+import img29 from "../assets/black-pine/29-5808-Black-Pine-Cir-08202024_082524.jpg";
+import img30 from "../assets/black-pine/30-5808-Black-Pine-Cir-08202024_082551.jpg";
+import img31 from "../assets/black-pine/31-5808-Black-Pine-Cir-08202024_081545.jpg";
+import img32 from "../assets/black-pine/32-5808-Black-Pine-Cir-08202024_081603.jpg";
+import img33 from "../assets/black-pine/33-5808-Black-Pine-Cir-08202024_075535.jpg";
+import img34 from "../assets/black-pine/34-5808-Black-Pine-Cir-08202024_075550.jpg";
+import img35 from "../assets/black-pine/35-5808-Black-Pine-Cir-08202024_075610.jpg";
+import img36 from "../assets/black-pine/36-5808-Black-Pine-Cir-08202024_075737.jpg";
+import img37 from "../assets/black-pine/37-5808-Black-Pine-Cir-08202024_075752.jpg";
+import img38 from "../assets/black-pine/38-5808-Black-Pine-Cir-08202024_075806.jpg";
+import img39 from "../assets/black-pine/39-5808-Black-Pine-Cir-08202024_080255.jpg";
+import img40 from "../assets/black-pine/40-5808-Black-Pine-Cir-08202024_082348.jpg";
+import img41 from "../assets/black-pine/41-5808-Black-Pine-Cir-08202024_080749.jpg";
+import img42 from "../assets/black-pine/42-5808-Black-Pine-Cir-08202024_080649.jpg";
+import img43 from "../assets/black-pine/42-5808-Black-Pine-Cir-08202024_080649.jpg";
+
 export const investmentPortfolioData = [
   {
     id: 1,
@@ -23,14 +66,51 @@ export const investmentPortfolioData = [
     expectedSellingPrice: null,
     expectedInvestorProfit: null,
     status: "Sold",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL
+    image: img7,
 
     images: [
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef21f3567e28046b48_6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
-
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef065703b55ba57ca0_6710f5ad53dd2e5bb2bf8a7e_43430264c8373db9ea00f9ac0fbd954e-p_e.png", // Replace with your image URL
+      img1,
+      img2,
+      img3,
+      img4,
+      img5,
+      img6,
+      img7,
+      img8,
+      img9,
+      img10,
+      img12,
+      img13,
+      img14,
+      img15,
+      img16,
+      img17,
+      img18,
+      img19,
+      img20,
+      img21,
+      img22,
+      img23,
+      img24,
+      img25,
+      img26,
+      img27,
+      img28,
+      img29,
+      img30,
+      img31,
+      img32,
+      img33,
+      img34,
+      img35,
+      img36,
+      img37,
+      img38,
+      img39,
+      img40,
+      img41,
+      img42,
+      img43,
     ],
     video: "https://sample-videos.com/home-video.mp4",
   },
@@ -305,7 +385,7 @@ export const investmentPortfolioData = [
 export const developmentPortfolioData = [
   {
     id: 1,
-    title: "5808 Black Pine Circle",
+    title: "Black Pine Circle",
     SellingPrice: "$300k",
     Status: "Sold",
     CompletionDate: "",
@@ -325,15 +405,51 @@ export const developmentPortfolioData = [
     category: "Sold",
     vedio:
       "https://res.cloudinary.com/dpbpuhsx9/video/upload/v1737454658/5808_Black_Pine_Cir_-_Video_hlna1l.mp4",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
+    image: img7,
+
     images: [
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/67588ae972784d8cae5ceafa_WhatsApp%20Image%202024-12-09%20at%203.08.10%20AM.jpeg",
-      "https://res.cloudinary.com/dpbpuhsx9/image/upload/v1737454653/5808-Black-Pine-Circle-1-Edit_prylzn.jpg",
-      "https://res.cloudinary.com/dpbpuhsx9/image/upload/v1737454654/5808-Black-Pine-Circle-10_wuqjph.jpg",
-      "https://res.cloudinary.com/dpbpuhsx9/image/upload/v1737454654/5808-Black-Pine-Circle-5_1_saw4ou.jpg",
-      "https://res.cloudinary.com/dpbpuhsx9/image/upload/v1737454654/5808-Black-Pine-Circle-6_2_dajfil.jpg",
-      "https://res.cloudinary.com/dpbpuhsx9/image/upload/v1737454653/5808-Black-Pine-Circle_cbkbjt.jpg",
+      img1,
+      img2,
+      img3,
+      img4,
+      img5,
+      img6,
+      img7,
+      img8,
+      img9,
+      img10,
+      img12,
+      img13,
+      img14,
+      img15,
+      img16,
+      img17,
+      img18,
+      img19,
+      img20,
+      img21,
+      img22,
+      img23,
+      img24,
+      img25,
+      img26,
+      img27,
+      img28,
+      img29,
+      img30,
+      img31,
+      img32,
+      img33,
+      img34,
+      img35,
+      img36,
+      img37,
+      img38,
+      img39,
+      img40,
+      img41,
+      img42,
+      img43,
     ],
   },
   {
@@ -371,7 +487,7 @@ export const developmentPortfolioData = [
   {
     id: 3,
     // title: "Barkridge Dr (5702), Granbury, TX 76048",
-    title: "Barkridge Dr (5702)",
+    title: "Barkridge Dr",
     SellingPrice: "$400k-$425k",
     Status: "Under Construction",
     CompletionDate: "",
