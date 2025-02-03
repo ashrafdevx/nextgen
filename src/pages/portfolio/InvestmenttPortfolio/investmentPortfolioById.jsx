@@ -102,7 +102,7 @@ const InvestmentPortfolioById = () => {
 
             {/* Thumbnail strip */}
             <div className="flex gap-2 mt-2 px-2">
-              {selectedProject?.images.map((img, index) => (
+              {selectedProject?.images?.slice(0, 8)?.map((img, index) => (
                 <div
                   key={index}
                   className="w-24 h-16 cursor-pointer"
