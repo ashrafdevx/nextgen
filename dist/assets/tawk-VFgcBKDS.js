@@ -1,0 +1,1 @@
+import{r}from"./index-BGT-QwQW.js";const a=()=>(r.useEffect(()=>{(function(){var e=document.createElement("script"),t=document.getElementsByTagName("script")[0];e.async=!0,e.src="https://embed.tawk.to/677eb524af5bfec1dbe88e1e/1ih3f76lf",e.charset="UTF-8",e.setAttribute("crossorigin","*"),t.parentNode.insertBefore(e,t)})()},[]),null);export{a as default};
