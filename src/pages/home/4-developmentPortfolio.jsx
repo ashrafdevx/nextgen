@@ -3,38 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import "../../assets/slider.css";
 import { developmentPortfolioData } from "../../utils/data";
-// import { ChartArea, CircleDollarSign, DollarSign, House } from "lucide-react";
 
-// const CustomPrevArrow = ({ className, style, onClick }) => (
-//   <div
-//     className={`${className}`}
-//     style={{
-//       ...style,
-//       display: "block",
-//       left: "-10px",
-//       zIndex: 10,
-//       fontSize: "0px", // Increase the icon size
-//       color: "#000", // Set icon color
-//     }}
-//     onClick={onClick}
-//   ></div>
-// );
-
-// const CustomNextArrow = ({ className, style, onClick }) => (
-//   <div
-//     className={`${className}`}
-//     style={{
-//       ...style,
-//       display: "block",
-//       right: "-40px",
-//       zIndex: 10,
-//       color: "#000", // Set icon color
-//     }}
-//     onClick={onClick}
-//   ></div>
-// );
 const DevelopmentPortfolio = () => {
   const [activeFilter] = useState("All");
   const { pathname } = useLocation();

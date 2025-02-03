@@ -116,7 +116,8 @@ export const investmentPortfolioData = [
   },
   {
     id: 2,
-    title: "5634 Barkridge Dr, Granbury, TX 76048",
+    // title: "5634 Barkridge Dr, Granbury, TX 76048",
+    title: "Barkridge Dr, Granbury",
     shortDescription:
       "Two-story family home with brick-stone front elevation.y home with brick front elevation.",
     propertyType: "Single Family Home",
@@ -150,7 +151,8 @@ export const investmentPortfolioData = [
   },
   {
     id: 3,
-    title: "5702 Barkridge Dr, Granbury, TX 76048",
+    title: "Barkridge Dr, Granbury",
+    // title: "5702 Barkridge Dr, Granbury, TX 76048",
     shortDescription:
       "Two-story family home with brick-stone y home with brick front elevation. front elevation.",
     propertyType: "Single Family Home",
@@ -184,7 +186,8 @@ export const investmentPortfolioData = [
   },
   {
     id: 4,
-    title: "5426 Van Horn Dr, Granbury, TX 76048",
+    // title: "5426 Van Horn Dr, Granbury, TX 76048",
+    title: "Van Horn Dr, Granbury",
     shortDescription:
       "Two-story home with wood & sidings in the front y home with brick front elevation. elevation.",
     propertyType: "Single Family Home",
@@ -218,7 +221,8 @@ export const investmentPortfolioData = [
   },
   {
     id: 5,
-    title: "2300 Candlestick Dr, Granbury, TX 76049",
+    // title: "2300 Candlestick Dr, Granbury, TX 76049",
+    title: "Candlestick Dr, Granbury",
     shortDescription:
       "Large two-story home on a 0.7-acre lot.y home with brick front elevation.",
     propertyType: "Single Family Home",
@@ -252,7 +256,8 @@ export const investmentPortfolioData = [
   },
   {
     id: 6,
-    title: "2416 Candlestick Dr, Granbury, TX 76049",
+    // title: "2416 Candlestick Dr, Granbury, TX 76049",
+    title: "Candlestick Dr, Granbury",
     shortDescription: "Two-story home on a 0.67-acre lot.",
     propertyType: "Single Family Home",
     specs:
@@ -285,13 +290,12 @@ export const investmentPortfolioData = [
   },
   {
     id: 7,
-    title:
-      "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills, TX 75135",
+    title: "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills",
+    // "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills, TX 75135",
     shortDescription: "Undeveloped 16.25-acre parcel for future development.",
     propertyType: null,
     specs: "16.25-acre parcel so around twelve 1 acre lots can be developed",
     investors: 3,
-    perInvestorShare: null,
     category: "Closed",
     propertyStatus: null,
     sellingPrice: null,
@@ -455,7 +459,7 @@ export const developmentPortfolioData = [
   {
     id: 2,
     // title: "5634 Barkridge Dr , Granbury, TX 76048",
-    title: "Barkridge Dr (5634)",
+    title: "Barkridge Dr",
     SellingPrice: "$400k-$425k",
     Status: "January 2025",
     CompletionDate: "",
@@ -574,7 +578,8 @@ export const developmentPortfolioData = [
   },
   {
     id: 4,
-    title: "Van Horn Dr (5426)",
+    // title: "Van Horn Dr (5426)",
+    title: "Van Horn Dr",
     SellingPrice: "$400k-$425k",
     Status: "Under Construction",
     CompletionDate: "",
@@ -606,7 +611,8 @@ export const developmentPortfolioData = [
   },
   {
     id: 5,
-    title: "Northview Ct (5503)",
+    // title: "Northview Ct (5503)",
+    title: "Northview Ct",
     SellingPrice: "$390k-$410k",
     CompletionDate: "",
     Status: "Under Construction",
@@ -636,7 +642,8 @@ export const developmentPortfolioData = [
   },
   {
     id: 6,
-    title: "Northview Ct (5505)",
+    // title: "Northview Ct (5505)",
+    title: "Northview Ct",
     SellingPrice: "$400k-$430k",
     Status: "Under Construction",
     CompletionDate: "",
@@ -666,7 +673,8 @@ export const developmentPortfolioData = [
   },
   {
     id: 7,
-    title: "Candlestick Dr (2300)",
+    // title: "Candlestick Dr (2300)",
+    title: "Candlestick Dr",
     SellingPrice: "$725k",
     Status: "Under Construction",
 
@@ -697,7 +705,8 @@ export const developmentPortfolioData = [
   },
   {
     id: 8,
-    title: "Candlestick Dr (2416)",
+    // title: "Candlestick Dr (2416)",
+    title: "Candlestick Dr",
     SellingPrice: "$725k",
     Status: "Under Construction",
     buitIn: "April 2025",
