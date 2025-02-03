@@ -18,7 +18,6 @@ const LoginPage = () => {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log("Login data:", data);
       // Add your authentication logic here
       navigate("/");
     } catch (error) {

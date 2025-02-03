@@ -7,7 +7,6 @@ const Header = () => {
   const navigate = useNavigate();
   const [activeItem, setActiveItem] = useState(location.pathname);
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log("activeItem", activeItem);
   useEffect(() => {
     setActiveItem(location.pathname);
   }, [location.pathname]);

@@ -9,7 +9,6 @@ export default function ContactForm() {
 
   const onSubmit = (data) => {
     alert("OnSubmit Clicked!!!!");
-    console.log(data);
   };
 
   return (

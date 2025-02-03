@@ -66,7 +66,6 @@ const InvestmentPortfolioById = () => {
   const selectedProject = investmentPortfolioData?.find(
     (project) => project.id === parseInt(id)
   );
-  console.log("selectedProject", selectedProject);
   if (!selectedProject?.images) {
     return <Navigate to="/" />; // Redirect to home page (or wherever appropriate)
   }

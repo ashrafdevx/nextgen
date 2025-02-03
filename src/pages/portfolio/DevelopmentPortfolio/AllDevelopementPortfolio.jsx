@@ -5,7 +5,6 @@ import { developmentPortfolioData } from "../../../utils/data";
 const AllDevelopmentPortfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const { pathname } = useLocation();
-  console.log("pathname", pathname);
   const navigate = useNavigate();
   const filteredProjects =
     activeFilter === "All"

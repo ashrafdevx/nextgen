@@ -53,7 +53,6 @@ function App() {
         setShowScrollButton(false);
       }
     };
-    console.log("Route Called!!!!!!!!");
     window.addEventListener("scroll", handleScroll);
 
     return () => {
