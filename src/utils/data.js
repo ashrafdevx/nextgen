@@ -379,38 +379,38 @@ export const investmentPortfolioData = [
     // ],
     video: "https://sample-videos.com/home-video.mp4",
   },
-  {
-    id: 7,
-    title: "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills",
-    // "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills, TX 75135",
-    shortDescription: "Undeveloped 16.25-acre parcel for future development.",
-    propertyType: null,
-    specs: "16.25-acre parcel so around twelve 1 acre lots can be developed",
-    investors: 3,
-    category: "Closed",
-    propertyStatus: null,
-    sellingPrice: null,
-    Floor: "1",
-    fundRound: "Completed",
-    Garage: "1",
-    Bathroom: "3 beds",
-    Bedroom: "2 baths",
-    FrontElevation: "Brick – Back",
-    SideElevations: "Hardy Plank",
-    expectedSellingPrice: null,
-    expectedInvestorProfit: null,
-    status: "Planning",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef065703b55ba57ca0_6710f5ad53dd2e5bb2bf8a7e_43430264c8373db9ea00f9ac0fbd954e-p_e.png", // Replace with your image URL
+  // {
+  //   id: 7,
+  //   title: "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills",
+  //   // "Residential Undeveloped Parcel - 4682 Co Rd 2714, Caddo Mills, TX 75135",
+  //   shortDescription: "Undeveloped 16.25-acre parcel for future development.",
+  //   propertyType: null,
+  //   specs: "16.25-acre parcel so around twelve 1 acre lots can be developed",
+  //   investors: 3,
+  //   category: "Closed",
+  //   propertyStatus: null,
+  //   sellingPrice: null,
+  //   Floor: "1",
+  //   fundRound: "Completed",
+  //   Garage: "1",
+  //   Bathroom: "3 beds",
+  //   Bedroom: "2 baths",
+  //   FrontElevation: "Brick – Back",
+  //   SideElevations: "Hardy Plank",
+  //   expectedSellingPrice: null,
+  //   expectedInvestorProfit: null,
+  //   status: "Planning",
+  //   image:
+  //     "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef065703b55ba57ca0_6710f5ad53dd2e5bb2bf8a7e_43430264c8373db9ea00f9ac0fbd954e-p_e.png", // Replace with your image URL
 
-    images: [
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef21f3567e28046b48_6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+  //   images: [
+  //     "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL
+  //     "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef21f3567e28046b48_6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
 
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef065703b55ba57ca0_6710f5ad53dd2e5bb2bf8a7e_43430264c8373db9ea00f9ac0fbd954e-p_e.png", // Replace with your image URL
-    ],
-    video: null,
-  },
+  //     "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef065703b55ba57ca0_6710f5ad53dd2e5bb2bf8a7e_43430264c8373db9ea00f9ac0fbd954e-p_e.png", // Replace with your image URL
+  //   ],
+  //   video: null,
+  // },
   {
     id: 8,
     title: "Residential Developed Lot Portfolio - The Retreat at Cleburne, TX",
