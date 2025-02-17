@@ -235,7 +235,7 @@ const InvestmentPortfolioById = () => {
         <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
           {/* Video content */}
 
-          <video
+          {/* <video
             ref={videoRef}
             className="w-full h-auto"
             autoPlay={isIntersecting}
@@ -248,7 +248,7 @@ const InvestmentPortfolioById = () => {
                 : ""
             }
             alt="Under Construction Video"
-          />
+          /> */}
         </div>
       </div>
     </div>

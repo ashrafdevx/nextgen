@@ -7,7 +7,10 @@ const InvestmentResearchAnalysis = () => {
         <ImageWithOverlay img="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/671f871c3774ae2003dc7e7e_DJI_0500-HDR-Edit.webp" />
       </div>{" "}
       {/* Left Section */}
-      <div className="max-w-xl px-2 md:px-0  md:text-left">
+      <div className="max-w-xl px-2 md:px-0 md:text-left">
+        <h3 className="flex font-medium font-rubik text-center  sm:text-3xl py-2 md:py-3  md:text-3xl justify-start ">
+          Regular Update reporting
+        </h3>
         <div>
           <div>
             <p className=" md:flex font-rubik rounded-full text-xl">

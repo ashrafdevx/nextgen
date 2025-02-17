@@ -289,7 +289,7 @@ const PropertyListing = () => {
         </div>
         <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
           {/* Video content */}
-          <div className="video-container h-96">
+          {/* <div className="video-container h-96">
             <video
               className="w-full object-cover h-full"
               autoPlay
@@ -302,7 +302,7 @@ const PropertyListing = () => {
               }
               alt="Under Construction Video"
             />
-          </div>
+          </div> */}
 
           {/* 3D Image content */}
         </div>

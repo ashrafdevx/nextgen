@@ -6,19 +6,16 @@ const AboutUs = () => {
     <>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 sm:gap-8 items-center px-8 md:px-16 bg-white py-10 md:py-8">
         {/* Left Section */}
-        <div className="max-w-xl text-left">
+        <div className="max-w-xl  h-full flex flex-col justify-evenly text-left">
           <button
-            className="border font-quicksand transition duration-300 border-black hover:border-black px-8 py-2 rounded-full text-md mb-5 hover:bg-black hover:text-white ease-in-out delay-75"
+            className="border font-quicksand transition duration-300 w-40 border-black hover:border-black px-8 py-2 rounded-full text-md mb-5 hover:bg-black hover:text-white ease-in-out delay-75"
             onClick={() => navigate("/about")}
           >
             About Us
           </button>
-          <div>
-            <h1 className="sm:text-3xl font-rubik mb-2 sm:mb-0 md:text-4xl leading-tight ">
-              Your Trusted Partner in Real Estate Development and{" "}
-            </h1>
-            <h1 className="text-2xl sm:text-6xl font-rubik  py-2 sm:py-5 pt-0 font-bold leading-tight">
-              Investments
+          <div className="sm:py-2">
+            <h1 className="sm:text-3xl  font-rubik mb-2 sm:mb-4 md:text-4xl leading-tight ">
+              Your Trusted Partner in Real Estate Development and Investments
             </h1>
           </div>
           <p className="text-gray-600 font-quicksand mb-6">
@@ -26,7 +23,7 @@ const AboutUs = () => {
             home management. Our dual commitment to craftsmanship and financial
             growth ensures your home and financial future.
           </p>
-          <div className="flex sm:flex-col md:flex-row sm:gap-4 justify-evenly">
+          <div className="flex sm:flex-col md:flex-row sm:gap-4 justify-evenly md:justify-start ">
             <button className="bg-blue-600 font-quicksand text-white transition duration-300 px-4 sm:px-9 sm:py-2 rounded-full shadow-md hover:bg-blue-700">
               Consult Now
             </button>

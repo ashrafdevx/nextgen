@@ -296,7 +296,7 @@ export const investmentPortfolioData = [
     expectedInvestorProfit: { project: "10%", annualized: "15%" },
     status: "In Progress",
     image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef21f3567e28046b48_6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
 
     images: [Van1, Van2, Van3, Van4, Van5, Van6, Van8, Van9, Van10],
     video: "https://sample-videos.com/home-video.mp4",
@@ -413,7 +413,8 @@ export const investmentPortfolioData = [
   // },
   {
     id: 8,
-    title: "Residential Developed Lot Portfolio - The Retreat at Cleburne, TX",
+    // title: "Residential Developed Lot Portfolio - The Retreat at Cleburne, TX",
+    title: "The Retreat at Cleburne, TX",
     shortDescription: "Lots available in a luxury resort community.",
     propertyType: null,
     specs: "0.25 acre to 0.65-acre lots",
@@ -445,7 +446,7 @@ export const investmentPortfolioData = [
   },
   {
     id: 9,
-    title: "Residential Developed Lot Portfolio - White Bluff at Whitney, TX",
+    title: "White Bluff at Whitney, TX",
     shortDescription: "Lots available in a resort community with amenities.",
     propertyType: null,
     specs: "0.1 acre to 1 acre lots",
@@ -550,10 +551,10 @@ export const developmentPortfolioData = [
   {
     id: 2,
     // title: "5634 Barkridge Dr , Granbury, TX 76048",
-    title: "Barkridge Dr, Granbury Model - A",
+    title: "Barkridge Dr, Granbury Plan - A",
     SellingPrice: "$400k-$425k",
-    Status: "January 2025",
-    CompletionDate: "",
+    Status: "Completed",
+    CompletionDate: "January 2025",
     buitIn: "2024",
     LotArea: "0.09 acre",
     LivingArea: "2,228 sq ft",
@@ -566,7 +567,7 @@ export const developmentPortfolioData = [
     SideElevations: "Hardy Plank",
     Community: "Canyon Creek, Granbury, TX",
     description:
-      "Expected to be completed in early January 2025, offering a modern design with ample living space.",
+      "Expected to be completed in early January 2025, offering a modern design with ample living space. Expected to be completed in early January 2025, offering a modern design with ample living space.",
     category: "Completed",
     image:
       "https://photos.zillowstatic.com/fp/5fc9e808fb72713b6808824707f27b4b-uncropped_scaled_within_1536_1152.webp",
@@ -609,10 +610,10 @@ export const developmentPortfolioData = [
   {
     id: 3,
     // title: "Barkridge Dr (5702), Granbury, TX 76048",
-    title: "Barkridge Dr, Granbury Model - B",
+    title: "Barkridge Dr, Granbury Plan - B",
     SellingPrice: "$400k-$425k",
-    Status: "Under Construction",
-    CompletionDate: "",
+    Status: "Completed",
+    CompletionDate: "January 2025",
     buitIn: "January 2025",
     LotArea: "0.09 acre",
     LivingArea: "2,228 sq ft",
@@ -626,7 +627,7 @@ export const developmentPortfolioData = [
     Community: "Canyon Creek, Granbury, TX",
     description:
       "Expected to be completed in January 2025, this home features high-end finishes and spacious interiors.",
-    category: "Under Construction",
+    category: "Completed",
     // image: Barkrage5702,
     image:
       "https://photos.zillowstatic.com/fp/af17f8d63ce729f4e6f0db5c86fc9778-uncropped_scaled_within_1536_1152.webp",
@@ -670,9 +671,11 @@ export const developmentPortfolioData = [
   {
     id: 4,
     // title: "Van Horn Dr (5426)",
-    title: "Van Horn Plan - A",
+    // title: "Van Horn Plan - A",
+    title: "Van Horn Plan",
     SellingPrice: "$400k-$425k",
-    Status: "Under Construction",
+    Status: "Completed",
+    category: "Completed",
     CompletionDate: "",
     buitIn: "January 2025",
     LotArea: "0.09 acre",
@@ -687,10 +690,8 @@ export const developmentPortfolioData = [
     Community: "Canyon Creek, Granbury, TX",
     description:
       "Expected to be completed in January 2025, this home will offer luxurious finishes with a modern design.",
-    category: "Under Construction",
-
     image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef21f3567e28046b48_6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
 
     images: [Van1, Van2, Van3, Van4, Van5, Van6, Van8, Van9, Van10], // image:
     // "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL,

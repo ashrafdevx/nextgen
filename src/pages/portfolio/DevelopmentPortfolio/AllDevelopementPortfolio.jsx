@@ -63,7 +63,7 @@ const AllDevelopmentPortfolio = () => {
 
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-justify break-all mb-4">
+                <p className="text-gray-600 text-justify break-all mb-4 md:h-28">
                   {project.description}
                 </p>
                 <button
