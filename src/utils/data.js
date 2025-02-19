@@ -51,6 +51,9 @@ import Van6 from "../assets/van-hon/van-6.jpg";
 import Van8 from "../assets/van-hon/van-8.jpg";
 import Van9 from "../assets/van-hon/van-9.jpg";
 import Van10 from "../assets/van-hon/van-10.jpg";
+import Van11 from "../assets/van-hon/vanhan-5426-1.jpeg";
+import Van12 from "../assets/van-hon/vanhan-5426-2.jpeg";
+import Van13 from "../assets/van-hon/vanhan-5426-3.jpeg";
 
 export const investmentPortfolioData = [
   {
@@ -295,10 +298,23 @@ export const investmentPortfolioData = [
     expectedSellingPrice: "$400K",
     expectedInvestorProfit: { project: "10%", annualized: "15%" },
     status: "In Progress",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+    image: Van12,
+    // "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
 
-    images: [Van1, Van2, Van3, Van4, Van5, Van6, Van8, Van9, Van10],
+    images: [
+      Van11,
+      Van12,
+      Van13,
+      Van1,
+      Van2,
+      Van3,
+      Van4,
+      Van5,
+      Van6,
+      Van8,
+      Van9,
+      Van10,
+    ],
     video: "https://sample-videos.com/home-video.mp4",
   },
   {
@@ -690,10 +706,23 @@ export const developmentPortfolioData = [
     Community: "Canyon Creek, Granbury, TX",
     description:
       "Expected to be completed in January 2025, this home will offer luxurious finishes with a modern design.",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
+    image: Van12,
+    // "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
 
-    images: [Van1, Van2, Van3, Van4, Van5, Van6, Van8, Van9, Van10], // image:
+    images: [
+      Van11,
+      Van12,
+      Van13,
+      Van1,
+      Van2,
+      Van3,
+      Van4,
+      Van5,
+      Van6,
+      Van8,
+      Van9,
+      Van10,
+    ], // image:
     // "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL,
     // "https://images.pexels.com/photos/4692281/pexels-photo-4692281.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     // images: [

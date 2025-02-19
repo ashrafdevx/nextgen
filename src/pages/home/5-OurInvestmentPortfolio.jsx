@@ -46,7 +46,7 @@ const OurInvestmentPortfolio = () => {
           (project) => project.category === activeFilter
         );
   const settings = {
-    dots: true, // Default: Show dots on larger screens
+    dots: false, // Default: Show dots on larger screens
     infinite: true,
     speed: 900,
     slidesToShow: 3,
