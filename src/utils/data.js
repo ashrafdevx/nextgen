@@ -55,6 +55,13 @@ import Van11 from "../assets/van-hon/vanhan-5426-1.jpeg";
 import Van12 from "../assets/van-hon/vanhan-5426-2.jpeg";
 import Van13 from "../assets/van-hon/vanhan-5426-3.jpeg";
 
+// 2300 CandleStick
+import Candle1 from "../assets/2300/2300-andlestick-1.jpeg";
+import Candle2 from "../assets/2300/2300-andlestick-2.jpeg";
+
+//2416
+import Candle4 from "../assets/2416/2416-Candlestick-1.jpeg";
+import Candle5 from "../assets/2416/2416-Candlestick-2.jpeg";
 export const investmentPortfolioData = [
   {
     id: 1,
@@ -328,6 +335,7 @@ export const investmentPortfolioData = [
       "0.7-acre lot | 3,200 sq ft of living area | 4,501 sq ft of covered area | 4 beds & 3 baths | Two car garage | Two Story with Brick-Stone Front Elevation & Hardy Plank elsewhere",
     investors: 20,
     perInvestorShare: "$27,500",
+    totalRaised: "$550,000 ",
     category: "Completed",
     fundRound: "Completed",
     Floor: "1",
@@ -336,20 +344,14 @@ export const investmentPortfolioData = [
     Bedroom: "2 baths",
     FrontElevation: "Brick – Back",
     SideElevations: "Hardy Plank",
-    propertyStatus: "Expected Completion March 2025",
+    propertyStatus: "Expected completion in April 2025",
     sellingPrice: null,
     expectedSellingPrice: "$725K",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image:
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL
+    image: Candle1,
 
-    images: [
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef0de9fe5f6c30fb8b_6710f3638fb66abd51c8d6de_5db09f65d4feb64b2366d9f39954f16f-cc_ft_960%2520(2).png", // Replace with your image URL
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef21f3567e28046b48_6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
-
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/671110ef065703b55ba57ca0_6710f5ad53dd2e5bb2bf8a7e_43430264c8373db9ea00f9ac0fbd954e-p_e.png", // Replace with your image URL
-    ],
+    images: [Candle1, Candle2],
     video: "https://sample-videos.com/home-video.mp4",
   },
   {
@@ -369,7 +371,7 @@ export const investmentPortfolioData = [
     Garage: "1",
     Bathroom: "3 beds",
     Bedroom: "2 baths",
-    category: "Completed",
+    category: "Under Construction",
     propertyStatus: "Expected Completion March 2025",
     sellingPrice: null,
     expectedSellingPrice: "$725K",
@@ -797,35 +799,34 @@ export const developmentPortfolioData = [
   //   ],
   // },
   {
-    id: 7,
-    // title: "Candlestick Dr (2300)",
-    title: "Candlestick Plan - A",
-    SellingPrice: "$725k",
-    Status: "Under Construction",
-    buitIn: "",
-    CompletionDate: "March 2025",
-    LotArea: "0.7 acre",
-    LivingArea: "3,200 sq ft",
-    CoveredArea: "4,501 sq ft",
-    Bedroom: 4,
-    Bathroom: 3.5,
-    Garage: 3,
-    Floor: 1,
-    FrontElevation: "Brick & Stones",
-    SideElevations: "All Brick",
-    Community: "Pecan Plantation, Granbury, TX",
+    id: 5,
+    // title: "2300 Candlestick Dr, Granbury, TX 76049",
+    title: "Candlestick - Model A",
     description:
-      "This luxury home will be completed by March 2025, featuring ample living space and premium finishes.",
-    category: "Under Construction",
-    image:
-      "https://images.pexels.com/photos/27938318/pexels-photo-27938318/free-photo-of-new-home-construction-california.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    images: [
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-    ],
+      "Large two-story home on a 0.7-acre lot.y home with brick front elevation.",
+    propertyType: "Single Family Home",
+    specs:
+      "0.7-acre lot | 3,200 sq ft of living area | 4,501 sq ft of covered area | 4 beds & 3 baths | Two car garage | Two Story with Brick-Stone Front Elevation & Hardy Plank elsewhere",
+    investors: 20,
+    perInvestorShare: "$27,500",
+    totalRaised: "$550,000 ",
+    category: "Completed",
+    fundRound: "Completed",
+    Floor: "1",
+    Garage: "1",
+    Bathroom: "3 beds",
+    Bedroom: "2 baths",
+    FrontElevation: "Brick – Back",
+    SideElevations: "Hardy Plank",
+    propertyStatus: "Expected completion in April 2025",
+    sellingPrice: null,
+    expectedSellingPrice: "$725K",
+    expectedInvestorProfit: { project: "15%", annualized: "20%" },
+    status: "In Progress",
+    image: Candle1,
+
+    images: [Candle1, Candle2],
+    video: "https://sample-videos.com/home-video.mp4",
   },
   {
     id: 8,
@@ -848,14 +849,8 @@ export const developmentPortfolioData = [
     description:
       "Expected completion by March 2025, offering luxury living with spacious rooms and modern designs.",
     category: "Under Construction",
-    image:
-      "https://images.pexels.com/photos/12243107/pexels-photo-12243107.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    images: [
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp",
-      "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710fe877277163f12697c53_18d18e1084142ff99195fdf002913241-p_e.png",
-    ],
+    image: Candle4,
+    images: [Candle4, Candle5],
+    video: "",
   },
 ];

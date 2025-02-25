@@ -169,7 +169,9 @@ const InvestmentPortfolioById = () => {
             </div>
 
             <div className="flex flex-col mb-6">
-              {/* <p className="text-gray-600">Specs: {selectedProject?.specs}</p> */}
+              <li className="text-gray-800 font-rubik">
+                Specs: {selectedProject?.specs}
+              </li>
               <li className="md:hidden">{selectedProject?.Bedroom} Bed</li>
               <li className="md:hidden">{selectedProject?.Bathroom} Bath</li>
               <li className="md:hidden">
@@ -189,6 +191,9 @@ const InvestmentPortfolioById = () => {
               </li>
               <li className="text-gray-800 font-rubik">
                 Per Investors Share : {selectedProject?.perInvestorShare}
+              </li>{" "}
+              <li className="text-gray-800 font-rubik">
+                Total Raised : {selectedProject?.totalRaised}
               </li>
               <li className="text-gray-800 font-rubik">
                 Funding Round: : {selectedProject?.fundRound}
