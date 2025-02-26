@@ -28,7 +28,7 @@ const AllDevelopmentPortfolio = () => {
           )}
         </div>
         <h2 className="text-xl md:text-4xl px-2 md:px-0 font-bold md:mt-2 md:py-4">
-          Our Development Portfolio
+          Our Portfolio
         </h2>
 
         {/* Filters */}
