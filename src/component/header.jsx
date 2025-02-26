@@ -129,7 +129,7 @@ const Header = () => {
             <img
               src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c/6736c94fd7a302e4ac8ed8f3_NextGen%20Properties%20Logo.jpg"
               alt="NextGen Properties Logo"
-              className="h-14 w-24 object-cover"
+              className="h-14 w-24 object-contain"
             />
           </Link>
         </div>
