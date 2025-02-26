@@ -817,8 +817,12 @@ export const developmentPortfolioData = [
     expectedSellingPrice: "$660K",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image: Candle4,
-    images: [Candle4, Candle5],
+    image:
+      "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Sandl5678/55793141-220404.jpg",
+    images: [
+      "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Sandl5678/55793141-220404.jpg",
+      "https://dlqxt4mfnxo6k.cloudfront.net/sandlinhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80ZGFkM2FhYThjNmI2M2ZkNTA2YzM0ZjE0NGE3ZDI3Yi5qcGVn/exact/webp/475/267",
+    ],
     video: "",
   },
   {
@@ -847,8 +851,13 @@ export const developmentPortfolioData = [
     expectedSellingPrice: "$660K",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image: Candle4,
-    images: [Candle4, Candle5],
+    image:
+      "https://cdn.landsearch.com/listings/4wGvs/large/cleburne-tx-120350102.jpg",
+    images: [
+      "https://cdn.landsearch.com/listings/4wGvs/large/cleburne-tx-120350102.jpg",
+      "https://leaguere.com/wp-content/uploads/2018/07/Muirfield-Dr-Cleburne-TX-76033-large-008-15-The-Retreat-8-of-28-1500x1000-72dpi.jpg",
+      "https://cdn.landsearch.com/listings/4wGvs/large/cleburne-tx-120350102.jpg",
+    ],
     video: "",
   },
   {
@@ -869,8 +878,13 @@ export const developmentPortfolioData = [
     // Community: "Pecan Plantation, Granbury, TX",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image: Candle4,
-    images: [Candle4, Candle5],
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6sSupn10rLrw_2W556-FgxeridMzTGal4w&s",
+    images: [
+      "https://dyn1.heritagestatic.com/lf?set=path%5B2%2F1%2F9%2F1%2F1%2F21911648%5D&call=url%5Bfile%3Aproduct.chain%5D",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lg5E1n9CJukk5CWTG-wlRDT5QOBkiF57HQ&s",
+      "https://myavidgolfer.com/wp-content/uploads/2020/12/Bluff-5.jpg",
+    ],
     video: "",
   },
 ];
