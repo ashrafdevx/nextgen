@@ -32,17 +32,17 @@ const DevelopmentPortfolio = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true, // Keep dots visible on medium screens
-          arrows: true, // Ensure arrows are enabled for medium screens
+          dots: true,
+          arrows: true,
         },
       },
       {
-        breakpoint: 768, // Mobile screens
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
-          arrows: false, // Show arrows on mobile screens
+          arrows: false,
         },
       },
     ],
@@ -70,11 +70,11 @@ const DevelopmentPortfolio = () => {
         <Slider {...settings} className="">
           {filteredProjects.map((project) => (
             <div key={project.id} className="sm:p-4 ">
-              <div className="shadow-lg overflow-hidden bg-white">
+              <div className="shadow-lg overflow-hidden bg-white sm:p-1">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full mb-2 h-40 sm:h-80 object-fill sm:object-fill"
+                  className=" w-full sm:w-auto mb-2 h-40 sm:h-80 object-cover p-1 sm:object-cover"
                 />{" "}
                 <div className=" px-6 py-4">
                   <h3 className="text-xl sm:text-md overflow-hidden whitespace-nowrap text-ellipsis font-bold mb-2 ">

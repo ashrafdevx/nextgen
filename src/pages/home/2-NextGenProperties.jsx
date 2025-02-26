@@ -3,25 +3,24 @@ import { useState, useEffect } from "react";
 const NextGenProperties = () => {
   const data = [
     {
-      title: "Real Estate Development Portfolio",
+      title: "Our Portfolio",
       items: [
-        { value: "06", label: "Total Projects", numericValue: 6 },
-        { value: "$3.8M", label: "Market Value", numericValue: 3.8 },
-        { value: "03", label: "Completed", numericValue: 3 },
+        { value: "09", label: "Total Projects", numericValue: 9 },
+        { value: "$5M", label: "Market Value", numericValue: 5 },
+        { value: "04", label: "Completed", numericValue: 4 },
         { value: "03", label: "Under Construction", numericValue: 3 },
+        { value: "$3.0M", label: "Funding In Progress", numericValue: 3 },
+        { value: "55+", label: "Total Investors", numericValue: 55 },
       ],
     },
     {
-      title: "Real Estate Investment Portfolio",
+      // title: "Real Estate Investment Portfolio",
       items: [
-        { value: "07", label: "Total Projects", numericValue: 7 },
-        { value: "$3.20M", label: "Market Value", numericValue: 3.2 },
-        {
-          value: "07",
-          label: "Funding Secured - In Progress",
-          numericValue: 7,
-        },
-        { value: "50+", label: "Total Investors", numericValue: 50 },
+        // {
+        //   value: "07",
+        //   label: "Funding Secured - In Progress",
+        //   numericValue: 7,
+        // },
       ],
     },
   ];
@@ -79,10 +78,10 @@ const NextGenProperties = () => {
 
         {data.map((section, index) => (
           <div key={index} className="mb-6">
-            <h2 className="text-sm sm:text-2xl font-quicksand font-semibold text-gray-700 mb-6 text-center">
+            <h2 className="text-sm sm:text-3xl  font-quicksand font-semibold text-gray-700 mb-6 text-center">
               {section.title}
             </h2>
-            <div className="grid grid-cols-2 font-rubik sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 font-rubik sm:grid-cols-2 md:grid-cols-3 gap-6">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}

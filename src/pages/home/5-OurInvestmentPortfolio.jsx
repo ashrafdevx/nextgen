@@ -6,35 +6,6 @@ import "../../assets/slider.css";
 import { useNavigate } from "react-router-dom";
 import { investmentPortfolioData } from "../../utils/data";
 
-const CustomPrevArrow = ({ className, style, onClick }) => (
-  <div
-    className={`${className}  `}
-    style={{
-      ...style,
-      display: "block",
-      left: "-10px",
-      zIndex: 10,
-      fontSize: "0px", // Increase the icon size
-      color: "#000", // Set icon color
-    }}
-    onClick={onClick}
-  ></div>
-);
-
-const CustomNextArrow = ({ className, style, onClick }) => (
-  <div
-    className={`${className}`}
-    style={{
-      ...style,
-      display: "block",
-      right: "-40px",
-      zIndex: 10,
-      color: "#000", // Set icon color
-    }}
-    onClick={onClick}
-  ></div>
-);
-
 const OurInvestmentPortfolio = () => {
   const navigate = useNavigate();
   const [activeFilter] = useState("All");
@@ -46,31 +17,31 @@ const OurInvestmentPortfolio = () => {
           (project) => project.category === activeFilter
         );
   const settings = {
-    dots: false, // Default: Show dots on larger screens
+    dots: false,
     infinite: true,
     speed: 900,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true, // Enable arrows by default
+    arrows: true,
     responsive: [
       {
-        breakpoint: 1024, // Medium screens
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true, // Keep dots visible on medium screens
-          arrows: true, // Ensure arrows are enabled for medium screens
+          dots: true,
+          arrows: true,
         },
       },
       {
-        breakpoint: 768, // Mobile screens
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: false, // Hide dots on mobile screens
-          arrows: false, // Show arrows on mobile screens
+          dots: false,
+          arrows: false,
         },
       },
     ],
