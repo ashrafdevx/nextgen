@@ -81,7 +81,6 @@ export const investmentPortfolioData = [
     Bedroom: "2 baths",
     FrontElevation: "Brick – Back",
     SideElevations: "Hardy Plank",
-
     category: "Completed",
     propertyStatus: "Sold",
     sellingPrice: "$300K",
@@ -142,6 +141,7 @@ export const investmentPortfolioData = [
     title: "Barkridge Dr, Granbury Model - A",
     shortDescription:
       "Two-story family home with brick-stone front elevation.y home with brick front elevation.",
+    description: "",
     propertyType: "Single Family Home",
     specs:
       "0.09-acre lot | 2,228 sq ft living area | 4 beds & 3 baths | Two car garage | Two Story with Brick-Stone Front Elevation & Hardy Plank Sidings",
@@ -516,7 +516,7 @@ export const developmentPortfolioData = [
     Community: "Canyon Creek, Granbury, TX",
     description:
       "Designed to minimize environmental impact while maximizing comfort,Designed to minimize environmental impact while maximizing comfort,Designed to minimize environmental impact while maximizing comfort, it’s the ...",
-    category: "Sold",
+    category: "Completed",
     vedio:
       "https://res.cloudinary.com/dpbpuhsx9/video/upload/v1737454658/5808_Black_Pine_Cir_-_Video_hlna1l.mp4",
     image: img7,
@@ -585,7 +585,7 @@ export const developmentPortfolioData = [
     SideElevations: "Hardy Plank",
     Community: "Canyon Creek, Granbury, TX",
     description:
-      "Expected to be completed in early January 2025, offering a modern design with ample living space. Expected to be completed in early January 2025, offering a modern design with ample living space.",
+      "Completed in January 2025, offering a modern design with ample living space. ",
     category: "Completed",
     image:
       "https://photos.zillowstatic.com/fp/5fc9e808fb72713b6808824707f27b4b-uncropped_scaled_within_1536_1152.webp",
@@ -644,7 +644,7 @@ export const developmentPortfolioData = [
     SideElevations: "Hardy Plank",
     Community: "Canyon Creek, Granbury, TX",
     description:
-      "Expected to be completed in January 2025, this home features high-end finishes and spacious interiors.",
+      "Completed in January 2025 , this home features high-end finishes and spacious interiors.",
     category: "Completed",
     // image: Barkrage5702,
     image:
@@ -707,7 +707,7 @@ export const developmentPortfolioData = [
     SideElevations: "Hardy Plank-Black",
     Community: "Canyon Creek, Granbury, TX",
     description:
-      "Expected to be completed in January 2025, this home will offer luxurious finishes with a modern design.",
+      "Completed in February 2025, this home will offer luxurious finishes with a modern design.",
     image: Van12,
     // "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
 
@@ -810,7 +810,7 @@ export const developmentPortfolioData = [
     investors: 20,
     perInvestorShare: "$27,500",
     totalRaised: "$550,000 ",
-    category: "Completed",
+    category: "Under Construction",
     fundRound: "Completed",
     Floor: "1",
     Garage: "1",

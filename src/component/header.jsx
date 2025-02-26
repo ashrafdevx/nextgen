@@ -51,17 +51,17 @@ const Header = () => {
     },
     {
       name: "Portfolio",
-      path: "/portfolio/investment-portfolio",
-      dropdownItems: [
-        {
-          name: "Real Estate Development Portfolio",
-          path: "/portfolio/development-portfolio",
-        },
-        {
-          name: "Real Estate Investment Portfolio",
-          path: "/portfolio/investment-portfolio",
-        },
-      ],
+      path: "/portfolio/development-portfolio",
+      // dropdownItems: [
+      //   {
+      //     name: "Real Estate Development Portfolio",
+      //     path: "/portfolio/development-portfolio",
+      //   },
+      //   {
+      //     name: "Real Estate Investment Portfolio",
+      //     path: "/portfolio/investment-portfolio",
+      //   },
+      // ],
     },
     { name: "Blogs", path: "/blog" },
     { name: "Contact", path: "/contact-us" },

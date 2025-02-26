@@ -63,7 +63,7 @@ const DevelopmentPortfolio = () => {
           )}
         </div>
         <h2 className="sm:text-4xl text-center sm:text-start font-bold sm:mt-2 py-4">
-          Our Development Portfolio
+          Our Portfolio
         </h2>
 
         {/* Projects Carousel */}
@@ -72,13 +72,13 @@ const DevelopmentPortfolio = () => {
             <div key={project.id} className="sm:p-4 ">
               <div className="shadow-lg overflow-hidden bg-white sm:p-1">
                 <img
-                  src={project.image}
-                  alt={project.title}
+                  src={project?.image}
+                  alt={project?.title}
                   className=" w-full sm:w-auto mb-2 h-40 sm:h-80 object-cover p-1 sm:object-cover"
                 />{" "}
                 <div className=" px-6 py-4">
                   <h3 className="text-xl sm:text-md overflow-hidden whitespace-nowrap text-ellipsis font-bold mb-2 ">
-                    {project.title}
+                    {project?.title}
                   </h3>
                   <p
                     className="text-gray-600 line-clamp-3 mb-4 sm:h-24 overflow-hidden text-ellipsis"
@@ -89,13 +89,13 @@ const DevelopmentPortfolio = () => {
                       lineClamp: 3, // For non-webkit browsers
                     }}
                   >
-                    {project.description}
+                    {project?.description}
                   </p>
                   <div className="flex items-center justify-center sm:justify-start">
                     <button
                       onClick={() =>
                         navigate(
-                          `/portfolio/development-portfolio/${project.id}`
+                          `/portfolio/development-portfolio/${project?.id}`
                         )
                       }
                       className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
