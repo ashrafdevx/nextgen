@@ -10,7 +10,7 @@ const Header = () => {
   useEffect(() => {
     setActiveItem(location.pathname);
   }, [location.pathname]);
-
+  console.log("activeItem", activeItem);
   const menuItems = [
     { name: "Home", path: "/" },
     {
@@ -170,12 +170,21 @@ const Header = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
-          <button
-            onClick={() => navigate("/login")}
-            className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg mr-2 hover:bg-blue-800 transition-colors duration-300"
-          >
-            Login
-          </button>
+          {activeItem !== "/login" ? (
+            <button
+              onClick={() => navigate("/login")}
+              className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg mr-2 hover:bg-blue-800 transition-colors duration-300"
+            >
+              Login
+            </button>
+          ) : (
+            <button
+              onClick={() => navigate("/")}
+              className="rounded-full bg-blue-700 px-6 py-2 text-white font-quicksand text-lg mr-2 hover:bg-blue-800 transition-colors duration-300"
+            >
+              Back
+            </button>
+          )}
         </div>
 
         {/* Mobile Menu */}
