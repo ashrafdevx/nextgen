@@ -52,28 +52,34 @@ const AllDevelopmentPortfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div
-              key={project.id}
+              key={project?.id}
               className="shadow-lg overflow-hidden bg-white"
             >
               <img
-                src={project.image}
-                alt={project.title}
+                src={project?.image}
+                alt={project?.title}
                 className="w-full h-40 object-cover md:h-80 md:object-cover"
               />
 
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 line-clamp-3  text-justify break-all mb-4 md:h-28">
-                  {project.description}
-                </p>
-                <button
-                  onClick={() =>
-                    navigate(`/portfolio/development-portfolio/${project.id}`)
-                  }
-                  className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
-                >
-                  Read More
-                </button>
+              <div className="p-2 md:p-6  flex flex-col justify-between">
+                <div className=" md:h-36">
+                  <h3 className="text-xl font-bold mb-2">{project?.title}</h3>
+                  <p className="text-gray-600 text-justify overflow-hidden mb-4 line-clamp-4">
+                    {project?.description}
+                  </p>
+                </div>
+                <div className="">
+                  <button
+                    onClick={() =>
+                      navigate(
+                        `/portfolio/development-portfolio/${project?.id}`
+                      )
+                    }
+                    className="border-blue-600 text-blue-600 border transition hover:text-white duration-300 px-9 py-2 rounded-full shadow-md hover:bg-blue-700"
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
             </div>
           ))}
