@@ -196,7 +196,7 @@ export const developmentPortfolioData = [
     specs:
       " Single Family Home | Built Year: 2025 | 0.09-acre lot | 2,228 sq ft living area | 2,700 sq ft covered area | 4 beds & 3 baths | 2 car garage | Double Story with Brick & Stone Front Elevation and Hardy Plank Sidings",
     description:
-      "Experience luxury and modern living in this stunning new construction two-story home, featuring 2,228 sq ft, 4 bedrooms, 3 bathrooms, and a 2-car garage. Walk in the Wroth Iron 8 foot entry doors to be welcome by 10 foot ceilings. Designed with an open-concept layout, the expansive living room boasts soaring 20-foot ceilings, filling the space with natural light. The chef’s kitchen is a dream, offering high-end finishes, custom cabinetry, and a large island perfect for entertaining. The primary suite, located on the first floor, provides a peaceful retreat with a spa-like ensuite and walk-in closet. Upstairs, two secondary bedrooms each feature an attached study space, ideal for work or school. Additional highlights include a mudroom, a laundry room with a sink, spray foam insulation, a full sprinkler system, gutters, and a privacy cedar fence. Built with quality and efficiency in mind, this home offers both style and functionality—schedule your showing today! ",
+      "Experience luxury and modern living in this stunning new construction two-story home, featuring 2,228 sq ft, 4 bedrooms, 3 bathrooms, and a 2-car garage. Walk in the Wroth Iron 8 foot entry doors to be welcome by 10 foot ceilings. Designed with an open-concept layout, the expansive living room boasts soaring 20-foot ceilings, filling the space with natural light. The chef’s kitchen is a dream, offering high-end finishes, custom cabinetry, and a large island perfect for entertaining. The primary suite, located on the first floor, provides a peaceful retreat with a spa-like ensuite and walk-in closet. Upstairs, two secondary bedrooms each feature an attached study space, ideal for work or school. Additional highlights include a mudroom, a laundry room with a sink, spray foam insulation, a full sprinkler system, gutters, and a privacy cedar fence. Built with quality and efficiency in mind, this home offers both style and functionality.",
     category: "Completed",
     image:
       "https://photos.zillowstatic.com/fp/5fc9e808fb72713b6808824707f27b4b-uncropped_scaled_within_1536_1152.webp",
@@ -261,7 +261,8 @@ export const developmentPortfolioData = [
     specs:
       "Single Family Home | Built Year: 2025 | 0.09-acre lot | 2,228 sq ft living area | 2,700 sq ft covered area | 4 beds & 3 baths | 2 car garage | Double Story with Brick & Stone Front Elevation and Hardy Plank Sidings",
     description:
-      "Completed in January 2025 , this home features high-end finishes and spacious interiors.",
+      "Experience luxury and modern living in this stunning new construction two-story home, featuring 2,228sq ft of living space, 4 bedrooms, 3 bathrooms, and a 2-car garage. Walk in the Wroth Iron 8 foot entry doors to be welcome by 10 foot ceilings. Designed with an open-concept layout, the expansive living room boasts soaring 20-foot ceilings, filling the space with natural light. The chef’s kitchen is a dream, offering high-end finishes, custom cabinetry, and a large island perfect for entertaining. The primary suite, located on the first floor, provides a peaceful retreat with a spa-like ensuite and walk-in closet. Upstairs, two secondary bedrooms each feature an attached study space, ideal for work or school. Additional highlights include a mudroom, a laundry room with a sink, spray foam insulation, a full sprinkler system, gutters, and a privacy cedar fence. Built with quality and efficiency in mind, this home offers both style and functionality.",
+    // "Completed in January 2025 , this home features high-end finishes and spacious interiors.",
     category: "Completed",
     // image: Barkrage5702,
     image:
@@ -331,7 +332,7 @@ export const developmentPortfolioData = [
     specs:
       "Single Family Home | Built Year: 2025 | 0.09-acre lot | 2,350 sq ft living area | 2,750 sq ft covered area | 4 beds & 3.5 baths | 2 car garage | Double Story with Brick & Stone Front Elevation and Hardy Plank Sidings | Steel framing structure",
     description:
-      "Amazing steel framing is a new construction two-story home featuring 2,360 sq ft of living space, 4 bedrooms, 3.5 bathrooms, and a 2-car garage that can withstand tornados and heavy storms. Walk in the huge 10-foot ceilings on both the floors . All common areas downstairs whereas all bedrooms including utility room upstairs. The chef’s kitchen is a dream, offering high-end finishes, birch wood cabinetry, and a large island perfect for entertaining. Additional highlights include a mudroom, a laundry room with a sink, spray foam insulation, a full sprinkler system, gutters, and a privacy cedar fence. Built with quality and efficiency in mind, this home offers both style and functionality.",
+      "2025 construction - Amazing steel framing is a new construction two-story home featuring 2,360 sq ft of living space, 4 bedrooms, 3.5 bathrooms, and a 2-car garage that can withstand tornados and heavy storms. Walk in the huge 10-foot ceilings on both the floors . All common areas downstairs whereas all bedrooms including utility room upstairs. The chef’s kitchen is a dream, offering high-end finishes, birch wood cabinetry, and a large island perfect for entertaining. Additional highlights include a mudroom, a laundry room with a sink, spray foam insulation, a full sprinkler system, gutters, and a privacy cedar fence. Built with quality and efficiency in mind, this home offers both style and functionality.",
     // "Completed in February 2025, this home will offer luxurious finishes with a modern design.",
     image: Van12,
     // "https://cdn.prod.website-files.com/67067fdc2c280a5f9b9112c8/6710ff96015e583036141d64_5dee77c5147f6f7e78616f970f8068e5-p_e.webp", // Replace with your image URL
@@ -369,8 +370,8 @@ export const developmentPortfolioData = [
     expectedSale: "$725k",
     Floor: "1",
     Garage: "1",
-    Bathroom: "3 beds",
-    Bedroom: "2 baths",
+    Bathroom: "4 beds",
+    Bedroom: "3.5 baths",
     FrontElevation: "Brick – Back",
     SideElevations: "Hardy Plank",
     propertyStatus: "Completion in April 2025",
@@ -395,6 +396,7 @@ export const developmentPortfolioData = [
     LivingArea: "3,200 sq ft",
     CoveredArea: "4,501 sq ft",
     Bedroom: 4,
+
     propertyStatus: "Completion by March 2025",
     Bathroom: 3.5,
     Garage: 3,
@@ -430,6 +432,8 @@ export const developmentPortfolioData = [
     specs:
       "Single Family Home | Built Year: 2025 | 0.69-acre lot | 3,300 sq ft living area | 4,600 sq ft covered area | 4 beds & 3 baths | 3 car garage | Single Story with Brick & Stone Front Elevation and all brick sidings",
     investors: 10,
+    Bathroom: "3 beds",
+    Bedroom: "5 baths",
     perInvestorShare: "$30,000",
     category: "Under Construction",
     Floor: "1",
@@ -440,8 +444,8 @@ export const developmentPortfolioData = [
     Community: "Pecan Plantation, Granbury, TX",
     FrontElevation: "Brick – Back",
     SideElevations: "Hardy Plank",
-    Bathroom: "3 beds",
-    Bedroom: "2 baths",
+    // Bathroom: "3 beds",
+    // Bedroom: "2 baths",
     totalRaised: "$300,000",
     expectedSellingPrice: "$660K",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
@@ -457,12 +461,13 @@ export const developmentPortfolioData = [
   {
     id: 10,
     title: "The Retreat at Cleburne",
-    shortDescription:
-      "Invest with us by owning fully developed residential lot(s) starting from $20,000 and up in The Retreat in Cleburne, TX presents an exceptional opportunity to build a spec home with us, your future home or rental investment property in a luxurious, gated, resort-style community just south of Fort Worth. This private enclave offers world-class amenities, including a championship golf course, an expansive clubhouse with a restaurant and bar, multiple swimming pools, fitness facilities, and scenic hiking trails. Residents can enjoy breathtaking hill country views, abundant wildlife, and a peaceful, low-density living environment, perfect for relaxation and outdoor recreation. The community also provides 24/7 security, a pro shop, and event spaces, ensuring a safe and well-maintained setting for families and retirees alike. With easy access to DFW’s metro conveniences while offering a tranquil escape from city life, The Retreat is an excellent investment for those seeking a blend of luxury, nature, and privacy in their future home..",
+
     propertyType: "Single Family Home",
-    description:
-      "Investors purchase the lots via Deed of Trust under our company until the home is developed on the lot. This reduces the holding cost of the lot for the investors as annual POA charges are very high due to the excellent amenities provided by this resort community. Refer to the website for details about this community and reach out to us for details about investment and ROI details. https://ddresorts.com/the-retreat/ ",
-    specs: "lot size 0.25 acre to 0.65 acre lots | total lots 9",
+    description: `
+       Invest with us by owning fully developed residential lot(s) starting from $10,000 and up in White Bluff at Whitney, TX offers the perfect opportunity to build a spec home through us, your future dream home or investment rental home in a scenic, resort-style community. Nestled along the shores of Lake Whitney, White Bluff provides stunning natural beauty, a peaceful atmosphere, and a range of premium amenities. Residents enjoy access to two championship golf courses, multiple swimming pools, a marina, fishing spots, tennis courts, and walking trails, making it an ideal destination for outdoor enthusiasts and those seeking a relaxed lifestyle. The gated community also boasts 24/7 security, a restaurant, a clubhouse, and ample green space, ensuring both comfort and safety. With its prime location just a short drive from DFW, White Bluff offers the perfect balance of serene lakefront living and modern conveniences, making it a smart investment for your future home.
+      
+      Investors purchase the lots via Deed of Trust under our company until the home is developed on the lot. This reduces the holding cost of the lot for the investors as annual POA charges are very high due to the excellent amenities provided by this resort community. Refer to the website for details about this community and reach out to us for details about investment and ROI details.`,
+    specs: "Lot size 0.25 acre to 0.65 acre lots | Total lots 9",
     LotArea: "0.25 to .65 acre",
     investors: 1,
     perInvestorShare: "$30,000",
@@ -481,7 +486,7 @@ export const developmentPortfolioData = [
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
     image: Retreat1,
-
+    link: "https://ddresorts.com/the-retreat/",
     images: [
       Retreat1,
       Retreat2,
@@ -502,10 +507,10 @@ export const developmentPortfolioData = [
     shortDescription:
       "Two-story family home with brick-stone front elevation.y home with brick front elevation.",
     propertyType: "Single Family Home",
-    description:
-      "Investors purchase the lots via Deed of Trust under our company until the home is developed on the lot. This reduces the holding cost of the lot for the investors as annual POA charges are very high due to the excellent amenities provided by this resort community. Refer to the website for details about this community and reach out to us for details about investment and ROI details. https://ddresorts.com/the-retreat/ ",
+    description: `Investors purchase the lots via Deed of Trust under our company until the home is developed on the lot. This reduces the holding cost of the lot for the investors as annual POA charges are very high due to the excellent amenities provided by this resort community. Refer to the website for details about this community and reach out to us for details about investment and ROI details.`,
+    link: "https://whitebluffresort.com/white-bluff-living/",
     specs:
-      ": 0.1 acre to 1.2 acre lots | total lots 72 | LotArea: 0.25 to .65 acre",
+      ": 0.1 acre to 1.2 acre lots | Total lots 72 | LotArea: 0.25 to .65 acre",
     LotArea: "0.25 to .65 acre",
     investors: 10,
     perInvestorShare: "$30,000",

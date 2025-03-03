@@ -260,28 +260,45 @@ const PropertyListing = () => {
               {/* <li className="text-gray-800"> Garage(s): 1</li> */}
               {selectedProject?.Floor && (
                 <li className="text-gray-800 font-rubik">
-                  `Floor(s): ${selectedProject?.Floor}`{" "}
+                  Floor(s): {selectedProject?.Floor}{" "}
                 </li>
               )}
               {/* <p className="text-gray-800">
                 {" "}
                 Community : {selectedProject?.Community}
               </p> */}
-              <div className="pt-2">
-                <p className="text-gray-800 font-rubik text-lg">Elevations :</p>
-                <li className="text-gray-800 font-rubik text-lg">
-                  Front Elevation: {selectedProject?.FrontElevation}
-                </li>
-                <li className="text-gray-800 font-rubik text-lg">
-                  Side Elevations: {selectedProject?.SideElevations}
-                </li>
-              </div>
+              {selectedProject?.FrontElevation &&
+                selectedProject?.SideElevations && (
+                  <div className="pt-2">
+                    <p className="text-gray-800 font-rubik text-lg">
+                      Elevations :
+                    </p>
+                    <li className="text-gray-800 font-rubik ">
+                      Front Elevation: {selectedProject?.FrontElevation}
+                    </li>
+                    <li className="text-gray-800 font-rubik ">
+                      Side Elevations: {selectedProject?.SideElevations}
+                    </li>
+                  </div>
+                )}
             </div>
 
             <h2 className="font-semibold text-lg mb-2">{`What's special`}</h2>
 
             <div className="space-y-4 text-gray-700">
-              <p>{selectedProject?.description}</p>
+              <p>
+                {selectedProject?.description}{" "}
+                {selectedProject?.link && (
+                  <a
+                    className="text-blue-600 hover:underline"
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {selectedProject.link}
+                  </a>
+                )}
+              </p>
             </div>
 
             <div className="mt-6 mb-2 flex items-center justify-between">
