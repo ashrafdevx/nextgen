@@ -188,9 +188,117 @@ const PropertyListing = () => {
 
             {/* 3D Image content */}
           </div>
-
-          {/* Property details section */}
           <div className="px-2 md:px-6">
+            <div className="flex justify-between items-start ">
+              <div className="">
+                <div className="flex items-center gap-2 mb-2">
+                  <h1 className="md:text-2xl font-semibold">
+                    {selectedProject.title}
+                  </h1>
+                  {/* <MapPin className="h-6 w-6 text-gray-500" /> */}
+                </div>
+                <div className="hidden md:flex md:gap-4 mb-2">
+                  <div className="flex items-center gap-1">
+                    <Home className="h-5 w-5 text-gray-600" />
+                    <span>{selectedProject?.Bedroom} Bed</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Bath className="h-5 w-5 text-gray-600" />
+                    <span>{selectedProject?.Bathroom} Bath</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span>Garage(s): {selectedProject?.Garage}</span>
+                  </div>
+                </div>
+              </div>
+              <div className="text-right">
+                <p className="md:text-2xl font-bold text-orange-500">
+                  {selectedProject?.sellingPrice}
+                </p>
+                <span className="text-green-500 text-md">
+                  {" "}
+                  {selectedProject?.propertyStatus}
+                  <br />
+                  {selectedProject?.expectedSale &&
+                    `Sale Price : ${selectedProject?.expectedSale}`}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col mb-6">
+              <li className="text-gray-800 font-rubik">
+                Specs: {selectedProject?.specs}
+              </li>
+              <li className="md:hidden">{selectedProject?.Bedroom} Bed</li>
+              <li className="md:hidden">{selectedProject?.Bathroom} Bath</li>
+              <li className="md:hidden">
+                Garage(s): {selectedProject?.Garage}
+              </li>{" "}
+              {/* <li className="text-gray-800 font-rubik">
+                Property Type : {selectedProject?.propertyType}
+              </li> */}
+              {/* <li className="text-gray-800">
+                Living Area: {selectedProject?.LivingArea}
+              </li>
+              <li className="text-gray-800">
+                Covered Area: {selectedProject?.CoveredArea}
+              </li> */}
+              <li className="text-gray-800 font-rubik">
+                Investors: {selectedProject?.investors}
+              </li>
+              <li className="text-gray-800 font-rubik">
+                Per Investors Share : {selectedProject?.perInvestorShare}
+              </li>{" "}
+              {selectedProject?.totalRaised && (
+                <li className="text-gray-800 font-rubik">
+                  Total Raised : {selectedProject?.totalRaised}
+                </li>
+              )}
+              <li className="text-gray-800 font-rubik">
+                Funding Round: : {selectedProject?.fundRound}
+              </li>
+              {/* <li className="text-gray-800"> Garage(s): 1</li> */}
+              {selectedProject?.Floor && (
+                <li className="text-gray-800 font-rubik">
+                  `Floor(s): ${selectedProject?.Floor}`{" "}
+                </li>
+              )}
+              {/* <p className="text-gray-800">
+                {" "}
+                Community : {selectedProject?.Community}
+              </p> */}
+              <div className="pt-2">
+                <p className="text-gray-800 font-rubik text-lg">Elevations :</p>
+                <li className="text-gray-800 font-rubik text-lg">
+                  Front Elevation: {selectedProject?.FrontElevation}
+                </li>
+                <li className="text-gray-800 font-rubik text-lg">
+                  Side Elevations: {selectedProject?.SideElevations}
+                </li>
+              </div>
+            </div>
+
+            <h2 className="font-semibold text-lg mb-2">{`What's special`}</h2>
+
+            <div className="space-y-4 text-gray-700">
+              <p>{selectedProject?.description}</p>
+            </div>
+
+            <div className="mt-6 mb-2 flex items-center justify-between">
+              <button
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+                onClick={() => navigate("/contact-us")}
+              >
+                Contact Us
+              </button>
+              <div className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-gray-600" />
+                <span className="text-gray-700">(919)-249-8450</span>
+              </div>
+            </div>
+          </div>{" "}
+          {/* Property details section */}
+          {/* <div className="px-2 md:px-6">
             <div className="flex justify-between items-start ">
               <div className="">
                 <div className="flex items-center md:gap-2 mb-2">
@@ -247,7 +355,7 @@ const PropertyListing = () => {
               <li className="text-gray-800 font-rubik">
                 Covered Area: {selectedProject?.CoveredArea}
               </li>
-              {/* <p className="text-gray-800 font-rubik"> Garage(s): 1</p> */}
+           
               <li className="text-gray-800 font-rubik">
                 {" "}
                 Floor(s): {selectedProject?.Floor}
@@ -285,7 +393,7 @@ const PropertyListing = () => {
                 <span className="text-gray-700">(919)-249-8450</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10">
           {/* Video content */}
