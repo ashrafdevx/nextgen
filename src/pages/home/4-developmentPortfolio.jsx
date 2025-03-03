@@ -76,12 +76,12 @@ const DevelopmentPortfolio = () => {
                   alt={project?.title}
                   className=" w-full sm:w-auto mb-2 h-40 sm:h-80 object-cover p-1 sm:object-cover"
                 />{" "}
-                <div className=" px-6 py-4">
+                <div className="px-6 md:px-2 py-4">
                   <h3 className="text-xl sm:text-md overflow-hidden whitespace-nowrap text-ellipsis font-bold mb-2 ">
                     {project?.title}
                   </h3>
                   <p
-                    className="text-gray-600 line-clamp-3 mb-4 sm:h-24 overflow-hidden text-ellipsis"
+                    className="text-gray-600 text-justify line-clamp-3 mb-4 sm:h-24 overflow-hidden text-ellipsis"
                     style={{
                       display: "-webkit-box",
                       WebkitBoxOrient: "vertical",
