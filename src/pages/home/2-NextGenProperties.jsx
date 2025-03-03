@@ -8,7 +8,7 @@ const NextGenProperties = () => {
         { value: "09", label: "Total Projects", numericValue: 9 },
         { value: "$5M", label: "Market Value", numericValue: 5 },
         { value: "04", label: "Completed", numericValue: 4 },
-        { value: "03", label: "Under Construction", numericValue: 3 },
+        { value: "03", label: "In Progress", numericValue: 3 },
         { value: "$3.0M", label: "Funding In Progress", numericValue: 3 },
         { value: "55+", label: "Total Investors", numericValue: 55 },
       ],
