@@ -61,10 +61,18 @@ const AllDevelopmentPortfolio = () => {
                 className="w-full h-40 object-cover md:h-80 md:object-cover"
               />
 
-              <div className="p-2 md:p-6  flex flex-col justify-between">
+              <div className="p-2 md:px-2 md:py-4  flex flex-col justify-between">
                 <div className=" md:h-36">
                   <h3 className="text-xl font-bold mb-2">{project?.title}</h3>
-                  <p className="text-gray-600 text-justify overflow-hidden mb-4 line-clamp-4">
+                  <p
+                    className="text-gray-600 text-justify line-clamp-3 mb-4 sm:h-24 overflow-hidden text-ellipsis"
+                    style={{
+                      display: "-webkit-box",
+                      WebkitBoxOrient: "vertical",
+                      WebkitLineClamp: 3, // Adjust the number of lines as needed
+                      lineClamp: 3, // For non-webkit browsers
+                    }}
+                  >
                     {project?.description}
                   </p>
                 </div>

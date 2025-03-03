@@ -70,6 +70,29 @@ import WB2 from "../assets/White-Bluff/White-Bluff-2.jpg";
 import WB3 from "../assets/White-Bluff/White-Bluff-3.jpg";
 import WB4 from "../assets/White-Bluff/White-Bluff-4.jpg";
 import WB5 from "../assets/White-Bluff/White-Bluff-5.jpg";
+import WB6 from "../assets/White-Bluff/White-Bluff-6.jpg";
+import WB7 from "../assets/White-Bluff/White-Bluff-7.jpg";
+import WB8 from "../assets/White-Bluff/White-Bluff-8.jpg";
+import WB9 from "../assets/White-Bluff/White-Bluff-9.jpg";
+import WB10 from "../assets/White-Bluff/White-Bluff-10.jpg";
+import WB11 from "../assets/White-Bluff/White-Bluff-11.jpg";
+import WB12 from "../assets/White-Bluff/White-Bluff-12.jpg";
+import WB13 from "../assets/White-Bluff/White-Bluff-13.jpg";
+import WB14 from "../assets/White-Bluff/White-Bluff-14.jpg";
+import WB15 from "../assets/White-Bluff/White-Bluff-15.jpg";
+import WB16 from "../assets/White-Bluff/White-Bluff-16.jpg";
+
+// Retreaaate
+import Retreat1 from "../assets/retreat/retreat-1.jpg";
+import Retreat2 from "../assets/retreat/retreat-2.jpg";
+import Retreat3 from "../assets/retreat/retreat-3.jpg";
+import Retreat4 from "../assets/retreat/retreat-4.jpg";
+import Retreat5 from "../assets/retreat/retreat-5.jpg";
+import Retreat6 from "../assets/retreat/retreat-6.jpg";
+import Retreat7 from "../assets/retreat/retreat-7.jpg";
+import Retreat8 from "../assets/retreat/retreat-8.jpg";
+import Retreat9 from "../assets/retreat/retreat-9.jpg";
+import Retreat10 from "../assets/retreat/retreat-10.jpg";
 
 export const developmentPortfolioData = [
   {
@@ -423,16 +446,19 @@ export const developmentPortfolioData = [
     expectedSellingPrice: "$660K",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image:
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-6.jpg",
+    image: Retreat1,
 
     images: [
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-1.jpg",
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-2.jpg",
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-7.jpg",
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-5.jpg",
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-6.jpg",
-      "https://i0.wp.com/ddresorts.com/the-retreat/wp-content/uploads/sites/6/clubhouse-restaurant-8.jpg",
+      Retreat1,
+      Retreat2,
+      Retreat3,
+      Retreat4,
+      Retreat5,
+      Retreat6,
+      Retreat7,
+      Retreat8,
+      Retreat9,
+      Retreat10,
     ],
     video: "",
   },
@@ -454,8 +480,25 @@ export const developmentPortfolioData = [
     // Community: "Pecan Plantation, Granbury, TX",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image: WB2,
-    images: [WB1, WB2, WB3, WB4, WB5],
+    image: WB6,
+    images: [
+      WB6,
+      WB7,
+      WB8,
+      WB9,
+      WB10,
+      WB11,
+      WB12,
+      WB13,
+      WB14,
+      WB15,
+      WB16,
+      WB1,
+      WB2,
+      WB3,
+      WB4,
+      WB5,
+    ],
     video: "",
   },
 ];
