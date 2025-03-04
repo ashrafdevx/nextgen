@@ -287,7 +287,7 @@ const PropertyListing = () => {
 
             <div className="space-y-4 text-gray-700">
               <p>
-                {selectedProject?.description}{" "}
+                {selectedProject?.description}
                 {selectedProject?.link && (
                   <a
                     className="text-blue-600 hover:underline"
@@ -298,6 +298,9 @@ const PropertyListing = () => {
                     {selectedProject.link}
                   </a>
                 )}
+                <br />
+                <br />
+                {selectedProject?.pera && selectedProject?.pera}
               </p>
             </div>
 
