@@ -521,8 +521,9 @@ export const developmentPortfolioData = [
     // Community: "Pecan Plantation, Granbury, TX",
     expectedInvestorProfit: { project: "15%", annualized: "20%" },
     status: "In Progress",
-    image: WB6,
+    image: WB13,
     images: [
+      WB13,
       WB6,
       WB7,
       WB8,
@@ -530,7 +531,6 @@ export const developmentPortfolioData = [
       WB10,
       WB11,
       WB12,
-      WB13,
       WB14,
       WB15,
       WB16,
