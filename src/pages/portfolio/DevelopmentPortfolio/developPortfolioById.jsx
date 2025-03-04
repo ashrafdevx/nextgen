@@ -200,14 +200,14 @@ const PropertyListing = () => {
                 <div className="hidden md:flex md:gap-4 mb-2">
                   <div className="flex items-center gap-1">
                     <Home className="h-5 w-5 text-gray-600" />
-                    <span>{selectedProject?.Bedroom} Bed</span>
+                    <span>{selectedProject?.Bedroom} Beds</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Bath className="h-5 w-5 text-gray-600" />
-                    <span>{selectedProject?.Bathroom} Bath</span>
+                    <span>{selectedProject?.Bathroom} Baths</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <span>Garage(s): {selectedProject?.Garage}</span>
+                    <span>Garage(s) {selectedProject?.Garage}</span>
                   </div>
                 </div>
               </div>

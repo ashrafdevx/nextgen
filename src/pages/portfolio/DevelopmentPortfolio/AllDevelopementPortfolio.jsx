@@ -33,7 +33,7 @@ const AllDevelopmentPortfolio = () => {
 
         {/* Filters */}
         <div className="flex justify-center gap-4 md:gap-4 mb-3 md:mb-8 py-3 md:pt-0">
-          {["All", "Completed", "Under Construction"].map((category) => (
+          {["All", "Completed", "In Progress"].map((category) => (
             <button
               key={category}
               className={`px-2 md:px-4 md:py-2 py-1 rounded-full text-sm ${
@@ -53,7 +53,10 @@ const AllDevelopmentPortfolio = () => {
           {filteredProjects.map((project) => (
             <div
               key={project?.id}
-              className="shadow-lg overflow-hidden bg-white"
+              className="shadow-lg cursor-pointer overflow-hidden bg-white"
+              onClick={() =>
+                navigate(`/portfolio/development-portfolio/${project?.id}`)
+              }
             >
               <img
                 src={project?.image}
