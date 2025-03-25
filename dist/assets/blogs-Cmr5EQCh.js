@@ -1,1 +1,0 @@
-import{j as s}from"./index-DAcFyq7E.js";import{O as r}from"./blogs-Bd-opJIZ.js";const m=()=>s.jsx("div",{className:"container mx-auto mb-10",children:s.jsx("div",{className:"sm:px-0  lg:py-10",children:s.jsx(r,{})})});export{m as default};

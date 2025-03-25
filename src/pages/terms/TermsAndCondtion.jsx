@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TermsAndCondition = () => {
   return (
     <div className="p-4 sm:p-6 md:p-10 max-w-5xl mx-auto text-gray-800">
@@ -31,9 +33,9 @@ const TermsAndCondition = () => {
         <p>
           <strong>4. Help:</strong> If you are experiencing any issues, you can
           reply with the keyword HELP. Or, you can get help directly from us at{" "}
-          <a href="/contact-us" className="text-blue-600 underline">
+          <Link to="/contact-us" className="text-blue-600 underline">
             our contact page
-          </a>
+          </Link>
           .
         </p>
 
@@ -52,9 +54,9 @@ const TermsAndCondition = () => {
         <p>
           <strong>7. Privacy:</strong> If you have any questions regarding
           privacy, please read our
-          <a href="/our-policy" className="text-blue-600 underline ml-1">
+          <Link to="/our-policy" className="text-blue-600 underline ml-1">
             privacy policy
-          </a>
+          </Link>
           .
         </p>
       </div>
