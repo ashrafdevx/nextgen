@@ -41,6 +41,12 @@ import img41 from "../assets/black-pine/41-5808-Black-Pine-Cir-08202024_080749.j
 import img42 from "../assets/black-pine/42-5808-Black-Pine-Cir-08202024_080649.jpg";
 import img43 from "../assets/black-pine/42-5808-Black-Pine-Cir-08202024_080649.jpg";
 
+import imgA from "../assets/black-pine/a-5808-bl-pi.jpg";
+import imgB from "../assets/black-pine/b-5808-bl.jpg";
+import imgC from "../assets/black-pine/c-5808-bl.jpg";
+import imgD from "../assets/black-pine/d-5808-bl.jpg";
+import imgE from "../assets/black-pine/e-5808-bl.jpg";
+
 // VAN-HON
 import Van1 from "../assets/van-hon/van-1.jpg";
 import Van2 from "../assets/van-hon/van-2.jpg";
@@ -126,6 +132,11 @@ export const developmentPortfolioData = [
     image: img7,
 
     images: [
+      imgA,
+      imgB,
+      imgC,
+      imgD,
+      imgE,
       img1,
       img2,
       img3,
