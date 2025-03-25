@@ -115,7 +115,7 @@ export const developmentPortfolioData = [
     SideElevations: "Hardy Plank",
     Community: "Canyon Creek, Granbury, TX",
     description:
-      "2024 Construction - Designed to minimize environmental impact while maximizing comfort,Designed to minimize environmental impact while maximizing comfort,Designed to minimize environmental impact while maximizing comfort, it’s the ...",
+      "Gorgeous construction where modern sophistication meets timeless craftsmanship with a striking brick front and soaring 14-foot ceilings in the living, dining, and kitchen areas, creating a bright and open-concept space. The home features 3 spacious bedrooms, 2 beautifully designed bathrooms, and one car garage. High-quality finishes include real wood cabinetry, wood-look LVP flooring throughout, upgraded tile in the bathrooms, energy-efficient foam insulation, sprinkler system and sleek quartz countertops.",
     category: "Completed",
     investors: 10,
     perInvestorShare: "$27,500",

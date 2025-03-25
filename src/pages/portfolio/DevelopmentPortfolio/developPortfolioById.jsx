@@ -225,7 +225,7 @@ const PropertyListing = () => {
               </div>
             </div>
 
-            <div className="flex flex-col mb-6">
+            <div className="flex flex-col mb-2">
               <li className="text-gray-800 font-rubik">
                 Specs: {selectedProject?.specs}
               </li>
@@ -269,7 +269,7 @@ const PropertyListing = () => {
               </p> */}
               {selectedProject?.FrontElevation &&
                 selectedProject?.SideElevations && (
-                  <div className="pt-2">
+                  <div className="pt-1">
                     <p className="text-gray-800 font-rubik text-lg">
                       Elevations :
                     </p>
@@ -283,7 +283,7 @@ const PropertyListing = () => {
                 )}
             </div>
 
-            <h2 className="font-semibold text-lg mb-2">{`What's special`}</h2>
+            <h2 className=" font-semibold text-lg mb-1.5">{`What's special`}</h2>
 
             <div className="space-y-4 text-gray-700">
               <p>
