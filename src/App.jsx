@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
+import TermsAndCondtion from "./pages/terms/TermsAndCondtion";
 const TawkToWidget = React.lazy(() => import("./utils/tawk"));
 const About = React.lazy(() => import("./pages/about/about"));
 const AskQuesdtion = React.lazy(() => import("./pages/faq/6-AskQuesdtion"));
@@ -75,6 +76,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/terms-and-conditions" element={<TermsAndCondtion />} />
         <Route path="/services" element={<Services />}>
           <Route
             path="individuals-homeowners"

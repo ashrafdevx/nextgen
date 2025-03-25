@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 export default function ContactForm() {
   const {
@@ -101,12 +102,9 @@ export default function ContactForm() {
               and offers from Nextgenproperties at the phone number provided.
               Msg & data rates may apply. Msg frequency varies. Reply STOP to
               unsubscribe.
-              <a
-                href="https://www.nextgenproperties.us/terms-and-conditions"
-                className="text-blue-600"
-              >
+              <Link to="/terms-and-conditions" className="text-blue-600">
                 SMS Terms & Conditions
-              </a>
+              </Link>
             </label>
           </div>
 

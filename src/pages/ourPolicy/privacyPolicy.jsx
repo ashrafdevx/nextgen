@@ -37,6 +37,11 @@ const PrivacyPolicy = () => {
                 non-marketing text messages from other phone numbers managed by
                 Company, and you may opt out of those in a similar fashion.
               </p>
+
+              <p className="py-3 sm:py-6 md:py-2 lg:py-6 px-6 sm:px-1 ">
+                Your messaging policy can be part of the privacy policy or a
+                separate web page/document on your website.
+              </p>
             </div>
           </div>
         </div>
