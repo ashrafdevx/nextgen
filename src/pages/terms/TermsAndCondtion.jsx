@@ -9,54 +9,59 @@ const TermsAndCondition = () => {
 
       <div className="space-y-4 text-sm sm:text-base leading-relaxed">
         <p>
-          <strong>1. Program description:</strong> When opted-in, you will
-          receive text messages (SMS/MMS) to your mobile number. These kinds of
-          messages may include a response to an inquiry, real-time texts to ask
-          and answer questions about our services and pricing, and appointment
-          confirmations.
+          <strong>1- SMS Consent Communication:</strong>
+          The information (Phone Numbers) obtained as part of the SMS consent
+          process will not be shared with third parties for marketing purposes.
         </p>
-
         <p>
-          <strong>2. Program frequency:</strong> Message frequency will vary
-          depending on the conversation.
+          <strong>2- Types of SMS Communications:</strong> If you have consented
+          to receive text messages from NextGen Properties LLC, you may receive
+          messages related to the following: Sales Agreements, Project Plans &
+          Construction Details, reminders, Follow-up messages Billing inquiries
         </p>
-
         <p>
-          <strong>3. Opt out:</strong> You can opt-out of this service at any
-          time. Just text “STOP” to the phone number. After you text “STOP” to
-          us, we will send you an SMS reply to confirm that you have been
-          unsubscribed. After this, you will no longer receive SMS messages from
-          us. If you want to join again, just sign up as you did the first time
-          or text “START,” and we will start sending SMS messages to you again.
+          <strong>3- Message Frequency:</strong>Message frequency may vary
+          depending on the type of communication. For example, you may receive
+          up to 3 SMS messages per week related to the services we offer.
         </p>
-
         <p>
-          <strong>4. Help:</strong> If you are experiencing any issues, you can
-          reply with the keyword HELP. Or, you can get help directly from us at{" "}
-          <Link to="/contact-us" className="text-blue-600 underline">
-            our contact page
+          <strong>4- Potential Fees for SMS Messaging:</strong> Please note that
+          standard message and data rates may apply, depending on your carrier’s
+          pricing plan. These fees may vary if the message is sent domestically
+          or internationally. .
+        </p>
+        <p>
+          <strong>5- Opt-In Method:</strong> You may opt-in to receive SMS
+          messages from NextGen Properties LLC in the following ways: Verbally,
+          during a conversation, By submitting an online form, By filling out a
+          paper form.
+        </p>
+        <p>
+          <strong>6- Opt-Out Method:</strong>{" "}
+          {`You can opt out of receiving SMS
+          messages at any time. To do so, simply reply "STOP" to any SMS message
+          you receive. Alternatively, you can contact us directly to request
+          removal from our messaging list.`}
+        </p>
+        <p>
+          <strong>7. Help:</strong>If you are experiencing any issues, you can
+          reply with the keyword HELP. Or, you can get help directly from us at
+          <Link to="/" className="text-blue-600 underline ml-1">
+            nextgenproperties.us
           </Link>
           .
         </p>
-
         <p>
-          <strong>5. Interruption:</strong> Carriers, such as AT&T, are not
-          liable for delayed or undelivered messages.
-        </p>
-
+          <strong>Additional Options:</strong>If you do not wish to receive SMS
+          messages, you can choose not to check the SMS consent box on our
+          forms.
+        </p>{" "}
         <p>
-          <strong>6. Costs:</strong> Message and data rates may apply for any
-          messages sent to you from us and to us from you. If you have any
-          questions about your text plan or data plan, please contact your
-          wireless provider.
-        </p>
-
-        <p>
-          <strong>7. Privacy:</strong> If you have any questions regarding
-          privacy, please read our
-          <Link to="/our-policy" className="text-blue-600 underline ml-1">
-            privacy policy
-          </Link>
+          <strong>8- Standard Messaging Disclosures:</strong>
+          {`Message and data
+          rates may apply. You can opt out at any time by texting "STOP." For
+          assistance, text "HELP" or visit our [Privacy Policy] and [Terms and
+          Conditions] pages. Message frequency may vary`}
           .
         </p>
       </div>
