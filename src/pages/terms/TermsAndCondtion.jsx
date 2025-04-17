@@ -57,12 +57,20 @@ const TermsAndCondition = () => {
           forms.
         </p>{" "}
         <p>
-          <strong>8- Standard Messaging Disclosures:</strong>
-          {`Message and data
-          rates may apply. You can opt out at any time by texting "STOP." For
-          assistance, text "HELP" or visit our [Privacy Policy] and [Terms and
-          Conditions] pages. Message frequency may vary`}
-          .
+          <strong>8- Standard Messaging Disclosures:</strong> Message and data
+          rates may apply. You can opt out at any time by texting {` "STOP" `}.
+          For assistance, text {`"HELP"`} or visit our
+          <Link to="/our-policy" className="text-blue-600 underline ml-1">
+            Privacy Policy
+          </Link>
+          and
+          <Link
+            to="/terms-and-conditions"
+            className="text-blue-600 underline ml-1"
+          >
+            Terms and Conditions
+          </Link>
+          pages. Message frequency may vary.
         </p>
       </div>
     </div>

@@ -26,6 +26,11 @@ const Header = () => {
           path: "/our-policy",
         },
         {
+          name: "Terms and Condition",
+          path: "/terms-and-conditions",
+        },
+
+        {
           name: "FAQ",
           path: "/faq",
         },
