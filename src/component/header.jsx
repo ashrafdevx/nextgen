@@ -22,7 +22,7 @@ const Header = () => {
           path: "/about",
         },
         {
-          name: "Our Policy",
+          name: "Privacy Policy",
           path: "/our-policy",
         },
         {
