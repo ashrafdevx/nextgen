@@ -8,7 +8,7 @@ export default function ContactForm() {
     // formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     alert("OnSubmit Clicked!!!!");
   };
 
@@ -98,6 +98,30 @@ export default function ContactForm() {
               className="checkbox mt-1"
             />
             <label className="text-sm text-justify text-gray-600">
+              By checking this box, you agree to receive recurring automated
+              promotional and personalized marketing text messages from NextGen
+              Properties LLC at the mobile number provided. Consent is not a
+              condition of any purchase. Message & data rates may apply. Text
+              HELP for help. Text STOP to cancel. For any additional help,
+              please reach out to our email at
+              <a
+                href="mailto:support@NextGenProperties.us"
+                className="text-blue-600"
+              >
+                support@NextGenProperties.us
+              </a>
+              . For more information, view our
+              <Link to="/our-policy" className="pl-1 text-blue-600">
+                Privacy Policy
+              </Link>
+              and
+              <Link to="/terms-and-conditions" className="pl-1 text-blue-600">
+                SMS Terms of Service
+              </Link>
+              .
+            </label>
+
+            {/* <label className="text-sm text-justify text-gray-600">
               By checking this box, I agree to receive SMS updates, promotions,
               and offers from Nextgenproperties at the phone number provided.
               Msg & data rates may apply. Msg frequency varies. Reply STOP to
@@ -105,7 +129,7 @@ export default function ContactForm() {
               <Link to="/terms-and-conditions" className="text-blue-600">
                 SMS Terms & Conditions
               </Link>
-            </label>
+            </label> */}
           </div>
 
           <div className="flex justify-start">
