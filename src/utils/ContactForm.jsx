@@ -98,6 +98,20 @@ export default function ContactForm() {
               className="checkbox mt-1"
             />
             <label className="text-sm text-justify text-gray-600">
+              By checking this box, I consent to receive SMS from
+              Nextgenproperties. Reply STOP to opt-out; Reply HELP for support;
+              Message & data rates may apply; Messaging frequency may vary.
+              Visit{" "}
+              <Link to="/our-policy" className="pl-1 text-blue-600">
+                Privacy Policy
+              </Link>{" "}
+              to see our privacy policy and{" "}
+              <Link to="/terms-and-conditions" className="pl-1 text-blue-600">
+                SMS Terms of Service
+              </Link>{" "}
+              for our Terms of Service.
+            </label>
+            {/* <label className="text-sm text-justify text-gray-600">
               By checking this box, you agree to receive recurring automated
               promotional and personalized marketing text messages from NextGen
               Properties LLC at the mobile number provided. Consent is not a
@@ -119,7 +133,7 @@ export default function ContactForm() {
                 SMS Terms of Service
               </Link>
               .
-            </label>
+            </label> */}
 
             {/* <label className="text-sm text-justify text-gray-600">
               By checking this box, I agree to receive SMS updates, promotions,
