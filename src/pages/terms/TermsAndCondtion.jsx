@@ -46,9 +46,15 @@ const TermsAndCondition = () => {
         <p>
           <strong>7. Help:</strong>If you are experiencing any issues, you can
           reply with the keyword HELP. Or, you can get help directly from us at
-          <Link to="/" className="text-blue-600 underline ml-1">
+          <a
+            href="mailto:support@NextGenProperties.us"
+            className="text-blue-600 ml-1"
+          >
+            support@NextGenProperties.us
+          </a>
+          {/* <Link to="/" className="text-blue-600 underline ml-1">
             nextgenproperties.us
-          </Link>
+          </Link> */}
           .
         </p>
         <p>
@@ -60,15 +66,15 @@ const TermsAndCondition = () => {
           <strong>8- Standard Messaging Disclosures:</strong> Message and data
           rates may apply. You can opt out at any time by texting {` "STOP" `}.
           For assistance, text {`"HELP"`} or visit our
-          <Link to="/our-policy" className="text-blue-600 underline ml-1">
+          <Link to="/our-policy" className="text-blue-600 underline mx-1">
             Privacy Policy
           </Link>
           and
           <Link
             to="/terms-and-conditions"
-            className="text-blue-600 underline ml-1"
+            className="text-blue-600 underline mx-1"
           >
-            Terms and Conditions
+            SMS Terms and Conditions
           </Link>
           pages. Message frequency may vary.
         </p>

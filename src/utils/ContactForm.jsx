@@ -107,9 +107,9 @@ export default function ContactForm() {
               </Link>{" "}
               to see our privacy policy and{" "}
               <Link to="/terms-and-conditions" className="pl-1 text-blue-600">
-                SMS Terms of Service
+                SMS Terms & Conditions
               </Link>{" "}
-              for our Terms of Service.
+              for our SMS Terms and Conditions.
             </label>
             {/* <label className="text-sm text-justify text-gray-600">
               By checking this box, you agree to receive recurring automated
