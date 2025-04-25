@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
         <div className="container mx-auto md:mb-10 lg:pt-6">
           <div className="sm:px-8 lg:px-16">
             <h1 className="flex text-2xl font-medium md:justify-start justify-center sm:text-4xl pt-4  sm:pt-7">
-              Privacy and Policy
+              Privacy Policy
             </h1>
             <div className="flex text-justify sm:text-lg flex-col md:pt-6 lg:pt-4">
               <p className="py-3 md:py-2 px-6 sm:px-1 lg:py-6">

@@ -13,7 +13,7 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
+  const onSubmit = async () => {
     setIsLoading(true);
     try {
       // Simulate API call
