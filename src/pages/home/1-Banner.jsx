@@ -1,6 +1,6 @@
 import { Pause, Play } from "lucide-react"; // Import Play icon as well
 import { useState, useRef } from "react"; // Use state and ref for video control
-import "../../assets/banner.css"; // Optional for custom styles
+import "../../assets/bannercss"; // Optional for custom styles
 import LazyLoad from "react-lazyload";
 
 const Banner = () => {
