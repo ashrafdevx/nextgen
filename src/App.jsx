@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-do";
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
