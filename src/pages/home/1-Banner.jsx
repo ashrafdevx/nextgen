@@ -1,6 +1,6 @@
 import { Pause, Play } from "lucide-react"; // Import Play icon as well
 import { useState, useRef } from "react"; // Use state and ref for video control
-import "../../assets/bannercss"; // Optional for custom styles
+import "../../assets/banner.css"; // Optional for custom styles
 import LazyLoad from "react-lazyload";
 
 const Banner = () => {
@@ -19,27 +19,33 @@ const Banner = () => {
     <>
       <div className="hidden md:flex banner-container">
         <div className="video-wrapper">
-          <LazyLoad height={300} offset={100} once>
-            <video
-              ref={videoRef} // Attach ref to the video element
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="background-video"
-              poster="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c%2F6721ce01a860242b6a351f8b_The%20WORLD%20S%20SMOOTHEST%20cinematic%20PROPERTY%20VIDEO%20_%20SONY%20FX6%20%281%29-poster-00001.jpg"
-            >
-              <source
-                src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c%2F6721ce01a860242b6a351f8b_The%20WORLD%20S%20SMOOTHEST%20cinematic%20PROPERTY%20VIDEO%20_%20SONY%20FX6%20%281%29-transcode.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c%2F6721ce01a860242b6a351f8b_The%20WORLD%20S%20SMOOTHEST%20cinematic%20PROPERTY%20VIDEO%20_%20SONY%20FX6%20%281%29-transcode.webm"
-                type="video/webm"
-              />
-              Your browser does not support the video tag.
-            </video>
-          </LazyLoad>
+          {isPlaying ? (
+            <div className="flex items-center justify-center -mt-20 border min-h-screen">
+              <div className="animate-spin rounded-full h-8 w-8 border-4 border-blue-500 border-t-transparent"></div>
+            </div>
+          ) : (
+            <LazyLoad height={300} offset={100} once>
+              <video
+                ref={videoRef} // Attach ref to the video element
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="background-video"
+                poster="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c%2F6721ce01a860242b6a351f8b_The%20WORLD%20S%20SMOOTHEST%20cinematic%20PROPERTY%20VIDEO%20_%20SONY%20FX6%20%281%29-poster-00001.jpg"
+              >
+                <source
+                  src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c%2F6721ce01a860242b6a351f8b_The%20WORLD%20S%20SMOOTHEST%20cinematic%20PROPERTY%20VIDEO%20_%20SONY%20FX6%20%281%29-transcode.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="https://cdn.prod.website-files.com/6703f76c902df755b27afd5c%2F6721ce01a860242b6a351f8b_The%20WORLD%20S%20SMOOTHEST%20cinematic%20PROPERTY%20VIDEO%20_%20SONY%20FX6%20%281%29-transcode.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </LazyLoad>
+          )}
           <div className="video-overlay">
             <button
               type="button"

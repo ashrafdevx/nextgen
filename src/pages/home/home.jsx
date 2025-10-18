@@ -8,12 +8,6 @@ import OurBlogs from "../../utils/blogs.jsx";
 import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    if (import.meta.env.MODE === "production") {
-      throw new Error("Intentional runtime error in production");
-    }
-  }, []);
-
   return (
     <>
       <Banner />
